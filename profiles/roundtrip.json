@@ -1,0 +1,20 @@
+{
+  "name": "roundtrip",
+  "description": "Sync session: bindings, path axes, camera sensors, production kind APIs and derived opinions below the editor layers.",
+  "include_builtin": true,
+  "severity_overrides": {
+    "BindingMissing": "error",
+    "BindingInstanceUnregistered": "error",
+    "roundtripAxisMissing": "error",
+    "roundtripKindMissing": "error",
+    "roundtripSensorMissing": "error",
+    "cctvSensorMissing": "error",
+    "cctvNativeCameraAuthored": "error",
+    "roundtripResultMissing": "error",
+    "derivedAboveResult": "error",
+    "DerivedAuthoredInIntent": "error",
+    "StaleIntent": "error",
+    "pipeMissingAxis": "error",
+    "WallMissingAxis": "error"
+  }
+}

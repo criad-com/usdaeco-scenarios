@@ -1,0 +1,731 @@
+{
+  "train": "aeco-0.5.0",
+  "previousFailures": [
+    {
+      "gate": "core check.py",
+      "previousResult": "64/70; 11.54s",
+      "classification": "environment",
+      "diagnosis": "Minimal core publications inherited a datacentre override.",
+      "action": "Unset datacentre source selectors for core; its six own examples run unmodified.",
+      "currentStatus": "PASS",
+      "currentResult": "70/70; 0 NOT RUN; 95.94s; reused successful check of unchanged release"
+    },
+    {
+      "gate": "axis check.py",
+      "previousResult": "52/53; 9.5s",
+      "classification": "environment",
+      "diagnosis": "Minimal axis runner explicitly rejects datacentre overrides.",
+      "action": "Unset datacentre source selectors for axis.",
+      "currentStatus": "PASS",
+      "currentResult": "53/53; 0 NOT RUN; 18.45s; reused successful check of unchanged release"
+    },
+    {
+      "gate": "buildup check.py",
+      "previousResult": "56/58; 7.29s",
+      "classification": "drift",
+      "diagnosis": "check.py:165 asserts core 0.9.1 and toolchain 0.3.1; its example is minimal.",
+      "action": "Use audited historical fixtures and unset datacentre selectors. Follow-up: re-pin and refresh the version assertion.",
+      "currentStatus": "PASS",
+      "currentResult": "58/58; 0 NOT RUN; 22.27s; reused successful check of unchanged release"
+    },
+    {
+      "gate": "wall check.py",
+      "previousResult": "83/86; 40.38s",
+      "classification": "drift",
+      "diagnosis": "check.py:289 selects guides stamped aeco-axis 0.1.0; result reproduction uses axis v0.1.0 and datacentre v0.4.1.",
+      "action": "Reproduce the declared fixtures separately from current axis v0.1.2 and datacentre v0.4.5 consumer composition. Follow-up: re-publish the guide stamp and result.",
+      "currentStatus": "PASS",
+      "currentResult": "86/86; 0 NOT RUN; 30.41s; reused successful check of unchanged release"
+    },
+    {
+      "gate": "pipe check.py",
+      "previousResult": "72/73; 41.32s",
+      "classification": "drift",
+      "diagnosis": "Committed result reproduction retains axis v0.1.1 and datacentre v0.4.1.",
+      "action": "Reproduce audited fixtures separately from current-train consumer composition. Follow-up: re-pin and re-publish.",
+      "currentStatus": "PASS",
+      "currentResult": "81/81; 0 NOT RUN; 41.43s; reused successful check of unchanged release"
+    },
+    {
+      "gate": "cctv check.py",
+      "previousResult": "20/23; 0.66s",
+      "classification": "environment",
+      "diagnosis": "Source and installed copies competed for usdAecoCctv registration, and the Python validator plugin was not registered.",
+      "action": "Select the source plugin directory consistently and register its sibling Python validator plugin explicitly.",
+      "currentStatus": "PASS",
+      "currentResult": "158/158; 0 NOT RUN; 79.25s; reused successful check of unchanged release"
+    },
+    {
+      "gate": "ifc check.py",
+      "previousResult": "93/94; 377.15s",
+      "classification": "drift",
+      "diagnosis": "The v0.1.2 converter contract asserted core 0.9.1.",
+      "action": "Re-pin IFC v0.2.0, whose converter contract declares core v0.9.2; required by the newly released Solid use case.",
+      "currentStatus": "PASS",
+      "currentResult": "100/100; 0 NOT RUN; 570.84s; reused successful check of unchanged release"
+    },
+    {
+      "gate": "bonsai check.py",
+      "previousResult": "44/47; 183.79s",
+      "classification": "drift",
+      "diagnosis": "testenv/test_bonsai.py:22-23 asserts core 0.9.1 and axis 0.1.0. The failed pytest run suppressed the native evidence rows.",
+      "action": "Use the declared core v0.9.1, axis v0.1.0, Sync v0.5.0, CCTV v0.4.8 and IFC v0.1.0 closure in isolated copies. Follow-up: update exact version assertions and re-pin the full closure.",
+      "currentStatus": "PASS",
+      "currentResult": "67/68; 1 NOT RUN; 155.74s"
+    },
+    {
+      "gate": "revit check.py",
+      "previousResult": "46/47; 29.35s",
+      "classification": "drift",
+      "diagnosis": "testenv/test_transport.py:72-73 asserts core 0.9.1 and axis 0.1.0.",
+      "action": "Use the declared core v0.9.1, axis v0.1.0, Sync v0.5.0, CCTV v0.4.8 and IFC v0.1.0 closure in isolated copies. Follow-up: update exact version assertions and re-pin the full closure.",
+      "currentStatus": "PASS",
+      "currentResult": "47/47; 0 NOT RUN; 26.17s"
+    },
+    {
+      "gate": "datacentre check.py",
+      "previousResult": "usdaeco-toolchain v0.3.2 byte-qualified input unavailable; released check rejects the pristine tag before its first check",
+      "classification": "upstream-correction",
+      "diagnosis": "Datacentre v0.4.3 recorded a toolchain runtime digest containing ignored obsolete package metadata.",
+      "action": "Re-pin v0.4.5 and supply its exact toolchain v0.3.2 publication fixture. The train structure gate uses v0.3.3.",
+      "currentStatus": "PASS",
+      "currentResult": "199/203; 4 NOT RUN; 663.89s; reused successful check of unchanged release"
+    },
+    {
+      "gate": "board check.py",
+      "previousResult": "62/63; 11.71s",
+      "classification": "upstream-correction",
+      "diagnosis": "Toolchain S01 rejected the full licence name Apache License 2.0 in board v0.1.1.",
+      "action": "Toolchain v0.3.3 accepts the full licence name. No board source changes.",
+      "currentStatus": "PASS",
+      "currentResult": "63/63; 0 NOT RUN; 10.83s; reused successful check of unchanged release"
+    },
+    {
+      "gate": "cctv scenarios",
+      "previousResult": "0/31 (embree)",
+      "classification": "environment",
+      "diagnosis": "The same duplicate CCTV plugin registration prevented all 31 cases.",
+      "action": "Use one source plugin identity across the shared registry and child processes.",
+      "currentStatus": "PASS",
+      "currentResult": "31/31 (embree)"
+    },
+    {
+      "gate": "datacentre process",
+      "previousResult": "nonzero exit; see datacentre-scenario.log",
+      "classification": "environment",
+      "diagnosis": "The shared CCTV consumer failed on duplicate plugin registration.",
+      "action": "Use the same source plugin identity and explicit validator registration as the released CCTV suite.",
+      "currentStatus": "PASS",
+      "currentResult": "36.659s; 240s budget"
+    },
+    {
+      "gate": "gate regression tests",
+      "previousResult": "3 failed, 87 passed in 14.24s",
+      "classification": "environment",
+      "diagnosis": "Two duplicate CCTV registration failures and one obsolete installed-directory assertion.",
+      "action": "Select the source plugin directory consistently; assert the source-layout contract in the gate test.",
+      "currentStatus": "PASS",
+      "currentResult": "91 passed in 13.20s"
+    }
+  ],
+  "fixturePinLag": [
+    {
+      "repo": "usdaeco-core",
+      "ref": "v0.9.2",
+      "dependency": "usdaeco-toolchain",
+      "fixtureRef": "v0.3.1",
+      "trainRef": "v0.3.3"
+    },
+    {
+      "repo": "usdaeco-core",
+      "ref": "v0.9.2",
+      "dependency": "usdaeco-datacentre",
+      "fixtureRef": "v0.4.1",
+      "trainRef": "v0.4.5"
+    },
+    {
+      "repo": "usdaeco-axis",
+      "ref": "v0.1.2",
+      "dependency": "usdaeco-toolchain",
+      "fixtureRef": "v0.3.2",
+      "trainRef": "v0.3.3"
+    },
+    {
+      "repo": "usdaeco-axis",
+      "ref": "v0.1.2",
+      "dependency": "usdaeco-datacentre",
+      "fixtureRef": "v0.4.2",
+      "trainRef": "v0.4.5"
+    },
+    {
+      "repo": "usdaeco-toolchain",
+      "ref": "v0.3.3",
+      "dependency": "usdaeco-core",
+      "fixtureRef": "v0.8.4",
+      "trainRef": "v0.9.2"
+    },
+    {
+      "repo": "usdaeco-buildup",
+      "ref": "v0.2.1",
+      "dependency": "usdaeco-core",
+      "fixtureRef": "v0.9.1",
+      "trainRef": "v0.9.2"
+    },
+    {
+      "repo": "usdaeco-buildup",
+      "ref": "v0.2.1",
+      "dependency": "usdaeco-toolchain",
+      "fixtureRef": "v0.3.1",
+      "trainRef": "v0.3.3"
+    },
+    {
+      "repo": "usdaeco-buildup",
+      "ref": "v0.2.1",
+      "dependency": "usdaeco-datacentre",
+      "fixtureRef": "v0.4.1",
+      "trainRef": "v0.4.5"
+    },
+    {
+      "repo": "usdaeco-wall",
+      "ref": "v0.2.1",
+      "dependency": "usdaeco-toolchain",
+      "fixtureRef": "v0.3.1",
+      "trainRef": "v0.3.3"
+    },
+    {
+      "repo": "usdaeco-wall",
+      "ref": "v0.2.1",
+      "dependency": "usdaeco-core",
+      "fixtureRef": "v0.9.1",
+      "trainRef": "v0.9.2"
+    },
+    {
+      "repo": "usdaeco-wall",
+      "ref": "v0.2.1",
+      "dependency": "usdaeco-axis",
+      "fixtureRef": "v0.1.0",
+      "trainRef": "v0.1.2"
+    },
+    {
+      "repo": "usdaeco-wall",
+      "ref": "v0.2.1",
+      "dependency": "usdaeco-buildup",
+      "fixtureRef": "v0.2.0",
+      "trainRef": "v0.2.1"
+    },
+    {
+      "repo": "usdaeco-wall",
+      "ref": "v0.2.1",
+      "dependency": "usdaeco-ifc",
+      "fixtureRef": "v0.1.0",
+      "trainRef": "v0.2.0"
+    },
+    {
+      "repo": "usdaeco-wall",
+      "ref": "v0.2.1",
+      "dependency": "usdaeco-datacentre",
+      "fixtureRef": "v0.4.1",
+      "trainRef": "v0.4.5"
+    },
+    {
+      "repo": "usdaeco-pipe",
+      "ref": "v0.2.1",
+      "dependency": "usdaeco-core",
+      "fixtureRef": "v0.9.1",
+      "trainRef": "v0.9.2"
+    },
+    {
+      "repo": "usdaeco-pipe",
+      "ref": "v0.2.1",
+      "dependency": "usdaeco-axis",
+      "fixtureRef": "v0.1.1",
+      "trainRef": "v0.1.2"
+    },
+    {
+      "repo": "usdaeco-pipe",
+      "ref": "v0.2.1",
+      "dependency": "usdaeco-toolchain",
+      "fixtureRef": "v0.3.1",
+      "trainRef": "v0.3.3"
+    },
+    {
+      "repo": "usdaeco-pipe",
+      "ref": "v0.2.1",
+      "dependency": "usdaeco-datacentre",
+      "fixtureRef": "v0.4.1",
+      "trainRef": "v0.4.5"
+    },
+    {
+      "repo": "usdaeco-pipe",
+      "ref": "v0.2.1",
+      "dependency": "usdaeco-ifc",
+      "fixtureRef": "v0.1.0",
+      "trainRef": "v0.2.0"
+    },
+    {
+      "repo": "usdaeco-cctv",
+      "ref": "v0.5.2",
+      "dependency": "usdaeco-toolchain",
+      "fixtureRef": "v0.3.2",
+      "trainRef": "v0.3.3"
+    },
+    {
+      "repo": "usdaeco-cctv",
+      "ref": "v0.5.2",
+      "dependency": "usdaeco-core",
+      "fixtureRef": "v0.9.1",
+      "trainRef": "v0.9.2"
+    },
+    {
+      "repo": "usdaeco-cctv",
+      "ref": "v0.5.2",
+      "dependency": "usdaeco-datacentre",
+      "fixtureRef": "v0.4.1",
+      "trainRef": "v0.4.5"
+    },
+    {
+      "repo": "usdaeco-cctv",
+      "ref": "v0.5.2",
+      "dependency": "usdaeco-ifc",
+      "fixtureRef": "v0.1.0",
+      "trainRef": "v0.2.0"
+    },
+    {
+      "repo": "usdaeco-cctv-exec",
+      "ref": "v0.2.1",
+      "dependency": "usdaeco-toolchain",
+      "fixtureRef": "v0.3.2",
+      "trainRef": "v0.3.3"
+    },
+    {
+      "repo": "usdaeco-sync",
+      "ref": "v0.5.2",
+      "dependency": "usdaeco-toolchain",
+      "fixtureRef": "v0.3.2",
+      "trainRef": "v0.3.3"
+    },
+    {
+      "repo": "usdaeco-sync",
+      "ref": "v0.5.2",
+      "dependency": "usdaeco-axis",
+      "fixtureRef": "v0.1.0",
+      "trainRef": "v0.1.2"
+    },
+    {
+      "repo": "usdaeco-ifc",
+      "ref": "v0.2.0",
+      "dependency": "usdaeco-toolchain",
+      "fixtureRef": "v0.3.2",
+      "trainRef": "v0.3.3"
+    },
+    {
+      "repo": "usdaeco-ifc",
+      "ref": "v0.2.0",
+      "dependency": "usdaeco-sync",
+      "fixtureRef": "v0.5.1",
+      "trainRef": "v0.5.2"
+    },
+    {
+      "repo": "usdaeco-ifc",
+      "ref": "v0.2.0",
+      "dependency": "usdaeco-datacentre",
+      "fixtureRef": "v0.4.2",
+      "trainRef": "v0.4.5"
+    },
+    {
+      "repo": "usdaeco-ifc",
+      "ref": "v0.2.0",
+      "dependency": "usdaeco-cctv",
+      "fixtureRef": "v0.5.0",
+      "trainRef": "v0.5.2"
+    },
+    {
+      "repo": "usdaeco-ifc",
+      "ref": "v0.2.0",
+      "dependency": "usdaeco-buildup",
+      "fixtureRef": "v0.2.0",
+      "trainRef": "v0.2.1"
+    },
+    {
+      "repo": "usdaeco-ifc",
+      "ref": "v0.2.0",
+      "dependency": "usdaeco-wall",
+      "fixtureRef": "v0.1.2",
+      "trainRef": "v0.2.1"
+    },
+    {
+      "repo": "usdaeco-ifc",
+      "ref": "v0.2.0",
+      "dependency": "usdaeco-pipe",
+      "fixtureRef": "v0.1.2",
+      "trainRef": "v0.2.1"
+    },
+    {
+      "repo": "usdaeco-ifc",
+      "ref": "v0.2.0",
+      "dependency": "usdaeco-axis",
+      "fixtureRef": "v0.1.1",
+      "trainRef": "v0.1.2"
+    },
+    {
+      "repo": "usdaeco-bonsai",
+      "ref": "v0.1.2",
+      "dependency": "usdaeco-toolchain",
+      "fixtureRef": "v0.3.2",
+      "trainRef": "v0.3.3"
+    },
+    {
+      "repo": "usdaeco-bonsai",
+      "ref": "v0.1.2",
+      "dependency": "usdaeco-core",
+      "fixtureRef": "v0.9.1",
+      "trainRef": "v0.9.2"
+    },
+    {
+      "repo": "usdaeco-bonsai",
+      "ref": "v0.1.2",
+      "dependency": "usdaeco-sync",
+      "fixtureRef": "v0.5.0",
+      "trainRef": "v0.5.2"
+    },
+    {
+      "repo": "usdaeco-bonsai",
+      "ref": "v0.1.2",
+      "dependency": "usdaeco-datacentre",
+      "fixtureRef": "v0.4.1",
+      "trainRef": "v0.4.5"
+    },
+    {
+      "repo": "usdaeco-bonsai",
+      "ref": "v0.1.2",
+      "dependency": "usdaeco-cctv",
+      "fixtureRef": "v0.4.8",
+      "trainRef": "v0.5.2"
+    },
+    {
+      "repo": "usdaeco-bonsai",
+      "ref": "v0.1.2",
+      "dependency": "usdaeco-buildup",
+      "fixtureRef": "v0.1.2",
+      "trainRef": "v0.2.1"
+    },
+    {
+      "repo": "usdaeco-bonsai",
+      "ref": "v0.1.2",
+      "dependency": "usdaeco-wall",
+      "fixtureRef": "v0.1.2",
+      "trainRef": "v0.2.1"
+    },
+    {
+      "repo": "usdaeco-bonsai",
+      "ref": "v0.1.2",
+      "dependency": "usdaeco-pipe",
+      "fixtureRef": "v0.1.2",
+      "trainRef": "v0.2.1"
+    },
+    {
+      "repo": "usdaeco-bonsai",
+      "ref": "v0.1.2",
+      "dependency": "usdaeco-ifc",
+      "fixtureRef": "v0.1.0",
+      "trainRef": "v0.2.0"
+    },
+    {
+      "repo": "usdaeco-bonsai",
+      "ref": "v0.1.2",
+      "dependency": "usdaeco-axis",
+      "fixtureRef": "v0.1.0",
+      "trainRef": "v0.1.2"
+    },
+    {
+      "repo": "usdaeco-revit",
+      "ref": "v0.1.2",
+      "dependency": "usdaeco-toolchain",
+      "fixtureRef": "v0.3.1",
+      "trainRef": "v0.3.3"
+    },
+    {
+      "repo": "usdaeco-revit",
+      "ref": "v0.1.2",
+      "dependency": "usdaeco-core",
+      "fixtureRef": "v0.9.1",
+      "trainRef": "v0.9.2"
+    },
+    {
+      "repo": "usdaeco-revit",
+      "ref": "v0.1.2",
+      "dependency": "usdaeco-sync",
+      "fixtureRef": "v0.5.0",
+      "trainRef": "v0.5.2"
+    },
+    {
+      "repo": "usdaeco-revit",
+      "ref": "v0.1.2",
+      "dependency": "usdaeco-datacentre",
+      "fixtureRef": "v0.4.1",
+      "trainRef": "v0.4.5"
+    },
+    {
+      "repo": "usdaeco-revit",
+      "ref": "v0.1.2",
+      "dependency": "usdaeco-cctv",
+      "fixtureRef": "v0.4.8",
+      "trainRef": "v0.5.2"
+    },
+    {
+      "repo": "usdaeco-revit",
+      "ref": "v0.1.2",
+      "dependency": "usdaeco-buildup",
+      "fixtureRef": "v0.1.2",
+      "trainRef": "v0.2.1"
+    },
+    {
+      "repo": "usdaeco-revit",
+      "ref": "v0.1.2",
+      "dependency": "usdaeco-wall",
+      "fixtureRef": "v0.1.2",
+      "trainRef": "v0.2.1"
+    },
+    {
+      "repo": "usdaeco-revit",
+      "ref": "v0.1.2",
+      "dependency": "usdaeco-pipe",
+      "fixtureRef": "v0.1.2",
+      "trainRef": "v0.2.1"
+    },
+    {
+      "repo": "usdaeco-revit",
+      "ref": "v0.1.2",
+      "dependency": "usdaeco-ifc",
+      "fixtureRef": "v0.1.0",
+      "trainRef": "v0.2.0"
+    },
+    {
+      "repo": "usdaeco-revit",
+      "ref": "v0.1.2",
+      "dependency": "usdaeco-axis",
+      "fixtureRef": "v0.1.0",
+      "trainRef": "v0.1.2"
+    },
+    {
+      "repo": "usdaeco-datacentre",
+      "ref": "v0.4.5",
+      "dependency": "usdaeco-ifc",
+      "fixtureRef": "v0.1.0",
+      "trainRef": "v0.2.0"
+    },
+    {
+      "repo": "usdaeco-datacentre",
+      "ref": "v0.4.5",
+      "dependency": "usdaeco-core",
+      "fixtureRef": "v0.8.4",
+      "trainRef": "v0.9.2"
+    },
+    {
+      "repo": "usdaeco-datacentre",
+      "ref": "v0.4.5",
+      "dependency": "usdaeco-toolchain",
+      "fixtureRef": "v0.3.2",
+      "trainRef": "v0.3.3"
+    },
+    {
+      "repo": "usdaeco-datacentre",
+      "ref": "v0.4.5",
+      "dependency": "usdaeco-revit",
+      "fixtureRef": "v0.1.0",
+      "trainRef": "v0.1.2"
+    },
+    {
+      "repo": "usdaeco-board",
+      "ref": "v0.1.1",
+      "dependency": "usdaeco-toolchain",
+      "fixtureRef": "v0.2.1",
+      "trainRef": "v0.3.3"
+    },
+    {
+      "repo": "usdaeco-plan",
+      "ref": "v0.1.0",
+      "dependency": "usdaeco-axis",
+      "fixtureRef": "v0.1.1",
+      "trainRef": "v0.1.2"
+    },
+    {
+      "repo": "usdaeco-plan",
+      "ref": "v0.1.0",
+      "dependency": "usdaeco-toolchain",
+      "fixtureRef": "v0.3.2",
+      "trainRef": "v0.3.3"
+    },
+    {
+      "repo": "usdaeco-plan",
+      "ref": "v0.1.0",
+      "dependency": "usdaeco-datacentre",
+      "fixtureRef": "v0.4.2",
+      "trainRef": "v0.4.5"
+    },
+    {
+      "repo": "usdaeco-compliance",
+      "ref": "v0.1.0",
+      "dependency": "usdaeco-toolchain",
+      "fixtureRef": "v0.3.2",
+      "trainRef": "v0.3.3"
+    },
+    {
+      "repo": "usdaeco-compliance",
+      "ref": "v0.1.0",
+      "dependency": "usdaeco-datacentre",
+      "fixtureRef": "v0.4.2",
+      "trainRef": "v0.4.5"
+    },
+    {
+      "repo": "usdaeco-compliance",
+      "ref": "v0.1.0",
+      "dependency": "usdaeco-axis",
+      "fixtureRef": "v0.1.1",
+      "trainRef": "v0.1.2"
+    },
+    {
+      "repo": "usdaeco-typical",
+      "ref": "v0.1.0",
+      "dependency": "usdaeco-toolchain",
+      "fixtureRef": "v0.3.2",
+      "trainRef": "v0.3.3"
+    },
+    {
+      "repo": "usdaeco-typical",
+      "ref": "v0.1.0",
+      "dependency": "usdaeco-datacentre",
+      "fixtureRef": "v0.4.2",
+      "trainRef": "v0.4.5"
+    },
+    {
+      "repo": "usdaeco-typical",
+      "ref": "v0.1.0",
+      "dependency": "usdaeco-axis",
+      "fixtureRef": "v0.1.1",
+      "trainRef": "v0.1.2"
+    },
+    {
+      "repo": "usdaeco-clash",
+      "ref": "v0.1.0",
+      "dependency": "usdaeco-toolchain",
+      "fixtureRef": "v0.3.2",
+      "trainRef": "v0.3.3"
+    },
+    {
+      "repo": "usdaeco-clash",
+      "ref": "v0.1.0",
+      "dependency": "usdaeco-datacentre",
+      "fixtureRef": "v0.4.2",
+      "trainRef": "v0.4.5"
+    },
+    {
+      "repo": "usdaeco-clash",
+      "ref": "v0.1.0",
+      "dependency": "usdaeco-axis",
+      "fixtureRef": "v0.1.1",
+      "trainRef": "v0.1.2"
+    },
+    {
+      "repo": "usdaeco-solid",
+      "ref": "v0.1.0",
+      "dependency": "usdaeco-axis",
+      "fixtureRef": "v0.1.1",
+      "trainRef": "v0.1.2"
+    },
+    {
+      "repo": "usdaeco-solid",
+      "ref": "v0.1.0",
+      "dependency": "usdaeco-toolchain",
+      "fixtureRef": "v0.3.2",
+      "trainRef": "v0.3.3"
+    },
+    {
+      "repo": "usdaeco-solid",
+      "ref": "v0.1.0",
+      "dependency": "usdaeco-datacentre",
+      "fixtureRef": "v0.4.2",
+      "trainRef": "v0.4.5"
+    }
+  ],
+  "note": "Fixture pin differences are not range failures. Current-train compatibility is measured by separate consumer rows.",
+  "bootstrapFindings": [
+    {
+      "repos": [
+        "usdaeco-wall",
+        "usdaeco-pipe"
+      ],
+      "finding": "Flattened stages match; archived USDA differs only in the relative data-fixture path.",
+      "fix": "Clone datacentre v0.4.1 at each example publication layout; preserve all tracked source and result bytes."
+    },
+    {
+      "repos": [
+        "usdaeco-ifc",
+        "usdaeco-bonsai",
+        "usdaeco-revit"
+      ],
+      "finding": "Sync auto-discovery preferred the built CCTV copy while the importer selected its source copy.",
+      "fix": "Build the CCTV install proof outside its source checkout, leaving one discoverable plugin identity."
+    },
+    {
+      "repos": [
+        "usdaeco-ifc"
+      ],
+      "finding": "IFC v0.2.0 requires datacentre v0.4.2 for its roundtrip, while the older invocation supplied v0.4.1.",
+      "fix": "Supply the exact v0.4.2 fixture."
+    },
+    {
+      "repos": [
+        "usdaeco-bonsai",
+        "usdaeco-revit"
+      ],
+      "finding": "Their core v0.9.1 fixture cannot satisfy current Sync v0.5.2, which requires core >=0.9.2.",
+      "fix": "Supply their declared Sync v0.5.0 fixture; current Sync v0.5.2 is tested separately with core v0.9.2."
+    },
+    {
+      "repos": [
+        "usdaeco-cctv-exec"
+      ],
+      "finding": "check.py compares the selected toolchain version with its exact v0.3.2 pin.",
+      "fix": "Supply the audited v0.3.2 fixture. Follow-up: advance its tested pin and version assertion to the current toolchain."
+    },
+    {
+      "repos": [
+        "usdaeco-bonsai",
+        "usdaeco-revit"
+      ],
+      "finding": "Sync v0.5.0 requires CCTV >=0.4.8,<0.5; selecting current CCTV v0.5.2 while retaining old Sync is invalid.",
+      "fix": "Supply the declared CCTV v0.4.8 and IFC v0.1.0 fixtures. The registration smoke verifies core 0.9.1, axis 0.1.0, Sync 0.5.0 and CCTV 0.4.8."
+    },
+    {
+      "repos": [
+        "usdSolidOcct"
+      ],
+      "finding": "One available runtime had the right package version but an older toolchain dependency revision, failing five native source/provenance checks.",
+      "fix": "Select the immutable runtime built against the exact kit dependency revisions. All 28 native checks pass."
+    },
+    {
+      "repos": [
+        "usdaeco-scenarios"
+      ],
+      "finding": "The lookthrough PNG exceeded the shared 400000-byte cap at larger dimensions.",
+      "fix": "Render all three consumer review views at 576x360. Preserve the original luminance, variation and overlay thresholds; all three pass."
+    }
+  ],
+  "remainingDrift": [
+    {
+      "repo": "usdaeco-solid",
+      "ref": "v0.1.0",
+      "check": "ResultStale",
+      "diagnosis": "The fresh normalized stage changes seven internal references between two content-identical flattened prototypes. All four archived USDA layers match byte-for-byte. The committed and reproduced stage hashes differ.",
+      "evidence": "solid-publication-drift.json",
+      "followUp": "Stabilize Solid publication or canonicalize equivalent prototype references in the publisher, then republish and tag. Do not rewrite the tagged result or weaken this gate assertion.",
+      "location": [
+        "tools/usdaeco_solid/example.py:84",
+        "tools/usdaeco_solid/example.py:113",
+        "usdaeco-toolchain/tools/usdaeco_check/example_result.py:26",
+        "usdaeco-toolchain/tools/usdaeco_check/example_result.py:187"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "repo": "usdaeco-solid",
+  "ref": "v0.1.0",
+  "classification": "publication-drift",
+  "check": "ResultStale",
+  "runs": [
+    {
+      "source": "committed",
+      "normalizedSha256": "e322bb2e0e666277be0c19ae3ae7e83cf57ecb4876aac06ca2e4392ed8160d94",
+      "prototypes": {
+        "Flattened_Prototype_1": "9e3f009d6bff1fe05159b52a8d1627965450d5203c1001eb4a3fa95b4291d0bb",
+        "Flattened_Prototype_2": "9e3f009d6bff1fe05159b52a8d1627965450d5203c1001eb4a3fa95b4291d0bb",
+        "Flattened_Prototype_3": "d29e7a3cf50c80f21990eba56976f35a76ca2fbe0b444bfbdd27d323f019dcb8",
+        "Flattened_Prototype_4": "d29e7a3cf50c80f21990eba56976f35a76ca2fbe0b444bfbdd27d323f019dcb8"
+      }
+    },
+    {
+      "source": "fresh",
+      "normalizedSha256": "63b4517a80a449715c334de711fe77d01e229ede0980592b45c787a33cc5e487",
+      "prototypes": {
+        "Flattened_Prototype_1": "9e3f009d6bff1fe05159b52a8d1627965450d5203c1001eb4a3fa95b4291d0bb",
+        "Flattened_Prototype_2": "9e3f009d6bff1fe05159b52a8d1627965450d5203c1001eb4a3fa95b4291d0bb",
+        "Flattened_Prototype_3": "d29e7a3cf50c80f21990eba56976f35a76ca2fbe0b444bfbdd27d323f019dcb8",
+        "Flattened_Prototype_4": "d29e7a3cf50c80f21990eba56976f35a76ca2fbe0b444bfbdd27d323f019dcb8"
+      }
+    }
+  ],
+  "layers": [
+    {
+      "path": "layers/inputs/cameras.usda",
+      "committedSha256": "1b624ef1ef222f52bc48119557b9b225625b54fa12eeb55422049252310f911e",
+      "freshSha256": "1b624ef1ef222f52bc48119557b9b225625b54fa12eeb55422049252310f911e",
+      "equal": true
+    },
+    {
+      "path": "layers/out/exact.usda",
+      "committedSha256": "491ed97ca62b764af29fc2bccd956d11b4908e958771c54687b310f1552f2774",
+      "freshSha256": "491ed97ca62b764af29fc2bccd956d11b4908e958771c54687b310f1552f2774",
+      "equal": true
+    },
+    {
+      "path": "layers/out/presentation.usda",
+      "committedSha256": "efed56f4bb9da6a7de5c4e3a01f7f7483022fef4d37ecea4825b7bf6c3dc5517",
+      "freshSha256": "efed56f4bb9da6a7de5c4e3a01f7f7483022fef4d37ecea4825b7bf6c3dc5517",
+      "equal": true
+    },
+    {
+      "path": "layers/out/twins.usda",
+      "committedSha256": "286a575401078e17fb8e6a7df714582c7984104aaa5bf9623be96daf7cb1f9ec",
+      "freshSha256": "286a575401078e17fb8e6a7df714582c7984104aaa5bf9623be96daf7cb1f9ec",
+      "equal": true
+    }
+  ],
+  "changedLines": [
+    "-                            add references = </Flattened_Prototype_1>",
+    "+                            add references = </Flattened_Prototype_2>",
+    "-                            add references = </Flattened_Prototype_2>",
+    "+                            add references = </Flattened_Prototype_1>",
+    "-                            add references = </Flattened_Prototype_2>",
+    "+                            add references = </Flattened_Prototype_1>",
+    "-                            add references = </Flattened_Prototype_2>",
+    "+                            add references = </Flattened_Prototype_1>",
+    "-                            add references = </Flattened_Prototype_2>",
+    "+                            add references = </Flattened_Prototype_1>",
+    "-                            add references = </Flattened_Prototype_2>",
+    "+                            add references = </Flattened_Prototype_1>",
+    "-                            add references = </Flattened_Prototype_2>",
+    "+                            add references = </Flattened_Prototype_1>"
+  ],
+  "onlyPrototypeReferences": true,
+  "nativeRuntime": "usdSolidOcct v0.1.0; built dependency revisions verified by its 28-check suite"
+}

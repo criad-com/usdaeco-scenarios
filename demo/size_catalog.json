@@ -1,0 +1,5 @@
+{
+  "nominalDiameters": [0.05, 0.065, 0.08],
+  "outerDiameters": [0.05, 0.065, 0.08],
+  "innerDiameters": [0.044, 0.059, 0.074]
+}

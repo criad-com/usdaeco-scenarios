@@ -1,0 +1,80 @@
+[
+  {
+    "licence": "MIT",
+    "path": "demo/size_catalog.json",
+    "producer": "Repository-authored configuration or fixture; consumed by the family gate",
+    "sha256": "43ae673b4bd3cb50816b1c055d7f9608750062e35a0286eec77cdcd0daf672da"
+  },
+  {
+    "licence": "MIT",
+    "path": "dependencies.json",
+    "producer": "Repository-authored configuration or fixture; consumed by the family gate",
+    "sha256": "7c33867953ccbec65493867a2c509ffd050c4c51f5c35934d60b44ffc2576ef1"
+  },
+  {
+    "licence": "MIT",
+    "path": "docs/datacentre-evidence.json",
+    "producer": "check_all.py and scenarios/datacentre.py; 0.3.7 numeric evidence",
+    "sha256": "f03e0ded3d96539e8703bcc2f713e11539597fddc51baf7b223267bbe4a43b27"
+  },
+  {
+    "licence": "MIT",
+    "path": "profiles/datacentre.json",
+    "producer": "Repository-authored configuration or fixture; consumed by the family gate",
+    "sha256": "e4cff8a1af8ae9ed6bef3365e33b585f6d1c7ab605de33f2e334ffc1d797abe0"
+  },
+  {
+    "licence": "MIT",
+    "path": "profiles/roundtrip.json",
+    "producer": "Repository-authored configuration or fixture; consumed by the family gate",
+    "sha256": "97833b281f880e67b2ed25fc78aaf8c3ffc48a7ff2945c6645b503477a6dd8a8"
+  },
+  {
+    "licence": "MIT",
+    "path": "spikes/revit/wallpipe-export.ifc",
+    "producer": "Neutral wall/pipe Revit probe; retained export, not a vendor family",
+    "sha256": "a67ca53c4e04efc7a2459d595e4cf09602897c1594f22f34f244d20a53e51b28"
+  },
+  {
+    "licence": "MIT",
+    "path": "docs/packaging-evidence.json",
+    "producer": "Release packaging aggregation of check_all.py, release_pins.py and native exec parity results",
+    "sha256": "72094f76ab025b5d4ef5c32dc4c054a104f0cd5ae92e485f0eb05c84d09745a3"
+  },
+  {
+    "licence": "MIT",
+    "path": "docs/residual-samples.json",
+    "producer": "scenarios/dc_samples.py; archived view masks, enclosure classification and per-point ray blockers",
+    "sha256": "8044f93cce4a8dd170e104fa36ceb954e85ad2984886abca07238eb14baaff03"
+  },
+  {
+    "licence": "MIT",
+    "path": "docs/revit-reference.json",
+    "producer": "Versioned reference to usdaeco-datacentre v0.3.3 live acceptance; source artifact hash retained",
+    "sha256": "02b790ac1924c088cbc5d86a2b2eb5245395f8e4f59a658f8cd03c851ec92717"
+  },
+  {
+    "licence": "MIT",
+    "path": "docs/release-evidence.json",
+    "producer": "Historical source audits, raw conversion and offline family acceptance; scope defined by embedded versions",
+    "sha256": "a316e5e10688ce73f024824ef7f302341748e0941fa3f154c465d3219138a9b7"
+  },
+  {
+    "path": "docs/acceptance.json",
+    "producer": "Current gate acceptance and exact released source provenance",
+    "licence": "MIT",
+    "sha256": "04a21b6fa2fea4bcdcfe173022d0722255df60b77fb86f3dbb7dc7ab5ca26fd8"
+  },
+  {
+    "path": "family.json",
+    "producer": "Released family inventory and explicit unreleased seeds",
+    "licence": "MIT",
+    "sha256": "c54289a702a85448437b0d18a3b2730e221d0469e0e0b3e4385a26f631d0f23b"
+  },
+  {
+    "path": "testenv/fixtures/column-view-exception.json",
+    "producer": "Historical numeric fixture for strict exception regression",
+    "licence": "MIT",
+    "sha256": "f330cac7c2273390aa41d32727c38fe3b64e5c563ba37a67d0472a6b2ae25073"
+  }
+]

@@ -1,0 +1,42 @@
+{
+  "name": "datacentre toolchain runtime selection",
+  "passed": true,
+  "ref": "v0.3.5",
+  "runtime_sha256": "99c92da01d92384fccd250561eef3efcdd2e32c8a27028c5a95e4f349db63372",
+  "scope": "Declared harness selection for three affected suites and datacentre runtime-byte resolution; complete suites are not rerun",
+  "suiteSelections": [
+    {
+      "suite": "buildup",
+      "ref": "v0.3.5",
+      "revision": "af7528f7cd27b38afb1bbb2db465f40cf83ca5c9",
+      "passed": true
+    },
+    {
+      "suite": "cctv-exec",
+      "ref": "v0.3.5",
+      "revision": "af7528f7cd27b38afb1bbb2db465f40cf83ca5c9",
+      "passed": true
+    },
+    {
+      "suite": "datacentre",
+      "ref": "v0.3.5",
+      "revision": "af7528f7cd27b38afb1bbb2db465f40cf83ca5c9",
+      "passed": true
+    }
+  ],
+  "consumerAliases": [
+    {
+      "consumer": "wall",
+      "passed": true,
+      "originalFailure": "ResultSourcePathInvalid",
+      "proof": "Copied archived layers pass S29 after retargeting the source alias; original artifacts unchanged"
+    },
+    {
+      "consumer": "pipe",
+      "passed": true,
+      "originalFailure": "ResultSourcePathInvalid",
+      "proof": "Copied archived layers pass S29 after retargeting the source alias; original artifacts unchanged"
+    }
+  ],
+  "implementationRevision": "1dcf944f9efac1f0cc1ecfd04528f87ba19a3ec3"
+}

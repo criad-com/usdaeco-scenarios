@@ -1,0 +1,44 @@
+{
+  "Corridors": {
+    "/SecurityTargets/sp_corr_c": {
+      "columnBlockedPrimarySamples": [
+        {
+          "blocker": "/demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L00_Ground/col_044",
+          "point": [
+            34.25,
+            18.25,
+            1.5
+          ],
+          "sampleIndex": 0,
+          "view": "/demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L00_Ground/Corridor_Spine/sec_cam_corr_corr_spine_4/Sensor_0"
+        }
+      ],
+      "enclosedPoints": [],
+      "enclosedSamples": 0,
+      "evaluatedSamples": 288,
+      "fixedCoveredSamples": 288,
+      "sampleCount": 288,
+      "uncoveredFixedSamples": []
+    },
+    "/SecurityTargets/sp_corr_e": {
+      "columnBlockedPrimarySamples": [
+        {
+          "blocker": "/demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L00_Ground/col_071",
+          "point": [
+            68.25,
+            18.25,
+            1.5
+          ],
+          "sampleIndex": 0,
+          "view": "/demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L00_Ground/Corridor_Spine/sec_cam_corr_corr_spine_5/Sensor_0"
+        }
+      ],
+      "enclosedPoints": [],
+      "enclosedSamples": 0,
+      "evaluatedSamples": 288,
+      "fixedCoveredSamples": 288,
+      "sampleCount": 288,
+      "uncoveredFixedSamples": []
+    }
+  }
+}

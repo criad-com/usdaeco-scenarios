@@ -1,0 +1,348 @@
+{
+  "version": "0.7.1",
+  "train": "aeco-0.7.0",
+  "status": "BLOCKED",
+  "implementationRevision": "92659f8dd2113605747f9d4d9a0c216563ea40b7",
+  "correctedRunnerRevision": "1dcf944f9efac1f0cc1ecfd04528f87ba19a3ec3",
+  "fastImplementationRevision": "7921732",
+  "full": {
+    "checks": 122,
+    "PASS": 87,
+    "FAIL": 7,
+    "NOT RUN": 28,
+    "seconds": 931.5,
+    "evidenceSha256": "40f7315a33b32b8c13e0fb8ef8ebfe543bd3345fe187e3b66abac6abf7b764c5",
+    "scope": "One fresh-root full run; no reused suite evidence"
+  },
+  "fast": {
+    "checks": 53,
+    "PASS": 30,
+    "FAIL": 0,
+    "NOT RUN": 23,
+    "seconds": 77.44,
+    "evidenceSha256": "ecc00e27e1b88a7b75d8b560ed72d6e46ec2d639c4d9ea72ca7765c47fe9da8c"
+  },
+  "acquisition": {
+    "train": "aeco-0.7.0",
+    "sources": [
+      {
+        "repo": "usdaeco-core",
+        "ref": "v0.9.3",
+        "revision": "169db75dd57d080171de23fff3006d3bf590910e"
+      },
+      {
+        "repo": "usdaeco-axis",
+        "ref": "v0.1.3",
+        "revision": "6700d456435cc6bf5a3a3f26ff7c102e9a17f0e5"
+      },
+      {
+        "repo": "usdaeco-toolchain",
+        "ref": "v0.3.7",
+        "revision": "0354e85736803224f02b85668ac848d0d5c0c812"
+      },
+      {
+        "repo": "usdaeco-buildup",
+        "ref": "v0.2.2",
+        "revision": "58a604cd01a872aab46b0bd3131e06f48e9a2230"
+      },
+      {
+        "repo": "usdaeco-wall",
+        "ref": "v0.2.3",
+        "revision": "55fe9cd157b1a43e913ccf035cf3711e7b2e96cd"
+      },
+      {
+        "repo": "usdaeco-pipe",
+        "ref": "v0.2.3",
+        "revision": "e2a9ebc9974c45f0be0c691441a9492629544907"
+      },
+      {
+        "repo": "usdaeco-cctv",
+        "ref": "v0.5.4",
+        "revision": "b80bdbf84b64ad58ee05a4916dea43477546e4f1"
+      },
+      {
+        "repo": "usdaeco-cctv-exec",
+        "ref": "v0.2.2",
+        "revision": "217e2a064a4dec89f237f5ee2a2df455dd7da964"
+      },
+      {
+        "repo": "usdaeco-sync",
+        "ref": "v0.5.3",
+        "revision": "a03f03feae09509cc9f8108ec101ab56a9372cc5"
+      },
+      {
+        "repo": "usdaeco-ifc",
+        "ref": "v0.2.1",
+        "revision": "ec96dcfb61598bda1b203726d8ba19d1236c0885"
+      },
+      {
+        "repo": "usdaeco-bonsai",
+        "ref": "v0.1.4",
+        "revision": "d71244c5b1ad29fe3de39070d4d68dd1752c05b4"
+      },
+      {
+        "repo": "usdaeco-revit",
+        "ref": "v0.1.3",
+        "revision": "b1a6d99801e3fb5ef7e9dfba47057a46f979837d"
+      },
+      {
+        "repo": "usdaeco-datacentre",
+        "ref": "v0.4.6",
+        "revision": "d789e40fba81e5213caf9c54d1233b77b8e1fa20"
+      },
+      {
+        "repo": "usdaeco-board",
+        "ref": "v0.1.3",
+        "revision": "d73ac5b3d0484c766c803fb3833df4050e1d73c0"
+      },
+      {
+        "repo": "usdaeco-scenarios",
+        "ref": "v0.7.0",
+        "revision": "9c94a67ea50548cce255516dece9d6db458e5152"
+      },
+      {
+        "repo": "usdaeco-plan",
+        "ref": "v0.1.2",
+        "revision": "3d8153a45b4d613cccfe9d03a5140184f5a0d2da"
+      },
+      {
+        "repo": "usdaeco-compliance",
+        "ref": "v0.1.1",
+        "revision": "7804228488dcd9818eecb16d6130f86807c82701"
+      },
+      {
+        "repo": "usdaeco-typical",
+        "ref": "v0.1.1",
+        "revision": "006d75c4af8dabb58e68c75939d91f88b551fc7f"
+      },
+      {
+        "repo": "usdaeco-clash",
+        "ref": "v0.2.1",
+        "revision": "2b010c94c8168fd73395241eaf51e8a5af5aaf1a"
+      },
+      {
+        "repo": "usdaeco-solid",
+        "ref": "v0.1.3",
+        "revision": "48b56e4026df0d5114de266d08403c129ab7a71a"
+      },
+      {
+        "repo": "usdSolid",
+        "ref": "v0.1.2",
+        "revision": "dfbe4b8f922896634c29c623548513cb20dc3e43"
+      },
+      {
+        "repo": "usdSolidOcct",
+        "ref": "v0.1.1",
+        "revision": "2a250d03feecda0bff9f2de293843e9514885307"
+      }
+    ],
+    "seconds": 1.95
+  },
+  "repositories": {
+    "core": {
+      "revision": "169db75dd57d080171de23fff3006d3bf590910e",
+      "expected": "169db75dd57d080171de23fff3006d3bf590910e",
+      "base_tag": "v0.9.3",
+      "modified": false
+    },
+    "axis": {
+      "revision": "6700d456435cc6bf5a3a3f26ff7c102e9a17f0e5",
+      "expected": "6700d456435cc6bf5a3a3f26ff7c102e9a17f0e5",
+      "base_tag": "v0.1.3",
+      "modified": false
+    },
+    "toolchain": {
+      "revision": "0354e85736803224f02b85668ac848d0d5c0c812",
+      "expected": "0354e85736803224f02b85668ac848d0d5c0c812",
+      "base_tag": "v0.3.7",
+      "modified": false
+    },
+    "buildup": {
+      "revision": "58a604cd01a872aab46b0bd3131e06f48e9a2230",
+      "expected": "58a604cd01a872aab46b0bd3131e06f48e9a2230",
+      "base_tag": "v0.2.2",
+      "modified": false
+    },
+    "wall": {
+      "revision": "55fe9cd157b1a43e913ccf035cf3711e7b2e96cd",
+      "expected": "55fe9cd157b1a43e913ccf035cf3711e7b2e96cd",
+      "base_tag": "v0.2.3",
+      "modified": false
+    },
+    "pipe": {
+      "revision": "e2a9ebc9974c45f0be0c691441a9492629544907",
+      "expected": "e2a9ebc9974c45f0be0c691441a9492629544907",
+      "base_tag": "v0.2.3",
+      "modified": false
+    },
+    "cctv": {
+      "revision": "b80bdbf84b64ad58ee05a4916dea43477546e4f1",
+      "expected": "b80bdbf84b64ad58ee05a4916dea43477546e4f1",
+      "base_tag": "v0.5.4",
+      "modified": false
+    },
+    "cctv-exec": {
+      "revision": "217e2a064a4dec89f237f5ee2a2df455dd7da964",
+      "expected": "217e2a064a4dec89f237f5ee2a2df455dd7da964",
+      "base_tag": "v0.2.2",
+      "modified": false
+    },
+    "sync": {
+      "revision": "a03f03feae09509cc9f8108ec101ab56a9372cc5",
+      "expected": "a03f03feae09509cc9f8108ec101ab56a9372cc5",
+      "base_tag": "v0.5.3",
+      "modified": false
+    },
+    "ifc": {
+      "revision": "ec96dcfb61598bda1b203726d8ba19d1236c0885",
+      "expected": "ec96dcfb61598bda1b203726d8ba19d1236c0885",
+      "base_tag": "v0.2.1",
+      "modified": false
+    },
+    "bonsai": {
+      "revision": "d71244c5b1ad29fe3de39070d4d68dd1752c05b4",
+      "expected": "d71244c5b1ad29fe3de39070d4d68dd1752c05b4",
+      "base_tag": "v0.1.4",
+      "modified": false
+    },
+    "revit": {
+      "revision": "b1a6d99801e3fb5ef7e9dfba47057a46f979837d",
+      "expected": "b1a6d99801e3fb5ef7e9dfba47057a46f979837d",
+      "base_tag": "v0.1.3",
+      "modified": false
+    },
+    "datacentre": {
+      "revision": "d789e40fba81e5213caf9c54d1233b77b8e1fa20",
+      "expected": "d789e40fba81e5213caf9c54d1233b77b8e1fa20",
+      "base_tag": "v0.4.6",
+      "modified": false
+    },
+    "board": {
+      "revision": "d73ac5b3d0484c766c803fb3833df4050e1d73c0",
+      "expected": "d73ac5b3d0484c766c803fb3833df4050e1d73c0",
+      "base_tag": "v0.1.3",
+      "modified": false
+    },
+    "plan": {
+      "revision": "3d8153a45b4d613cccfe9d03a5140184f5a0d2da",
+      "expected": "3d8153a45b4d613cccfe9d03a5140184f5a0d2da",
+      "base_tag": "v0.1.2",
+      "modified": false
+    },
+    "compliance": {
+      "revision": "7804228488dcd9818eecb16d6130f86807c82701",
+      "expected": "7804228488dcd9818eecb16d6130f86807c82701",
+      "base_tag": "v0.1.1",
+      "modified": false
+    },
+    "typical": {
+      "revision": "006d75c4af8dabb58e68c75939d91f88b551fc7f",
+      "expected": "006d75c4af8dabb58e68c75939d91f88b551fc7f",
+      "base_tag": "v0.1.1",
+      "modified": false
+    },
+    "clash": {
+      "revision": "2b010c94c8168fd73395241eaf51e8a5af5aaf1a",
+      "expected": "2b010c94c8168fd73395241eaf51e8a5af5aaf1a",
+      "base_tag": "v0.2.1",
+      "modified": false
+    },
+    "solid": {
+      "revision": "48b56e4026df0d5114de266d08403c129ab7a71a",
+      "expected": "48b56e4026df0d5114de266d08403c129ab7a71a",
+      "base_tag": "v0.1.3",
+      "modified": false
+    },
+    "usdSolid": {
+      "revision": "dfbe4b8f922896634c29c623548513cb20dc3e43",
+      "expected": "dfbe4b8f922896634c29c623548513cb20dc3e43",
+      "base_tag": "v0.1.2",
+      "modified": false
+    },
+    "usdSolidOcct": {
+      "revision": "2a250d03feecda0bff9f2de293843e9514885307",
+      "expected": "2a250d03feecda0bff9f2de293843e9514885307",
+      "base_tag": "v0.1.1",
+      "modified": false
+    }
+  },
+  "drift": {
+    "directPins": 121,
+    "mismatches": 0,
+    "fixtures": 47
+  },
+  "familyIndex": {
+    "rows": 23,
+    "sha256": "09acf62a512d5f65ae7fed7dd9387a50fe981a2aefbe6c7c93cf6fd70a78608a"
+  },
+  "runnerCorrection": {
+    "name": "datacentre toolchain runtime selection",
+    "passed": true,
+    "ref": "v0.3.5",
+    "runtime_sha256": "99c92da01d92384fccd250561eef3efcdd2e32c8a27028c5a95e4f349db63372",
+    "scope": "Declared harness selection for three affected suites and datacentre runtime-byte resolution; complete suites are not rerun",
+    "suiteSelections": [
+      {
+        "suite": "buildup",
+        "ref": "v0.3.5",
+        "revision": "af7528f7cd27b38afb1bbb2db465f40cf83ca5c9",
+        "passed": true
+      },
+      {
+        "suite": "cctv-exec",
+        "ref": "v0.3.5",
+        "revision": "af7528f7cd27b38afb1bbb2db465f40cf83ca5c9",
+        "passed": true
+      },
+      {
+        "suite": "datacentre",
+        "ref": "v0.3.5",
+        "revision": "af7528f7cd27b38afb1bbb2db465f40cf83ca5c9",
+        "passed": true
+      }
+    ],
+    "consumerAliases": [
+      {
+        "consumer": "wall",
+        "passed": true,
+        "originalFailure": "ResultSourcePathInvalid",
+        "proof": "Copied archived layers pass S29 after retargeting the source alias; original artifacts unchanged"
+      },
+      {
+        "consumer": "pipe",
+        "passed": true,
+        "originalFailure": "ResultSourcePathInvalid",
+        "proof": "Copied archived layers pass S29 after retargeting the source alias; original artifacts unchanged"
+      }
+    ],
+    "implementationRevision": "1dcf944f9efac1f0cc1ecfd04528f87ba19a3ec3"
+  },
+  "consumerCorrectionSha256": "796c2f9dadc6ce4704b85d9434bb314d62ac92da6068bd6c1d0123b2ac309727",
+  "nix": {
+    "attempts": 1,
+    "status": "NOT PROVEN",
+    "command": "nix flake check --offline --no-update-lock-file --option restrict-eval true --option allowed-uris '' --option substituters ''",
+    "reason": "Public axis v0.1.3 input resolution returned HTTP 404; no retry"
+  },
+  "finalVerification": {
+    "sanitization": {
+      "files": 111,
+      "violations": [],
+      "passed": true
+    },
+    "index": "23 rows; live tagged sources",
+    "consumer": {
+      "PASS": 33,
+      "FAIL": 0,
+      "NOT RUN": 20
+    },
+    "pytest": {
+      "passed": 128,
+      "seconds": 13.18
+    },
+    "structure": {
+      "checks": 29,
+      "failed": 0
+    }
+  }
+}

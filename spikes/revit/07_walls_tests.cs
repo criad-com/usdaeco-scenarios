@@ -1,0 +1,11 @@
+double y = M(10);
+sb.Append(RunKeep("W1 shorten WA to 4000 (door at 6000 falls outside)", () => SetCurve("WA", new XYZ(0, y, 0), new XYZ(M(4), y, 0))));
+sb.Append(RunKeep("W2 MoveElement WB by (+2000,0,0)", () => Move("WB", new XYZ(M(2), 0, 0))));
+sb.Append(RunKeep("W2 revert", () => Move("WB", new XYZ(M(-2), 0, 0))));
+sb.Append(RunKeep("W3 extend WA past the join to 10000", () => SetCurve("WA", new XYZ(0, y, 0), new XYZ(M(10), y, 0))));
+sb.Append(RunKeep("W3 revert", () => SetCurve("WA", new XYZ(0, y, 0), new XYZ(M(8), y, 0))));
+sb.Append(RunKeep("W4 shorten WA to 7000 (end leaves WB, door stays inside)", () => SetCurve("WA", new XYZ(0, y, 0), new XYZ(M(7), y, 0))));
+sb.Append(RunKeep("W4 revert", () => SetCurve("WA", new XYZ(0, y, 0), new XYZ(M(8), y, 0))));
+sb.Append(RunKeep("W5 DisallowWallJoinAtEnd(WA, end1)", () => WallUtils.DisallowWallJoinAtEnd(ByCmt("WA") as Wall, 1)));
+sb.Append(RunKeep("W5 AllowWallJoinAtEnd(WA, end1)", () => WallUtils.AllowWallJoinAtEnd(ByCmt("WA") as Wall, 1)));
+return sb.ToString();

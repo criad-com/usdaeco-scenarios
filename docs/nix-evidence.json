@@ -1,0 +1,23 @@
+{
+  "attempts": 1,
+  "command": [
+    "nix",
+    "flake",
+    "check",
+    "--offline",
+    "--no-update-lock-file",
+    "--option",
+    "restrict-eval",
+    "true",
+    "--option",
+    "allowed-uris",
+    "",
+    "--option",
+    "substituters",
+    ""
+  ],
+  "exit_code": 1,
+  "seconds": 0.13,
+  "outboundNetwork": "denied",
+  "status": "not-proven"
+}

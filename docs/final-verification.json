@@ -1,0 +1,37 @@
+{
+  "version": "0.8.0",
+  "structure": {
+    "checks": 29,
+    "failed": 0
+  },
+  "pytest": {
+    "passed": 134,
+    "evidence": "acceptance-fast.json"
+  },
+  "sanitization": {
+    "files": 122,
+    "violations": [],
+    "passed": true
+  },
+  "diffCheck": "passed",
+  "index": {
+    "rows": 24,
+    "fresh": true
+  },
+  "demo": {
+    "steps": 5,
+    "renders": 5
+  },
+  "nix": {
+    "attempts": 1,
+    "status": "not-proven"
+  },
+  "sha256": {
+    "family.json": "ba1c6b6357e3617bf0e3bf43e6be640d76500434523643b6b9e15ef18eddd064",
+    "dependencies.json": "a166aa96e7b457de361f607aecd49581f889cc6dcd130b9903dbdcc8a67c8b0c",
+    "docs/acceptance.json": "b2783d0e62d9cff1d4d34fe03997ee3282ee279869d3aca3f0e5dfb3681f28ca",
+    "docs/acceptance-fast.json": "8b3e1594736c7baa70b55ca840b40b6e8da50bb30fb4eb3e2e8f9c82152f0f83",
+    "docs/buildup-correction.json": "b5ca64b49ffce112f426e95d6f679917f91c507fe94f15c369fe1465dec378df",
+    "docs/family/index.json": "1dd091ee51f284603971fea1e99951a5518e4f6b5faab51eda7bcf92ca128577"
+  }
+}

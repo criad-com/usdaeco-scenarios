@@ -1,0 +1,633 @@
+{
+  "repositories": {
+    "core": {
+      "revision": "91a55c35bdd19ee1887f6522436d32ae99cd6c4f",
+      "base_tag": "v0.8.1"
+    },
+    "toolchain": {
+      "revision": "01f6caebf5d6bfb9eeba51a1251fa965f062f919",
+      "base_tag": "v0.1.0"
+    },
+    "buildup": {
+      "revision": "8377d0e1e2bcf94435a4c8518e0f3f3e1b32c606",
+      "base_tag": "v0.1.2"
+    },
+    "wall": {
+      "revision": "09b2993e11d07b96a2492e75c49448153524c8b2",
+      "base_tag": "v0.1.2"
+    },
+    "pipe": {
+      "revision": "f48a764dacc99c4467b426f3c1bb691c5c783952",
+      "base_tag": "v0.1.2"
+    },
+    "sync": {
+      "revision": "1b470c10c44c23e7a1af9171757d3dcaa1794879",
+      "base_tag": "v0.4.1"
+    },
+    "cctv": {
+      "revision": "6f5b5ad04e4328077466d8ce8f31b7254118372b",
+      "base_tag": "v0.4.2"
+    },
+    "datacentre": {
+      "revision": "6a05109038073959efe8958ad45773b0ad2657f2",
+      "base_tag": "v0.2.1"
+    }
+  },
+  "family": {
+    "checks": 58,
+    "failed": 0,
+    "statuses": {
+      "PASS": 49,
+      "NOT RUN": 1,
+      "FINDING": 8
+    },
+    "fullAcceptance": false,
+    "rows": [
+      {
+        "gate": "revision pins",
+        "passed": true,
+        "status": "PASS",
+        "result": "8/8 exact; audited before builds"
+      },
+      {
+        "gate": "released requirements",
+        "passed": true,
+        "status": "PASS",
+        "result": "14/14 tags and schema requirements"
+      },
+      {
+        "gate": "one plugin path",
+        "passed": true,
+        "status": "PASS",
+        "result": "6/6 libraries"
+      },
+      {
+        "gate": "core",
+        "passed": true,
+        "status": "PASS",
+        "result": "42/42"
+      },
+      {
+        "gate": "buildup",
+        "passed": true,
+        "status": "PASS",
+        "result": "20/20"
+      },
+      {
+        "gate": "wall",
+        "passed": true,
+        "status": "PASS",
+        "result": "48/48"
+      },
+      {
+        "gate": "pipe",
+        "passed": true,
+        "status": "PASS",
+        "result": "41/41"
+      },
+      {
+        "gate": "cctv",
+        "passed": true,
+        "status": "PASS",
+        "result": "118/118"
+      },
+      {
+        "gate": "sync",
+        "passed": true,
+        "status": "PASS",
+        "result": "46/46"
+      },
+      {
+        "gate": "ifc scenarios",
+        "passed": true,
+        "status": "PASS",
+        "result": "39/39"
+      },
+      {
+        "gate": "bonsai scenarios",
+        "passed": true,
+        "status": "PASS",
+        "result": "21/21"
+      },
+      {
+        "gate": "scenario + S4 parity",
+        "passed": true,
+        "status": "PASS",
+        "result": "608/608 values; 22 parity cases"
+      },
+      {
+        "gate": "toolchain",
+        "passed": true,
+        "status": "PASS",
+        "result": "4/4"
+      },
+      {
+        "gate": "datacentre",
+        "passed": true,
+        "status": "PASS",
+        "result": "40/40"
+      },
+      {
+        "gate": "cctv scenarios",
+        "passed": true,
+        "status": "PASS",
+        "result": "30/30 (embree)"
+      },
+      {
+        "gate": "demo ifc + bonsai",
+        "passed": true,
+        "status": "PASS",
+        "result": "3 edits each; intent empty"
+      },
+      {
+        "gate": "demo parity",
+        "passed": true,
+        "status": "PASS",
+        "result": "152/152"
+      },
+      {
+        "gate": "roundtrip profile",
+        "passed": true,
+        "status": "PASS",
+        "result": "0 errors on both demo stages"
+      },
+      {
+        "gate": "cctv demo derivation",
+        "passed": true,
+        "status": "PASS",
+        "result": "4/4 sensors"
+      },
+      {
+        "gate": "cctv demo steps",
+        "passed": true,
+        "status": "PASS",
+        "result": "6/6; findings printed"
+      },
+      {
+        "gate": "cctv demo render",
+        "passed": true,
+        "status": "PASS",
+        "result": "2/2 images"
+      },
+      {
+        "gate": "Revit",
+        "passed": false,
+        "status": "NOT RUN",
+        "result": "live Revit acceptance not configured"
+      },
+      {
+        "gate": "datacentre build",
+        "passed": true,
+        "status": "PASS",
+        "result": "loadedMachineLimit=45; nominalBudget=15; seconds=15.253"
+      },
+      {
+        "gate": "DC-build",
+        "passed": true,
+        "status": "PASS",
+        "result": "files=8"
+      },
+      {
+        "gate": "DC-convert",
+        "passed": true,
+        "status": "PASS",
+        "result": "elements=2938; extents=33; phasePercent=100.0; phases=2938; unparented=0"
+      },
+      {
+        "gate": "DC-system",
+        "passed": true,
+        "status": "PASS",
+        "result": "cameras=29; recorderCapacity=45; retentionDays=90"
+      },
+      {
+        "gate": "DC-import",
+        "passed": true,
+        "status": "PASS",
+        "result": "cameras=29; pipes=476; presets=7; sensors=29; types=3; walls=92"
+      },
+      {
+        "gate": "DC-derive",
+        "passed": true,
+        "status": "PASS",
+        "result": "sectors=29; sensors=29; tours=3"
+      },
+      {
+        "gate": "DC-profile",
+        "passed": true,
+        "status": "PASS",
+        "result": "designErrors=41; implementationErrors=0; nativePortGaps=160; statusEnumsNormalized=3; warnings=3968"
+      },
+      {
+        "gate": "DC-critical-doors",
+        "passed": true,
+        "status": "FINDING",
+        "result": "exclusions=0; fixedCovered=0; seconds=0.844; targets=11; views=11"
+      },
+      {
+        "gate": "DC-external",
+        "passed": true,
+        "status": "FINDING",
+        "result": "exclusions=0; fixedCovered=4; seconds=0.643; targets=5; views=5"
+      },
+      {
+        "gate": "DC-corridors",
+        "passed": true,
+        "status": "FINDING",
+        "result": "exclusions=0; fixedCovered=0; seconds=7.037; targets=7; views=21"
+      },
+      {
+        "gate": "DC-yard-day",
+        "passed": true,
+        "status": "FINDING",
+        "result": "exclusions=0; fixedCovered=4; seconds=0.593; targets=8; views=9"
+      },
+      {
+        "gate": "DC-yard-night",
+        "passed": true,
+        "status": "FINDING",
+        "result": "exclusions=0; fixedCovered=4; seconds=0.599; targets=8; views=5"
+      },
+      {
+        "gate": "DC-lobby",
+        "passed": true,
+        "status": "FINDING",
+        "result": "exclusions=0; fixedCovered=0; seconds=0.558; targets=3; views=3"
+      },
+      {
+        "gate": "DC-privacy-baseline",
+        "passed": true,
+        "status": "PASS",
+        "result": "exclusions=0; fixedCovered=0; seconds=0.876; targets=0; views=33"
+      },
+      {
+        "gate": "DC-revit-parity",
+        "passed": true,
+        "status": "FINDING",
+        "result": "exclusions=0; fixedCovered=0; seconds=0.584; targets=11; views=11"
+      },
+      {
+        "gate": "DC-column",
+        "passed": true,
+        "status": "PASS",
+        "result": "columnBlockers=0"
+      },
+      {
+        "gate": "DC-idempotence",
+        "passed": true,
+        "status": "PASS",
+        "result": "reused=98; views=98"
+      },
+      {
+        "gate": "DC-determinism",
+        "passed": true,
+        "status": "PASS",
+        "result": "builds=2; normalizedStageHash=a1764f761e596671c87e46fee3d803729961eb9bedd474338644099597bc2586; secondHash=a1764f761e596671c87e46fee3d803729961eb9bedd474338644099597bc2586; studies=8"
+      },
+      {
+        "gate": "DC-tray",
+        "passed": true,
+        "status": "FINDING",
+        "result": "limitation=Baseline critical doors already fail; newly uncovered door and tray attribution are not proven.; loweredMetres=0.9; tray=/demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L00_Ground/Data_Spine_A_Seg_1; uncovered=11"
+      },
+      {
+        "gate": "DC-temporary",
+        "passed": true,
+        "status": "PASS",
+        "result": "blocker=/ScenarioEdits/LoadingHoarding; ignoredFraction=1.0; includedFraction=0.0"
+      },
+      {
+        "gate": "DC-privacy",
+        "passed": true,
+        "status": "PASS",
+        "result": "camera=/demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L00_Ground/Corridor_West/sec_cam_corr_corr_w_1; panDegrees=20.0"
+      },
+      {
+        "gate": "DC-hall-rule",
+        "passed": true,
+        "status": "PASS",
+        "result": "camera=/demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L00_Ground/Corridor_West/sec_cam_corr_corr_w_1; errors=1"
+      },
+      {
+        "gate": "DC-noc-turn",
+        "passed": true,
+        "status": "PASS",
+        "result": "limitation=NOC monitoring is allowed. Privacy-error demonstration uses a hall intrusion instead.; panDelta=20.0"
+      },
+      {
+        "gate": "DC-ptz-duty",
+        "passed": true,
+        "status": "PASS",
+        "result": "dutyFraction=0.6666666666666666; expectedHomeDuty=0.3333333333333333; limitation=No fixed lobby dome exists in the generator; removal is not executable. This positive control proves sole-PTZ grading."
+      },
+      {
+        "gate": "DC-night-override",
+        "passed": true,
+        "status": "PASS",
+        "result": "fraction=0.0; irMetres=0.1"
+      },
+      {
+        "gate": "DC-stale",
+        "passed": true,
+        "status": "PASS",
+        "result": ""
+      },
+      {
+        "gate": "DC-results-incomplete",
+        "passed": true,
+        "status": "PASS",
+        "result": ""
+      },
+      {
+        "gate": "DC-sync-ifc",
+        "passed": true,
+        "status": "PASS",
+        "result": "accepted=3; guidPreserved=True; maxPositionError=0.0; mutations=3; pan=35.0; pending=0; repeatMutations=0; tilt=40.0; transactions=2"
+      },
+      {
+        "gate": "DC-sync-bonsai",
+        "passed": true,
+        "status": "PASS",
+        "result": "accepted=3; guidPreserved=True; maxPositionError=0.0; mutations=3; pan=35.0; pending=0; repeatMutations=0; tilt=40.0; transactions=2"
+      },
+      {
+        "gate": "DC-vanilla",
+        "passed": true,
+        "status": "PASS",
+        "result": "stages=10"
+      },
+      {
+        "gate": "DC-render",
+        "passed": true,
+        "status": "PASS",
+        "result": "coverageOpacity=1.0; domeIntensity=0.65; sectorMeshes=32; sectorOpacity=0.25; shading=Diagnostic camera light 65%; ambient occlusion off; 8 samples. No lighting-design claim.; status=pass; tolerance=Content and luminance limits; no byte-identical renderer claim."
+      },
+      {
+        "gate": "datacentre sanitization",
+        "passed": true,
+        "status": "PASS",
+        "result": "files=147"
+      },
+      {
+        "gate": "DC-budget",
+        "passed": true,
+        "status": "PASS",
+        "result": "kernel=embree; limit=240; seconds=181.281"
+      },
+      {
+        "gate": "gate regression tests",
+        "passed": true,
+        "status": "PASS",
+        "result": "51 passed in 12.39s"
+      },
+      {
+        "gate": "links",
+        "passed": true,
+        "status": "PASS",
+        "result": "18/18 roots"
+      },
+      {
+        "gate": "sanitization",
+        "passed": true,
+        "status": "PASS",
+        "result": "57 text files, no matches"
+      }
+    ]
+  },
+  "requirements": [
+    {
+      "name": "core tag",
+      "passed": true,
+      "detail": "v0.8.1"
+    },
+    {
+      "name": "toolchain tag",
+      "passed": true,
+      "detail": "v0.1.0"
+    },
+    {
+      "name": "buildup tag",
+      "passed": true,
+      "detail": "v0.1.2"
+    },
+    {
+      "name": "wall tag",
+      "passed": true,
+      "detail": "v0.1.2"
+    },
+    {
+      "name": "pipe tag",
+      "passed": true,
+      "detail": "v0.1.2"
+    },
+    {
+      "name": "sync tag",
+      "passed": true,
+      "detail": "v0.4.1"
+    },
+    {
+      "name": "cctv tag",
+      "passed": true,
+      "detail": "v0.4.2"
+    },
+    {
+      "name": "datacentre tag",
+      "passed": true,
+      "detail": "v0.2.1"
+    },
+    {
+      "name": "buildup requires usdAeco",
+      "passed": true,
+      "detail": ">=0.7 against 0.8.1"
+    },
+    {
+      "name": "wall requires usdAeco",
+      "passed": true,
+      "detail": ">=0.7 against 0.8.1"
+    },
+    {
+      "name": "wall requires usdAecoBuildUp",
+      "passed": true,
+      "detail": ">=0.1 against 0.1.2"
+    },
+    {
+      "name": "pipe requires usdAeco",
+      "passed": true,
+      "detail": ">=0.7 against 0.8.1"
+    },
+    {
+      "name": "cctv requires usdAeco",
+      "passed": true,
+      "detail": ">=0.8 against 0.8.1"
+    },
+    {
+      "name": "sync requires usdAeco",
+      "passed": true,
+      "detail": ">=0.7 against 0.8.1"
+    }
+  ],
+  "strictCandidatePins": {
+    "checks": [
+      {
+        "name": "core tag",
+        "passed": true,
+        "detail": "v0.8.1"
+      },
+      {
+        "name": "toolchain tag",
+        "passed": true,
+        "detail": "v0.1.0"
+      },
+      {
+        "name": "buildup tag",
+        "passed": true,
+        "detail": "v0.1.2"
+      },
+      {
+        "name": "wall tag",
+        "passed": true,
+        "detail": "v0.1.2"
+      },
+      {
+        "name": "pipe tag",
+        "passed": true,
+        "detail": "v0.1.2"
+      },
+      {
+        "name": "sync tag",
+        "passed": true,
+        "detail": "v0.4.1"
+      },
+      {
+        "name": "cctv tag",
+        "passed": true,
+        "detail": "v0.4.2"
+      },
+      {
+        "name": "datacentre tag",
+        "passed": true,
+        "detail": "v0.2.1"
+      },
+      {
+        "name": "buildup requires usdAeco",
+        "passed": true,
+        "detail": ">=0.7 against 0.8.1"
+      },
+      {
+        "name": "wall requires usdAeco",
+        "passed": true,
+        "detail": ">=0.7 against 0.8.1"
+      },
+      {
+        "name": "wall requires usdAecoBuildUp",
+        "passed": true,
+        "detail": ">=0.1 against 0.1.2"
+      },
+      {
+        "name": "pipe requires usdAeco",
+        "passed": true,
+        "detail": ">=0.7 against 0.8.1"
+      },
+      {
+        "name": "sync requires usdAeco",
+        "passed": true,
+        "detail": "==0.8.1 against 0.8.1"
+      },
+      {
+        "name": "sync pins core",
+        "passed": true,
+        "detail": "v0.8.1"
+      },
+      {
+        "name": "sync pins toolchain",
+        "passed": true,
+        "detail": "v0.1.0"
+      },
+      {
+        "name": "sync pins cctv",
+        "passed": true,
+        "detail": "v0.4.2"
+      },
+      {
+        "name": "sync pins datacentre",
+        "passed": true,
+        "detail": "v0.2.1"
+      },
+      {
+        "name": "cctv requires usdAeco",
+        "passed": true,
+        "detail": "==0.8.1 against 0.8.1"
+      },
+      {
+        "name": "cctv pins core",
+        "passed": true,
+        "detail": "v0.8.1"
+      },
+      {
+        "name": "cctv pins toolchain",
+        "passed": true,
+        "detail": "v0.1.0"
+      },
+      {
+        "name": "cctv pins datacentre",
+        "passed": true,
+        "detail": "v0.2.1"
+      },
+      {
+        "name": "datacentre pins core",
+        "passed": true,
+        "detail": "v0.8.1"
+      },
+      {
+        "name": "datacentre pins cctv",
+        "passed": true,
+        "detail": "v0.4.2"
+      },
+      {
+        "name": "datacentre pins sync",
+        "passed": true,
+        "detail": "v0.4.1"
+      },
+      {
+        "name": "cctv-exec requires usdAeco",
+        "passed": true,
+        "detail": "==0.8.1 against 0.8.1"
+      },
+      {
+        "name": "cctv-exec requires usdAecoCctv",
+        "passed": true,
+        "detail": "==0.4.2 against 0.4.2"
+      },
+      {
+        "name": "cctv-exec pins core",
+        "passed": true,
+        "detail": "v0.8.1"
+      },
+      {
+        "name": "cctv-exec pins cctv",
+        "passed": true,
+        "detail": "v0.4.2"
+      },
+      {
+        "name": "cctv-exec pins toolchain",
+        "passed": true,
+        "detail": "v0.1.0"
+      }
+    ],
+    "failed": 0
+  },
+  "pytest": {
+    "core": 18,
+    "cctv": 203,
+    "cctvFacilitySupplement": 3,
+    "sync": 193,
+    "datacentre": 53
+  },
+  "nativeExec": {
+    "checks": 21,
+    "failed": 0,
+    "pytest": 15,
+    "referenceRecords": 8,
+    "pointError": 7.105427357601002e-15,
+    "bakedPointError": 8.446e-07
+  }
+}

@@ -1,0 +1,441 @@
+{
+  "rows": [
+    {
+      "gate": "datacentre build",
+      "status": "NOT RUN",
+      "result": "consumer uses published stages; generator timing is in the data repository check",
+      "evidence": {}
+    },
+    {
+      "gate": "DC-build",
+      "status": "PASS",
+      "result": "published dist/base; source mode pinned; generator not invoked",
+      "evidence": {}
+    },
+    {
+      "gate": "DC-layer dc.geometry.usdc",
+      "status": "PASS",
+      "result": "332637 bytes; manifest hash matches",
+      "evidence": {
+        "sha256": "d73387613389fda72868152abc29f0ccfcae3f092f274e99bc3fb7b88998ec5c"
+      }
+    },
+    {
+      "gate": "DC-layer dc.semantics.usdc",
+      "status": "PASS",
+      "result": "1471556 bytes; manifest hash matches",
+      "evidence": {
+        "sha256": "1d9e6753da91b62fa95f553102f435c56a5ff93d63c2cec4f01d512dd8f1d3cd"
+      }
+    },
+    {
+      "gate": "DC-layer dc.usda",
+      "status": "PASS",
+      "result": "517 bytes; manifest hash matches",
+      "evidence": {
+        "sha256": "628b1383ecb57956fd3c39967c68914afa97c3a3d24c7359c05c44b9cdb7abf9"
+      }
+    },
+    {
+      "gate": "DC-count elements",
+      "status": "PASS",
+      "result": "2954/2954",
+      "evidence": {}
+    },
+    {
+      "gate": "DC-count levels",
+      "status": "PASS",
+      "result": "2/2",
+      "evidence": {}
+    },
+    {
+      "gate": "DC-count spaces",
+      "status": "PASS",
+      "result": "33/33",
+      "evidence": {}
+    },
+    {
+      "gate": "DC-count meshes",
+      "status": "PASS",
+      "result": "2987/2987",
+      "evidence": {}
+    },
+    {
+      "gate": "DC-count ports",
+      "status": "PASS",
+      "result": "6212/6212",
+      "evidence": {}
+    },
+    {
+      "gate": "DC-count unparented",
+      "status": "PASS",
+      "result": "0/0",
+      "evidence": {}
+    },
+    {
+      "gate": "DC-count unclassified",
+      "status": "PASS",
+      "result": "2/2",
+      "evidence": {}
+    },
+    {
+      "gate": "DC-identities",
+      "status": "PASS",
+      "result": "2954 unique element identities",
+      "evidence": {}
+    },
+    {
+      "gate": "DC-phases",
+      "status": "PASS",
+      "result": "2954/2954 authored asset phases",
+      "evidence": {}
+    },
+    {
+      "gate": "DC-convert",
+      "status": "PASS",
+      "result": "published conversion; no USD type or composition errors",
+      "evidence": {
+        "builtinErrors": 0,
+        "builtinTypeErrors": 0,
+        "compositionErrors": 0
+      }
+    },
+    {
+      "gate": "DC-profile",
+      "status": "PASS",
+      "result": "0 core errors; 2 non-errors",
+      "evidence": {}
+    },
+    {
+      "gate": "DC-vanilla-base",
+      "status": "PASS",
+      "result": "published base composes with no family plugins",
+      "evidence": {}
+    },
+    {
+      "gate": "DC-example findings",
+      "status": "PASS",
+      "result": "CCTV committed expected findings match",
+      "evidence": {
+        "sourceMode": "pinned",
+        "datacentre": "0.4.6",
+        "exampleDatacentre": "v0.4.5",
+        "expectedSha256": "fe7c2b315ba394091c7a40ad62fb4c9f1bb039ad714b409a37896ac8db815e8e"
+      }
+    },
+    {
+      "gate": "DC-import",
+      "status": "PASS",
+      "result": "45 cameras; 45 sensors; 3 types; 7 presets",
+      "evidence": {
+        "name": "Import",
+        "cameras": 45,
+        "presets": 7,
+        "propsBlocked": 459,
+        "sensors": 45,
+        "subInstancesFolded": 0,
+        "types": 3,
+        "unmatched": 0
+      }
+    },
+    {
+      "gate": "DC-derive",
+      "status": "PASS",
+      "result": "45 sensors; 45 sectors; 3 tours",
+      "evidence": {
+        "name": "Derive",
+        "cameras": 45,
+        "sensors": 45,
+        "tours": 3,
+        "sectors": 45,
+        "shells": 115,
+        "envelopes": 3,
+        "types": 3,
+        "skipped": [],
+        "densityModel": "plane",
+        "levelSystem": "dori2015"
+      }
+    },
+    {
+      "gate": "DC-critical-doors",
+      "status": "PASS",
+      "result": "11/11 fixed targets; 0 exclusions covered; expected findings match",
+      "evidence": {
+        "views": 11
+      }
+    },
+    {
+      "gate": "DC-privacy-baseline",
+      "status": "PASS",
+      "result": "0/0 fixed targets; 0 exclusions covered; expected findings match",
+      "evidence": {
+        "views": 49
+      }
+    },
+    {
+      "gate": "DC-idempotence",
+      "status": "PASS",
+      "result": "60/60 views reused on a reopened stage; 60 views computed to establish the current evaluator baseline; stable results",
+      "evidence": {
+        "baselineComputed": 60,
+        "reused": 60,
+        "views": 60
+      }
+    },
+    {
+      "gate": "DC-determinism",
+      "status": "PASS",
+      "result": "two independent compositions; normalized stage, findings and study results",
+      "evidence": {
+        "first": "a7421933e90e5a7b1ff9e319669a699588233737c9e72603361b5e0bc39ead5a",
+        "second": "a7421933e90e5a7b1ff9e319669a699588233737c9e72603361b5e0bc39ead5a"
+      }
+    },
+    {
+      "gate": "DC-stale",
+      "status": "PASS",
+      "result": "driver edit invalidates prior study",
+      "evidence": {}
+    },
+    {
+      "gate": "DC-results-incomplete",
+      "status": "PASS",
+      "result": "removed result is diagnosed",
+      "evidence": {}
+    },
+    {
+      "gate": "DC-render lobby",
+      "status": "PASS",
+      "result": "576x360; 95201 bytes; mean 0.683812; standard deviation 0.246996",
+      "evidence": {
+        "path": "renders/lobby.png",
+        "sha256": "f36c8574f3a15356428e71f96424e48f0a94ab2b04869633bcacc0db6b9f3ad9",
+        "width": 576,
+        "height": 360,
+        "bytes": 95201,
+        "meanLuminance": 0.683812469684247,
+        "stdLuminance": 0.24699616783862666,
+        "overlayColourPixels": 1728
+      }
+    },
+    {
+      "gate": "DC-render lookthrough",
+      "status": "PASS",
+      "result": "576x360; 352874 bytes; mean 0.650538; standard deviation 0.264628",
+      "evidence": {
+        "path": "renders/lookthrough.png",
+        "sha256": "97c685cdab2d65555d71fb27563f4627f33595f8e7007c4b40b76b76f7c04fc8",
+        "width": 576,
+        "height": 360,
+        "bytes": 352874,
+        "meanLuminance": 0.6505378058997519,
+        "stdLuminance": 0.2646281485281291,
+        "overlayColourPixels": 48169
+      }
+    },
+    {
+      "gate": "DC-render overview",
+      "status": "PASS",
+      "result": "576x360; 86970 bytes; mean 0.162683; standard deviation 0.320436",
+      "evidence": {
+        "path": "renders/overview.png",
+        "sha256": "19424ed8bf63883abdc240f9b094eee25ce8fb328990b50f0ee2d607c001d72c",
+        "width": 576,
+        "height": 360,
+        "bytes": 86970,
+        "meanLuminance": 0.1626827302181675,
+        "stdLuminance": 0.32043561301802437,
+        "overlayColourPixels": 2759
+      }
+    },
+    {
+      "gate": "DC-render",
+      "status": "PASS",
+      "result": "3/3 views; 33 extent guides hidden; diagnostic camera light 160%",
+      "evidence": {
+        "renders": [
+          {
+            "path": "renders/lobby.png",
+            "sha256": "f36c8574f3a15356428e71f96424e48f0a94ab2b04869633bcacc0db6b9f3ad9",
+            "width": 576,
+            "height": 360,
+            "bytes": 95201
+          },
+          {
+            "path": "renders/lookthrough.png",
+            "sha256": "97c685cdab2d65555d71fb27563f4627f33595f8e7007c4b40b76b76f7c04fc8",
+            "width": 576,
+            "height": 360,
+            "bytes": 352874
+          },
+          {
+            "path": "renders/overview.png",
+            "sha256": "19424ed8bf63883abdc240f9b094eee25ce8fb328990b50f0ee2d607c001d72c",
+            "width": 576,
+            "height": 360,
+            "bytes": 86970
+          }
+        ],
+        "content": {
+          "lobby": {
+            "meanLuminance": 0.683812469684247,
+            "stdLuminance": 0.24699616783862666,
+            "overlayColourPixels": 1728
+          },
+          "lookthrough": {
+            "meanLuminance": 0.6505378058997519,
+            "stdLuminance": 0.2646281485281291,
+            "overlayColourPixels": 48169
+          },
+          "overview": {
+            "meanLuminance": 0.1626827302181675,
+            "stdLuminance": 0.32043561301802437,
+            "overlayColourPixels": 2759
+          }
+        }
+      }
+    },
+    {
+      "gate": "DC-vanilla",
+      "status": "PASS",
+      "result": "3 consumer stages compose with no family plugins",
+      "evidence": {}
+    },
+    {
+      "gate": "DC-source unchanged",
+      "status": "PASS",
+      "result": "17 published source and CCTV input/artifact files unchanged",
+      "evidence": {}
+    },
+    {
+      "gate": "DC-system",
+      "status": "NOT RUN",
+      "result": "released CCTV example does not supply this historical study or policy case",
+      "evidence": {}
+    },
+    {
+      "gate": "DC-external",
+      "status": "NOT RUN",
+      "result": "released CCTV example does not supply this historical study or policy case",
+      "evidence": {}
+    },
+    {
+      "gate": "DC-corridors",
+      "status": "NOT RUN",
+      "result": "released CCTV example does not supply this historical study or policy case",
+      "evidence": {}
+    },
+    {
+      "gate": "DC-yard-day",
+      "status": "NOT RUN",
+      "result": "released CCTV example does not supply this historical study or policy case",
+      "evidence": {}
+    },
+    {
+      "gate": "DC-yard-night",
+      "status": "NOT RUN",
+      "result": "released CCTV example does not supply this historical study or policy case",
+      "evidence": {}
+    },
+    {
+      "gate": "DC-lobby",
+      "status": "NOT RUN",
+      "result": "released CCTV example does not supply this historical study or policy case",
+      "evidence": {}
+    },
+    {
+      "gate": "DC-revit-parity",
+      "status": "NOT RUN",
+      "result": "released CCTV example does not supply this historical study or policy case",
+      "evidence": {}
+    },
+    {
+      "gate": "DC-column",
+      "status": "NOT RUN",
+      "result": "released CCTV example does not supply this historical study or policy case",
+      "evidence": {}
+    },
+    {
+      "gate": "DC-tray",
+      "status": "NOT RUN",
+      "result": "released CCTV example does not supply this historical study or policy case",
+      "evidence": {}
+    },
+    {
+      "gate": "DC-temporary",
+      "status": "NOT RUN",
+      "result": "released CCTV example does not supply this historical study or policy case",
+      "evidence": {}
+    },
+    {
+      "gate": "DC-privacy",
+      "status": "NOT RUN",
+      "result": "released CCTV example does not supply this historical study or policy case",
+      "evidence": {}
+    },
+    {
+      "gate": "DC-hall-rule",
+      "status": "NOT RUN",
+      "result": "released CCTV example does not supply this historical study or policy case",
+      "evidence": {}
+    },
+    {
+      "gate": "DC-noc-turn",
+      "status": "NOT RUN",
+      "result": "released CCTV example does not supply this historical study or policy case",
+      "evidence": {}
+    },
+    {
+      "gate": "DC-ptz-duty",
+      "status": "NOT RUN",
+      "result": "released CCTV example does not supply this historical study or policy case",
+      "evidence": {}
+    },
+    {
+      "gate": "DC-night-override",
+      "status": "NOT RUN",
+      "result": "released CCTV example does not supply this historical study or policy case",
+      "evidence": {}
+    },
+    {
+      "gate": "DC-sync-ifc",
+      "status": "NOT RUN",
+      "result": "published USD has no editable native document; integration data-centre cases run separately",
+      "evidence": {}
+    },
+    {
+      "gate": "DC-sync-bonsai",
+      "status": "NOT RUN",
+      "result": "published USD has no editable native document; integration data-centre cases run separately",
+      "evidence": {}
+    },
+    {
+      "gate": "DC-revit-reference",
+      "status": "NOT RUN",
+      "result": "historical evidence does not match the current released artifacts",
+      "evidence": {}
+    },
+    {
+      "gate": "DC-revit",
+      "status": "NOT RUN",
+      "result": "live Revit execution outside this gate",
+      "evidence": {}
+    },
+    {
+      "gate": "datacentre sanitization",
+      "status": "PASS",
+      "result": "37 text/stage assets; 0 violations",
+      "evidence": {
+        "files": 37,
+        "violations": [],
+        "passed": true
+      }
+    },
+    {
+      "gate": "DC-budget",
+      "status": "PASS",
+      "result": "41.487s; 240s budget",
+      "evidence": {}
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "status": "REFERENCE ONLY",
+  "currentOfflineStatus": "NOT RUN",
+  "source": {
+    "repository": "usdaeco-datacentre",
+    "tag": "v0.3.3",
+    "revision": "c3517940cd0f491112ee980d76024f6e7dcf66f1",
+    "artifact": "artifacts/dc-live-rerun-acceptance.json",
+    "sha256": "5ae5c961a19e97f7fdb65f2aa2fab9dbe1a26ec1ece8a546555755f7396709d1",
+    "documentation": "docs/acceptance-revit.md",
+    "documentationSha256": "b46c11559138232bddaa759904a49e19e8a419b771ae71f460fef7b45a56f1a5"
+  },
+  "generatorVersion": [
+    0,
+    3,
+    3
+  ],
+  "syncVersion": [
+    0,
+    4,
+    3
+  ],
+  "runnerChangedAssertions": 0,
+  "expectedCameras": 45,
+  "observedCameras": 45,
+  "live": {
+    "cases": 12,
+    "passed": 12,
+    "nativeRequests": 10,
+    "nativeRollbacksVerified": 10,
+    "restoredFingerprints": 10,
+    "zeroCallRefusals": 2,
+    "repeatMutations": 0,
+    "repeatRequests": 0,
+    "elapsedSeconds": 657.7415912151337,
+    "minimumNativeWarnings": 466,
+    "maximumNativeWarnings": 466,
+    "nativeBlockingErrors": 0
+  },
+  "convergence": {
+    "cameras": 45,
+    "passed": 45,
+    "halfAnglesCompared": 98,
+    "halfAnglesPassed": 98,
+    "radiiCompared": 245,
+    "radiiPassed": 245,
+    "maxHalfAngleError": 2.220446049250313e-16,
+    "maxRadiusError": 3.552713678800501e-15,
+    "halfAngleTolerance": 0.001,
+    "radiusTolerance": 0.001
+  },
+  "limitations": [
+    "Recorded live run used core 0.8.1, CCTV 0.4.4 and the unmodified Sync 0.4.3 runner; it does not prove the current offline runtime on Revit.",
+    "Native execution, rollback and convergence were not repeated by this offline release.",
+    "Native Common.Status, helper association and 466 retained warnings remain documented in the source release."
+  ]
+}

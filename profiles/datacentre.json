@@ -1,0 +1,32 @@
+{
+  "name": "datacentre",
+  "description": "Required security studies, explicit target sampling and doors-only hall cameras. Design findings retain error severity.",
+  "include_builtin": true,
+  "severity_overrides": {
+    "cctvKindMismatch": "warn",
+    "cctvSensorMissing": "error",
+    "cctvSensorOrphan": "warn",
+    "cctvOutOfEnvelope": "error",
+    "cctvNativeCameraAuthored": "warn",
+    "cctvDerivedMismatch": "warn",
+    "cctvMountFrame": "warn",
+    "cctvSystemCapacity": "warn",
+    "cctvStudyMissingResults": "error",
+    "cctvStudyStale": "error",
+    "cctvTargetUncovered": "error",
+    "cctvTargetMostlyEnclosed": "warn",
+    "cctvPtzSoleCoverage": "error",
+    "cctvTargetTooFar": "error",
+    "cctvExclusionCovered": "error",
+    "cctvUnphasedInView": "warn",
+    "cctvUnclassifiedInView": "warn",
+    "cctvUnphasedProvider": "warn",
+    "cctvStudyIncomplete": "error",
+    "cctvUnsupportedTopology": "error",
+    "cctvMissingOptics": "error",
+    "cctvInvalidSampling": "error",
+    "cctvUnsupportedProjection": "error",
+    "dcStudyMissing": "error",
+    "dcHallCamera": "error"
+  }
+}

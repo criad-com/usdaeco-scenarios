@@ -1,0 +1,31 @@
+{
+  "repo": "usdaeco-buildup",
+  "ref": "v0.2.5",
+  "checks": 67,
+  "failed": 0,
+  "passed": true,
+  "seconds": 72.71,
+  "exit_code": 0,
+  "scope": "Focused suite in the existing isolated full-run source; family gate not rerun",
+  "correction": "Retain the explicitly declared datacentre input for section publication",
+  "inputs": {
+    "core": {
+      "repo": "usdaeco-core",
+      "ref": "v0.9.4",
+      "revision": "80a099e14e7bb825b207548d0a4f8a93e9ffa62f",
+      "scope": "direct"
+    },
+    "toolchain": {
+      "repo": "usdaeco-toolchain",
+      "ref": "v0.3.10",
+      "revision": "59d3da5ff5114089b54efaaae38efdd7fe1b8e73",
+      "scope": "direct"
+    },
+    "datacentre": {
+      "repo": "usdaeco-datacentre",
+      "ref": "v0.4.8",
+      "revision": "9e22b14c4909e50806805e735f93b1b425ac48cb",
+      "scope": "direct"
+    }
+  }
+}

@@ -1,0 +1,184 @@
+{
+  "repos": {
+    "core": {
+      "repo": "usdaeco-core",
+      "library": "usdAeco",
+      "ref": "v0.9.5"
+    },
+    "axis": {
+      "repo": "usdaeco-axis",
+      "library": "usdAecoAxis",
+      "ref": "v0.1.5"
+    },
+    "toolchain": {
+      "repo": "usdaeco-toolchain",
+      "library": null,
+      "ref": "v0.3.10"
+    },
+    "buildup": {
+      "repo": "usdaeco-buildup",
+      "library": "usdAecoBuildUp",
+      "ref": "v0.2.5"
+    },
+    "wall": {
+      "repo": "usdaeco-wall",
+      "library": "usdAecoWall",
+      "ref": "v0.2.5"
+    },
+    "pipe": {
+      "repo": "usdaeco-pipe",
+      "library": "usdAecoPipe",
+      "ref": "v0.2.5"
+    },
+    "cctv": {
+      "repo": "usdaeco-cctv",
+      "library": "usdAecoCctv",
+      "ref": "v0.5.6"
+    },
+    "cctv-exec": {
+      "repo": "usdaeco-cctv-exec",
+      "library": null,
+      "ref": "v0.2.4"
+    },
+    "sync": {
+      "repo": "usdaeco-sync",
+      "library": "usdAecoSync",
+      "ref": "v0.5.5"
+    },
+    "ifc": {
+      "repo": "usdaeco-ifc",
+      "library": null,
+      "ref": "v0.2.2"
+    },
+    "bonsai": {
+      "repo": "usdaeco-bonsai",
+      "library": null,
+      "ref": "v0.1.5"
+    },
+    "revit": {
+      "repo": "usdaeco-revit",
+      "library": null,
+      "ref": "v0.1.4"
+    },
+    "datacentre": {
+      "repo": "usdaeco-datacentre",
+      "library": null,
+      "ref": "v0.4.9"
+    },
+    "board": {
+      "repo": "usdaeco-board",
+      "library": null,
+      "ref": "v0.1.4"
+    },
+    "plan": {
+      "repo": "usdaeco-plan",
+      "library": "usdAecoPlan",
+      "ref": "v0.1.4"
+    },
+    "compliance": {
+      "repo": "usdaeco-compliance",
+      "library": "usdAecoCompliance",
+      "ref": "v0.1.3"
+    },
+    "clash": {
+      "repo": "usdaeco-clash",
+      "library": "usdAecoClash",
+      "ref": "v0.2.3"
+    },
+    "solid": {
+      "repo": "usdaeco-solid",
+      "library": null,
+      "ref": "v0.1.5"
+    },
+    "repeat": {
+      "repo": "usdaeco-repeat",
+      "library": "usdAecoRepeat",
+      "ref": "v0.2.1"
+    }
+  },
+  "runtime": {
+    "usd-core": "26.8",
+    "ifcopenshell": "0.8.5",
+    "bonsai": "0.8.5",
+    "blender": "5.1.2"
+  },
+  "nativeKits": {
+    "usdSolid": {
+      "repo": "usdSolid",
+      "library": "usdSolid",
+      "ref": "v0.1.5"
+    },
+    "usdSolidOcct": {
+      "repo": "usdSolidOcct",
+      "library": "usdSolidOcct",
+      "ref": "v0.1.4"
+    }
+  },
+  "fixtures": {
+    "core08": {
+      "repo": "usdaeco-core",
+      "ref": "v0.8.4",
+      "revision": "c818a1533bcfe36be47845252388a1c732ec69c0"
+    },
+    "ifc010": {
+      "repo": "usdaeco-ifc",
+      "ref": "v0.1.0",
+      "revision": "43935df9e059b724f8d1ae3d0ea324dbae7efd29"
+    },
+    "revit010": {
+      "repo": "usdaeco-revit",
+      "ref": "v0.1.0",
+      "revision": "49da593728d4829bef7fe8c491f45b8b97d1d11e"
+    },
+    "datacentre041": {
+      "repo": "usdaeco-datacentre",
+      "ref": "v0.4.1",
+      "revision": "212aab67e06acf6a33aac43b3f241047f79103df"
+    },
+    "core091": {
+      "repo": "usdaeco-core",
+      "ref": "v0.9.1",
+      "revision": "ee20aa7e20590d9893d4fbf67a39fb3a0ea782d0"
+    },
+    "toolchain031": {
+      "repo": "usdaeco-toolchain",
+      "ref": "v0.3.1",
+      "revision": "79af2246dbbeaecfa005fdecfdd2a90457bfc627"
+    },
+    "axis010": {
+      "repo": "usdaeco-axis",
+      "ref": "v0.1.0",
+      "revision": "627dbb5e19ca9070dd123432f2acb46b3ad38f51"
+    },
+    "axis011": {
+      "repo": "usdaeco-axis",
+      "ref": "v0.1.1",
+      "revision": "a559e6a200703f852efb1d15ffa69a6453b863c0"
+    },
+    "toolchain032": {
+      "repo": "usdaeco-toolchain",
+      "ref": "v0.3.2",
+      "revision": "362c3a392b37a5d27d876b2e55a3d00d0af798b5"
+    },
+    "datacentre042": {
+      "repo": "usdaeco-datacentre",
+      "ref": "v0.4.2",
+      "revision": "77d71f3f7372471fc56facc364e562302f1c4d60"
+    },
+    "sync050": {
+      "repo": "usdaeco-sync",
+      "ref": "v0.5.0",
+      "revision": "f0016e9bc24f9851ade3972380e054abc75c501c"
+    },
+    "cctv048": {
+      "repo": "usdaeco-cctv",
+      "ref": "v0.4.8",
+      "revision": "20c569d3ed43cc00513a662be9baa0f018d3c2bf"
+    },
+    "datacentre044": {
+      "repo": "usdaeco-datacentre",
+      "ref": "v0.4.4",
+      "revision": "fea602c605431c267dc2b544aa245ec81ef42ec4"
+    }
+  }
+}

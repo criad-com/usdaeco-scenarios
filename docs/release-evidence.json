@@ -1,0 +1,606 @@
+{
+  "columnException": {
+    "documentedTargets": 2,
+    "manifest": "artifacts/column-view-exception.json",
+    "matched": true,
+    "note": "Documented redundant corridor sightlines match exactly; all affected samples retain fixed coverage.",
+    "sha256": "f330cac7c2273390aa41d32727c38fe3b64e5c563ba37a67d0472a6b2ae25073"
+  },
+  "familyGate": {
+    "checks": 61,
+    "failed": 0,
+    "libraryEvidenceReused": false,
+    "statusCounts": {
+      "NOT RUN": 1,
+      "PASS": 60
+    }
+  },
+  "finalVerification": {
+    "assetHashesVerified": 13,
+    "familyLinks": {
+      "passed": 18,
+      "roots": 18
+    },
+    "localLinks": {
+      "passed": 3,
+      "roots": 3
+    },
+    "pinMetadataMatches": 8,
+    "sourceSanitization": {
+      "files": 73,
+      "passed": true,
+      "violations": []
+    },
+    "trackedByteAndFilenameSweep": {
+      "commitMessagesClean": true,
+      "files": 76,
+      "violations": []
+    }
+  },
+  "fullAcceptance": false,
+  "generatorPytest": 75,
+  "libraries": {
+    "buildup": {
+      "counts": "20/20",
+      "passed": true,
+      "seconds": 0.61
+    },
+    "cctv": {
+      "counts": "123/123",
+      "passed": true,
+      "seconds": 29.3
+    },
+    "core": {
+      "counts": "45/45",
+      "passed": true,
+      "seconds": 24.26
+    },
+    "datacentre": {
+      "counts": "59/59",
+      "passed": true,
+      "seconds": 79.01
+    },
+    "pipe": {
+      "counts": "41/41",
+      "passed": true,
+      "seconds": 2.88
+    },
+    "sync": {
+      "counts": "49/49",
+      "passed": true,
+      "seconds": 299.12
+    },
+    "toolchain": {
+      "counts": "4/4",
+      "passed": true,
+      "seconds": 8.09
+    },
+    "wall": {
+      "counts": "48/48",
+      "passed": true,
+      "seconds": 3.28
+    }
+  },
+  "libraryEvidenceOrigin": {
+    "freshLibraries": 8,
+    "freshSources": true,
+    "initialFailedRows": [],
+    "initialGateChecks": 61,
+    "resolution": "Exact releases fetched into owned checkouts; source isolation created the scenarios link. All plugins, library checks and runtime rows ran freshly.",
+    "reusedPlugins": false,
+    "scenariosLink": {
+      "createdBy": "isolate_sources",
+      "path": "sources/usdaeco-scenarios",
+      "target": "current checkout"
+    },
+    "workStartedEmpty": true
+  },
+  "links": [
+    {
+      "evidence": [
+        {
+          "detail": "15 links resolve (anchors and remote URLs skipped)",
+          "passed": true,
+          "root": "usdaeco-scenarios/README.md"
+        },
+        {
+          "detail": "17 links resolve (anchors and remote URLs skipped)",
+          "passed": true,
+          "root": "usdaeco-scenarios/docs"
+        },
+        {
+          "detail": "8 links resolve (anchors and remote URLs skipped)",
+          "passed": true,
+          "root": "usdaeco-scenarios/demo"
+        },
+        {
+          "detail": "29 links resolve (anchors and remote URLs skipped)",
+          "passed": true,
+          "root": "usdaeco-core/README.md"
+        },
+        {
+          "detail": "91 links resolve (anchors and remote URLs skipped)",
+          "passed": true,
+          "root": "usdaeco-core/docs"
+        },
+        {
+          "detail": "7 links resolve (anchors and remote URLs skipped)",
+          "passed": true,
+          "root": "usdaeco-buildup/README.md"
+        },
+        {
+          "detail": "3 links resolve (anchors and remote URLs skipped)",
+          "passed": true,
+          "root": "usdaeco-buildup/docs"
+        },
+        {
+          "detail": "9 links resolve (anchors and remote URLs skipped)",
+          "passed": true,
+          "root": "usdaeco-wall/README.md"
+        },
+        {
+          "detail": "1 links resolve (anchors and remote URLs skipped)",
+          "passed": true,
+          "root": "usdaeco-wall/docs"
+        },
+        {
+          "detail": "8 links resolve (anchors and remote URLs skipped)",
+          "passed": true,
+          "root": "usdaeco-pipe/README.md"
+        },
+        {
+          "detail": "6 links resolve (anchors and remote URLs skipped)",
+          "passed": true,
+          "root": "usdaeco-pipe/docs"
+        },
+        {
+          "detail": "16 links resolve (anchors and remote URLs skipped)",
+          "passed": true,
+          "root": "usdaeco-cctv/README.md"
+        },
+        {
+          "detail": "44 links resolve (anchors and remote URLs skipped)",
+          "passed": true,
+          "root": "usdaeco-cctv/docs"
+        },
+        {
+          "detail": "22 links resolve (anchors and remote URLs skipped)",
+          "passed": true,
+          "root": "usdaeco-sync/README.md"
+        },
+        {
+          "detail": "50 links resolve (anchors and remote URLs skipped)",
+          "passed": true,
+          "root": "usdaeco-sync/docs"
+        },
+        {
+          "detail": "2 links resolve (anchors and remote URLs skipped)",
+          "passed": true,
+          "root": "usdaeco-toolchain/README.md"
+        },
+        {
+          "detail": "17 links resolve (anchors and remote URLs skipped)",
+          "passed": true,
+          "root": "usdaeco-datacentre/README.md"
+        },
+        {
+          "detail": "43 links resolve (anchors and remote URLs skipped)",
+          "passed": true,
+          "root": "usdaeco-datacentre/docs"
+        }
+      ],
+      "gate": "links before builds",
+      "passed": true,
+      "result": "18/18 roots",
+      "status": "PASS"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "15 links resolve (anchors and remote URLs skipped)",
+          "passed": true,
+          "root": "usdaeco-scenarios/README.md"
+        },
+        {
+          "detail": "17 links resolve (anchors and remote URLs skipped)",
+          "passed": true,
+          "root": "usdaeco-scenarios/docs"
+        },
+        {
+          "detail": "8 links resolve (anchors and remote URLs skipped)",
+          "passed": true,
+          "root": "usdaeco-scenarios/demo"
+        },
+        {
+          "detail": "29 links resolve (anchors and remote URLs skipped)",
+          "passed": true,
+          "root": "usdaeco-core/README.md"
+        },
+        {
+          "detail": "91 links resolve (anchors and remote URLs skipped)",
+          "passed": true,
+          "root": "usdaeco-core/docs"
+        },
+        {
+          "detail": "7 links resolve (anchors and remote URLs skipped)",
+          "passed": true,
+          "root": "usdaeco-buildup/README.md"
+        },
+        {
+          "detail": "3 links resolve (anchors and remote URLs skipped)",
+          "passed": true,
+          "root": "usdaeco-buildup/docs"
+        },
+        {
+          "detail": "9 links resolve (anchors and remote URLs skipped)",
+          "passed": true,
+          "root": "usdaeco-wall/README.md"
+        },
+        {
+          "detail": "1 links resolve (anchors and remote URLs skipped)",
+          "passed": true,
+          "root": "usdaeco-wall/docs"
+        },
+        {
+          "detail": "8 links resolve (anchors and remote URLs skipped)",
+          "passed": true,
+          "root": "usdaeco-pipe/README.md"
+        },
+        {
+          "detail": "6 links resolve (anchors and remote URLs skipped)",
+          "passed": true,
+          "root": "usdaeco-pipe/docs"
+        },
+        {
+          "detail": "16 links resolve (anchors and remote URLs skipped)",
+          "passed": true,
+          "root": "usdaeco-cctv/README.md"
+        },
+        {
+          "detail": "44 links resolve (anchors and remote URLs skipped)",
+          "passed": true,
+          "root": "usdaeco-cctv/docs"
+        },
+        {
+          "detail": "22 links resolve (anchors and remote URLs skipped)",
+          "passed": true,
+          "root": "usdaeco-sync/README.md"
+        },
+        {
+          "detail": "50 links resolve (anchors and remote URLs skipped)",
+          "passed": true,
+          "root": "usdaeco-sync/docs"
+        },
+        {
+          "detail": "2 links resolve (anchors and remote URLs skipped)",
+          "passed": true,
+          "root": "usdaeco-toolchain/README.md"
+        },
+        {
+          "detail": "17 links resolve (anchors and remote URLs skipped)",
+          "passed": true,
+          "root": "usdaeco-datacentre/README.md"
+        },
+        {
+          "detail": "43 links resolve (anchors and remote URLs skipped)",
+          "passed": true,
+          "root": "usdaeco-datacentre/docs"
+        }
+      ],
+      "gate": "links at end",
+      "passed": true,
+      "result": "18/18 roots",
+      "status": "PASS"
+    }
+  ],
+  "nix": {
+    "attempts": 1,
+    "evidenceScope": "Single offline v0.3.7 attempt with eight source overrides, substituters and registry disabled, no lock writes and max-jobs 0",
+    "exitCode": 1,
+    "reason": "Nested toolchain/aeco-toolchain registry input did not resolve",
+    "sourceHashes": {
+      "datacentre": "sha256-jUAt1wGZG9IThOWttZma330OUjpYLGa/j8fxSwTq6tQ="
+    },
+    "status": "NOT PROVEN"
+  },
+  "optionalCompatibility": {
+    "cctv-exec": {
+      "checks": [
+        {
+          "dependency": "usdAeco",
+          "detail": "usdAeco >=0.8.1,<0.9 against released 0.8.4",
+          "passed": true,
+          "requirement": ">=0.8.1,<0.9",
+          "version": "0.8.4"
+        },
+        {
+          "dependency": "usdAecoCctv",
+          "detail": "usdAecoCctv >=0.4.5,<0.5 against released 0.4.8",
+          "passed": true,
+          "requirement": ">=0.4.5,<0.5",
+          "version": "0.4.8"
+        }
+      ],
+      "reason": "Declared ranges satisfied: usdAeco >=0.8.1,<0.9 against released 0.8.4; usdAecoCctv >=0.4.5,<0.5 against released 0.4.8; outside the runtime plugin set; native execution not tested",
+      "status": "PROVEN"
+    }
+  },
+  "rawConversion": {
+    "builtinErrors": 0,
+    "builtinTypeErrors": 0,
+    "compositionErrors": 0,
+    "elements": 2954,
+    "extents": 33,
+    "phasePercent": 100.0,
+    "phases": 2954,
+    "unparented": 0
+  },
+  "renders": {
+    "changes": {
+      "hall-door": {
+        "cameraChanged": false,
+        "committedImageUpdated": false,
+        "committedSha256": "bcfaec256498883c8f18fc6ecc283026f82cd370a0862f2efcef4ec5b9fd3d6c",
+        "contentChanged": true,
+        "freshSha256": "9e42caa66d384359982f22c41bbfe84b9f8e5fd8db5a1a6217530e7c3585a927",
+        "meanAbsoluteDifference": 0.000383044243338361,
+        "pixelsChanged": 21100
+      },
+      "lobby-ptz": {
+        "cameraChanged": false,
+        "committedImageUpdated": false,
+        "committedSha256": "32164bd59f71f00e80c2363ba8dc419d494133d680046e5fac4b5bfa19f2fb25",
+        "contentChanged": true,
+        "freshSha256": "49c6b88212fa5c63d883d7923df29c76b09d4419ecee04eb4f977d16ead22568",
+        "meanAbsoluteDifference": 0.00046775720501756875,
+        "pixelsChanged": 16899
+      },
+      "overview": {
+        "cameraChanged": false,
+        "committedImageUpdated": false,
+        "committedSha256": "480b1a69cd876eba72db78bb01d7b2bac57ac09fd1bddc87b324fd58c4f9e476",
+        "contentChanged": true,
+        "freshSha256": "ba1a8be5181b0a432812af89a63bfa71405fd8cb3eb2af61fd4e7143bb4c88f4",
+        "meanAbsoluteDifference": 0.004691326923346069,
+        "pixelsChanged": 62945
+      }
+    },
+    "content": {
+      "hall-door": {
+        "exposureAccepted": true,
+        "height": 390,
+        "meanLuminance": 0.36455289344834085,
+        "nonUniform": true,
+        "overlayColourPixels": 216,
+        "stdLuminance": 0.16050807698911804,
+        "width": 640
+      },
+      "lobby-ptz": {
+        "exposureAccepted": true,
+        "height": 359,
+        "meanLuminance": 0.4796187419984707,
+        "nonUniform": true,
+        "overlayColourPixels": 0,
+        "stdLuminance": 0.17891229434636005,
+        "width": 640
+      },
+      "overview": {
+        "exposureAccepted": true,
+        "height": 467,
+        "meanLuminance": 0.17709343223852708,
+        "nonUniform": true,
+        "overlayColourPixels": 6435,
+        "stdLuminance": 0.20315467773068221,
+        "width": 640
+      }
+    },
+    "measurementScope": "Fresh release render; committed diagnostic images retained with unchanged camera settings",
+    "status": "pass"
+  },
+  "repositories": {
+    "buildup": {
+      "base_tag": "v0.1.2",
+      "expected": "8377d0e1e2bcf94435a4c8518e0f3f3e1b32c606",
+      "modified": false,
+      "revision": "8377d0e1e2bcf94435a4c8518e0f3f3e1b32c606"
+    },
+    "cctv": {
+      "base_tag": "v0.4.8",
+      "expected": "20c569d3ed43cc00513a662be9baa0f018d3c2bf",
+      "modified": false,
+      "revision": "20c569d3ed43cc00513a662be9baa0f018d3c2bf"
+    },
+    "cctv-exec": {
+      "base_tag": "v0.1.3",
+      "expected": "1e78ee15862b09b30fea792ce0b5350c22a79ede",
+      "modified": false,
+      "revision": "1e78ee15862b09b30fea792ce0b5350c22a79ede"
+    },
+    "core": {
+      "base_tag": "v0.8.4",
+      "expected": "c818a1533bcfe36be47845252388a1c732ec69c0",
+      "modified": false,
+      "revision": "c818a1533bcfe36be47845252388a1c732ec69c0"
+    },
+    "datacentre": {
+      "base_tag": "v0.3.4",
+      "expected": "3a9e949d98e8b7cf38b702f6a9be5dc53610601e",
+      "modified": false,
+      "revision": "3a9e949d98e8b7cf38b702f6a9be5dc53610601e"
+    },
+    "pipe": {
+      "base_tag": "v0.1.2",
+      "expected": "f48a764dacc99c4467b426f3c1bb691c5c783952",
+      "modified": false,
+      "revision": "f48a764dacc99c4467b426f3c1bb691c5c783952"
+    },
+    "sync": {
+      "base_tag": "v0.4.5",
+      "expected": "e527672e0fc20a0e26f2aa4f4617fe2d38ff5ecc",
+      "modified": false,
+      "revision": "e527672e0fc20a0e26f2aa4f4617fe2d38ff5ecc"
+    },
+    "toolchain": {
+      "base_tag": "v0.1.0",
+      "expected": "01f6caebf5d6bfb9eeba51a1251fa965f062f919",
+      "modified": false,
+      "revision": "01f6caebf5d6bfb9eeba51a1251fa965f062f919"
+    },
+    "wall": {
+      "base_tag": "v0.1.2",
+      "expected": "09b2993e11d07b96a2492e75c49448153524c8b2",
+      "modified": false,
+      "revision": "09b2993e11d07b96a2492e75c49448153524c8b2"
+    }
+  },
+  "requirements": [
+    {
+      "detail": "v0.8.4",
+      "name": "core tag",
+      "passed": true
+    },
+    {
+      "detail": "v0.1.0",
+      "name": "toolchain tag",
+      "passed": true
+    },
+    {
+      "detail": "v0.1.2",
+      "name": "buildup tag",
+      "passed": true
+    },
+    {
+      "detail": "v0.1.2",
+      "name": "wall tag",
+      "passed": true
+    },
+    {
+      "detail": "v0.1.2",
+      "name": "pipe tag",
+      "passed": true
+    },
+    {
+      "detail": "v0.4.5",
+      "name": "sync tag",
+      "passed": true
+    },
+    {
+      "detail": "v0.4.8",
+      "name": "cctv tag",
+      "passed": true
+    },
+    {
+      "detail": "v0.3.4",
+      "name": "datacentre tag",
+      "passed": true
+    },
+    {
+      "detail": "v0.1.3",
+      "name": "cctv-exec tag",
+      "passed": true
+    },
+    {
+      "detail": ">=0.7 against schema 0.8.4",
+      "name": "buildup requires usdAeco",
+      "passed": true
+    },
+    {
+      "detail": ">=0.7 against schema 0.8.4",
+      "name": "wall requires usdAeco",
+      "passed": true
+    },
+    {
+      "detail": ">=0.1 against schema 0.1.0",
+      "name": "wall requires usdAecoBuildUp",
+      "passed": true
+    },
+    {
+      "detail": ">=0.7 against schema 0.8.4",
+      "name": "pipe requires usdAeco",
+      "passed": true
+    },
+    {
+      "detail": ">=0.8.1,<0.9 against schema 0.8.4",
+      "name": "cctv requires usdAeco",
+      "passed": true
+    },
+    {
+      "detail": ">=0.8.1,<0.9 against schema 0.8.4",
+      "name": "sync requires usdAeco",
+      "passed": true
+    }
+  ],
+  "revitReference": {
+    "artifactHashesVerified": 2,
+    "runnerChangedAssertions": 0,
+    "source": {
+      "artifact": "artifacts/dc-live-rerun-acceptance.json",
+      "documentation": "docs/acceptance-revit.md",
+      "documentationSha256": "b46c11559138232bddaa759904a49e19e8a419b771ae71f460fef7b45a56f1a5",
+      "repository": "usdaeco-datacentre",
+      "revision": "c3517940cd0f491112ee980d76024f6e7dcf66f1",
+      "sha256": "5ae5c961a19e97f7fdb65f2aa2fab9dbe1a26ec1ece8a546555755f7396709d1",
+      "tag": "v0.3.3"
+    },
+    "status": "NOT RUN"
+  },
+  "scenarioPytest": "82 passed in 11.74s",
+  "status": "PASS (offline)",
+  "syncPytest": 247,
+  "unchangedOutputs": {
+    "comparedWith": "0.3.6",
+    "datacentreRows": {
+      "compared": 33,
+      "equalExceptTiming": true,
+      "excluded": [
+        "DC-render: measured separately",
+        "datacentre sanitization: source file count"
+      ],
+      "rows": [
+        "datacentre build",
+        "DC-build",
+        "DC-convert",
+        "DC-system",
+        "DC-import",
+        "DC-derive",
+        "DC-profile",
+        "DC-critical-doors",
+        "DC-external",
+        "DC-corridors",
+        "DC-yard-day",
+        "DC-yard-night",
+        "DC-lobby",
+        "DC-privacy-baseline",
+        "DC-revit-parity",
+        "DC-column",
+        "DC-idempotence",
+        "DC-determinism",
+        "DC-tray",
+        "DC-temporary",
+        "DC-privacy",
+        "DC-hall-rule",
+        "DC-noc-turn",
+        "DC-ptz-duty",
+        "DC-night-override",
+        "DC-stale",
+        "DC-results-incomplete",
+        "DC-sync-ifc",
+        "DC-sync-bonsai",
+        "DC-revit-reference",
+        "DC-revit",
+        "DC-vanilla",
+        "DC-budget"
+      ]
+    },
+    "normalizedStage": {
+      "currentHash": "86389d79ea0f22c325b79912c2f16b22564649a6edfbbf3245c2991d0e0573e8",
+      "equal": true,
+      "priorHash": "86389d79ea0f22c325b79912c2f16b22564649a6edfbbf3245c2991d0e0573e8"
+    },
+    "renderCameras": 3,
+    "residualSamples": true,
+    "studyInputHashes": 8,
+    "studyResults": 8
+  },
+  "version": "0.3.7"
+}
