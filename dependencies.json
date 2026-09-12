@@ -48,17 +48,17 @@
     "ifc": {
       "repo": "usdaeco-ifc",
       "library": null,
-      "ref": "v0.2.2"
+      "ref": "v0.2.3"
     },
     "bonsai": {
       "repo": "usdaeco-bonsai",
       "library": null,
-      "ref": "v0.1.5"
+      "ref": "v0.1.6"
     },
     "revit": {
       "repo": "usdaeco-revit",
       "library": null,
-      "ref": "v0.1.4"
+      "ref": "v0.1.5"
     },
     "datacentre": {
       "repo": "usdaeco-datacentre",
@@ -68,7 +68,7 @@
     "board": {
       "repo": "usdaeco-board",
       "library": null,
-      "ref": "v0.1.4"
+      "ref": "v0.1.5"
     },
     "plan": {
       "repo": "usdaeco-plan",
@@ -106,12 +106,12 @@
     "usdSolid": {
       "repo": "usdSolid",
       "library": "usdSolid",
-      "ref": "v0.1.5"
+      "ref": "v0.1.6"
     },
     "usdSolidOcct": {
       "repo": "usdSolidOcct",
       "library": "usdSolidOcct",
-      "ref": "v0.1.4"
+      "ref": "v0.1.5"
     }
   },
   "fixtures": {

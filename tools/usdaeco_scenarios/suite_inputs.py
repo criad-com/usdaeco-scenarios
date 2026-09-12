@@ -25,11 +25,14 @@ def harness_source(source, selected, train_toolchain):
 
 
 def example_environment(source, environment):
-    """Keep an explicit example input; remove only ambient facility sources."""
+    """Keep declared facility inputs only for suites that consume that source."""
     direct, fixtures = declarations(source)
     env = dict(environment)
-    if not any(pin.get('repo') == 'usdaeco-datacentre' for pin in (direct | fixtures).values()):
+    metadata = json.loads((Path(source) / 'library.json').read_text())
+    minimal = metadata['name'] in ('usdAeco', 'usdAecoAxis')
+    if minimal or not any(pin.get('repo') == 'usdaeco-datacentre' for pin in (direct | fixtures).values()):
         env.pop('AECO_DATACENTRE_ROOT', None)
+        env.pop('AECO_DATACENTRE_STAGE', None)
     return env
 
 

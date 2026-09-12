@@ -1,5 +1,5 @@
 {
-  "train": "aeco-0.8.0",
+  "train": "aeco-0.8.1",
   "repos": [
     {
       "name": "aeco-toolchain",
@@ -134,7 +134,7 @@
       "name": "usdaeco-ifc",
       "kind": "integration",
       "library": null,
-      "tag": "v0.2.2",
+      "tag": "v0.2.3",
       "requires": {
         "usdAeco": ">=0.9,<1.0",
         "usdAecoSync": ">=0.5,<0.6",
@@ -144,11 +144,26 @@
       },
       "example": null,
       "enclave": null,
-      "released": "v0.2.2",
+      "released": "v0.2.3",
       "floor": "v0.2.2"
     },
     {
       "name": "usdaeco-bonsai",
+      "kind": "integration",
+      "library": null,
+      "tag": "v0.1.6",
+      "requires": {
+        "usdAeco": ">=0.9,<1.0",
+        "usdAecoSync": ">=0.5,<0.6",
+        "usdAecoAxis": ">=0.1,<0.2"
+      },
+      "example": null,
+      "enclave": null,
+      "released": "v0.1.6",
+      "floor": "v0.1.5"
+    },
+    {
+      "name": "usdaeco-revit",
       "kind": "integration",
       "library": null,
       "tag": "v0.1.5",
@@ -158,23 +173,8 @@
         "usdAecoAxis": ">=0.1,<0.2"
       },
       "example": null,
-      "enclave": null,
-      "released": "v0.1.5",
-      "floor": "v0.1.5"
-    },
-    {
-      "name": "usdaeco-revit",
-      "kind": "integration",
-      "library": null,
-      "tag": "v0.1.4",
-      "requires": {
-        "usdAeco": ">=0.9,<1.0",
-        "usdAecoSync": ">=0.5,<0.6",
-        "usdAecoAxis": ">=0.1,<0.2"
-      },
-      "example": null,
       "enclave": "tools/usdaeco_revit/scripts",
-      "released": "v0.1.4",
+      "released": "v0.1.5",
       "floor": "v0.1.4"
     },
     {
@@ -194,22 +194,22 @@
       "name": "usdaeco-board",
       "kind": "board",
       "library": null,
-      "tag": "v0.1.4",
+      "tag": "v0.1.5",
       "requires": {},
       "example": null,
       "enclave": null,
-      "released": "v0.1.4",
+      "released": "v0.1.5",
       "floor": "v0.1.4"
     },
     {
       "name": "usdaeco-scenarios",
       "kind": "gate",
       "library": null,
-      "tag": "v0.8.0",
+      "tag": "v0.8.1",
       "requires": {},
       "example": null,
       "enclave": null,
-      "released": "v0.8.0",
+      "released": "v0.8.1",
       "floor": "v0.8.0"
     },
     {
@@ -297,24 +297,24 @@
       "name": "usdSolid",
       "kind": "kit",
       "library": "usdSolid",
-      "tag": "v0.1.5",
+      "tag": "v0.1.6",
       "requires": {},
       "example": null,
       "enclave": null,
-      "released": "v0.1.5",
+      "released": "v0.1.6",
       "floor": "v0.1.4"
     },
     {
       "name": "usdSolidOcct",
       "kind": "kit",
       "library": "usdSolidOcct",
-      "tag": "v0.1.4",
+      "tag": "v0.1.5",
       "requires": {
         "usdSolid": ">=0.1,<0.2"
       },
       "example": null,
       "enclave": null,
-      "released": "v0.1.4",
+      "released": "v0.1.5",
       "floor": "v0.1.3"
     }
   ]

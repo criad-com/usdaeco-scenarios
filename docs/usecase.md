@@ -64,6 +64,9 @@ released manifest and recorded per suite, separately from current-train acceptan
 scenario always consumes published stages. This separates publication
 verification from the consumer's composition test. Missing historical studies
 remain visible with their reason instead of being silently removed.
+Core and axis retain their declared data-centre source for dependency discovery,
+but their minimal examples receive no data-centre ROOT/STAGE override.
+Build-up keeps its explicitly declared facility as its example input.
 
 ## 8 Out of scope and open questions
 
@@ -77,5 +80,5 @@ Nix execution is not proven by Python acceptance.
 
 ## 9 Status
 
-Version 0.8.0. See [acceptance](acceptance.md) for measured counts and
+Version 0.8.1. See [acceptance](acceptance.md) for measured counts and
 [release inventory](release-inventory.json) for exact source provenance.

@@ -1,6 +1,6 @@
 [project]
 name = "usdaeco-scenarios"
-version = "0.8.0"
+version = "0.8.1"
 description = "Pinned family acceptance gate"
 requires-python = ">=3.11"
 license = "MIT"

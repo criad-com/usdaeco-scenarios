@@ -1,8 +1,35 @@
 """Run the shared index generator with the gate's generic-kit inventory adapter."""
 import json
 import hashlib
+import os
+from contextlib import contextmanager
 from pathlib import Path
 import tempfile
+
+
+@contextmanager
+def released_sources(entries, sources):
+    """Supply tagged index inputs even when a kit has no suite checkout."""
+    from publish import git
+    root = Path(__file__).resolve().parents[2]
+    with tempfile.TemporaryDirectory() as directory:
+        source_root = Path(directory)
+        for entry in entries:
+            if entry['kind'] == 'meta' or entry['name'] == 'usdaeco-scenarios':
+                continue
+            name, tag = entry['name'], entry['released']
+            source = (Path(sources) / name).resolve()
+            target = source_root / name
+            if source.is_dir():
+                target.symlink_to(source, target_is_directory=True)
+            elif tag:
+                base = os.environ.get('AECO_GIT_BASE') or git(
+                    'remote', 'get-url', 'origin', cwd=root).decode().strip().rsplit('/', 1)[0]
+                if name in ('usdSolid', 'usdSolidOcct'):
+                    base = os.environ.get('AECO_KIT_GIT_BASE', base)
+                git('clone', '--quiet', '--no-checkout', '--depth', '1', '--branch', tag,
+                    '--', base.rstrip('/') + '/' + name + '.git', target)
+        yield source_root
 
 
 def collect(family, sources):
@@ -18,10 +45,13 @@ def collect(family, sources):
     if candidate['released'] != 'v' + metadata['version']:
         raise ValueError('Scenarios candidate version differs from train')
     projected = dict(data, repos=[e for e in data['repos'] if e != candidate])
-    with tempfile.TemporaryDirectory() as directory:
+    validated = validate_family(projected, inventory=True)
+    if not validated:
+        raise ValueError(validated.detail)
+    with tempfile.TemporaryDirectory() as directory, released_sources(projected['repos'], sources) as source_root:
         path = Path(directory) / 'family.json'
         path.write_text(json.dumps(projected))
-        snapshot = family_readme.collect(path, sources)
+        snapshot = family_readme.collect(path, source_root)
     cards = {c['name']: c for c in snapshot['cards']}
     cards[candidate['name']] = dict(
         name=candidate['name'], available=True, commit=None, candidate=True,

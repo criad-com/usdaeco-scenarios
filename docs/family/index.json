@@ -1,7 +1,7 @@
 {
   "format": 1,
   "family": {
-    "train": "aeco-0.8.0",
+    "train": "aeco-0.8.1",
     "repos": [
       {
         "name": "aeco-toolchain",
@@ -136,7 +136,7 @@
         "name": "usdaeco-ifc",
         "kind": "integration",
         "library": null,
-        "tag": "v0.2.2",
+        "tag": "v0.2.3",
         "requires": {
           "usdAeco": ">=0.9,<1.0",
           "usdAecoSync": ">=0.5,<0.6",
@@ -146,11 +146,26 @@
         },
         "example": null,
         "enclave": null,
-        "released": "v0.2.2",
+        "released": "v0.2.3",
         "floor": "v0.2.2"
       },
       {
         "name": "usdaeco-bonsai",
+        "kind": "integration",
+        "library": null,
+        "tag": "v0.1.6",
+        "requires": {
+          "usdAeco": ">=0.9,<1.0",
+          "usdAecoSync": ">=0.5,<0.6",
+          "usdAecoAxis": ">=0.1,<0.2"
+        },
+        "example": null,
+        "enclave": null,
+        "released": "v0.1.6",
+        "floor": "v0.1.5"
+      },
+      {
+        "name": "usdaeco-revit",
         "kind": "integration",
         "library": null,
         "tag": "v0.1.5",
@@ -160,23 +175,8 @@
           "usdAecoAxis": ">=0.1,<0.2"
         },
         "example": null,
-        "enclave": null,
-        "released": "v0.1.5",
-        "floor": "v0.1.5"
-      },
-      {
-        "name": "usdaeco-revit",
-        "kind": "integration",
-        "library": null,
-        "tag": "v0.1.4",
-        "requires": {
-          "usdAeco": ">=0.9,<1.0",
-          "usdAecoSync": ">=0.5,<0.6",
-          "usdAecoAxis": ">=0.1,<0.2"
-        },
-        "example": null,
         "enclave": "tools/usdaeco_revit/scripts",
-        "released": "v0.1.4",
+        "released": "v0.1.5",
         "floor": "v0.1.4"
       },
       {
@@ -196,22 +196,22 @@
         "name": "usdaeco-board",
         "kind": "board",
         "library": null,
-        "tag": "v0.1.4",
+        "tag": "v0.1.5",
         "requires": {},
         "example": null,
         "enclave": null,
-        "released": "v0.1.4",
+        "released": "v0.1.5",
         "floor": "v0.1.4"
       },
       {
         "name": "usdaeco-scenarios",
         "kind": "gate",
         "library": null,
-        "tag": "v0.8.0",
+        "tag": "v0.8.1",
         "requires": {},
         "example": null,
         "enclave": null,
-        "released": "v0.8.0",
+        "released": "v0.8.1",
         "floor": "v0.8.0"
       },
       {
@@ -299,24 +299,24 @@
         "name": "usdSolid",
         "kind": "kit",
         "library": "usdSolid",
-        "tag": "v0.1.5",
+        "tag": "v0.1.6",
         "requires": {},
         "example": null,
         "enclave": null,
-        "released": "v0.1.5",
+        "released": "v0.1.6",
         "floor": "v0.1.4"
       },
       {
         "name": "usdSolidOcct",
         "kind": "kit",
         "library": "usdSolidOcct",
-        "tag": "v0.1.4",
+        "tag": "v0.1.5",
         "requires": {
           "usdSolid": ">=0.1,<0.2"
         },
         "example": null,
         "enclave": null,
-        "released": "v0.1.4",
+        "released": "v0.1.5",
         "floor": "v0.1.3"
       }
     ]
@@ -568,10 +568,10 @@
     {
       "name": "usdaeco-ifc",
       "available": true,
-      "commit": "8eb72e89af15e8642d914948384fe73038cc7817",
+      "commit": "50a4cd0bd198622007980b6daf895e0dbfda3249",
       "library": {
         "name": "usdaeco-ifc",
-        "version": "0.2.2",
+        "version": "0.2.3",
         "kind": "integration",
         "tier": "integration",
         "requires": {
@@ -584,23 +584,23 @@
         "licence": "MIT"
       },
       "purpose": "IFC in, IFC out",
-      "status": "Version 0.2.2, integration kind with no schema directory. S01\u2013S05 and S20\u2013S29 apply; S06\u2013S19 are not applicable. Core is v0.9.2; AecoAxisAPI is supplied by axis v0.1.2. Source metadata allows the entry point to be exercised without installing packages in a shared interpreter. See the acceptance report for observed counts and unresolved packaging or Nix limits.",
+      "status": "Version 0.2.3, integration kind with no schema directory. S01\u2013S05 and S20\u2013S29 apply; S06\u2013S19 are not applicable. Core is v0.9.5; AecoAxisAPI is supplied by axis v0.1.5. Source metadata allows the entry point to be exercised without installing packages in a shared interpreter. See the acceptance report for observed counts and unresolved packaging or Nix limits.",
       "example": "examples/roundtrip/README.md",
       "licence": "MIT",
       "source_sha256": {
-        "library.json": "fd13421737b8ec9ab337b8a1dc4595cc08500c82ef9184d8353ccdc0e562eb9e",
-        "README.md": "81f2f2d8f5960d7ffad154093daa725da8961d413f54cf87b5588ef34e925634",
-        "docs/usecase.md": "fdd22aa2ed32c56157d8fb3ad0aa9a0d68c432547ac9a78b114bde10ab13bd7f",
+        "library.json": "918d3706ffbca6b559dcdf1937fbf89766574df83281dc8fdc2079bed0f8ba24",
+        "README.md": "8bfd74adfad15f581949a4ad28821feda104e9611612be62a6d4d68c78529dcb",
+        "docs/usecase.md": "f5fffb4e3d7a8ee222b77df0e483836b11555d863c23cd36af450f62440fa88f",
         "LICENSE": "202a23a57b429d91028dc1b4f62b6342bad6bc3ee294d20c58f363fac184e346"
       }
     },
     {
       "name": "usdaeco-bonsai",
       "available": true,
-      "commit": "9742443ad9acbe928f758c6be341e97d8ed89e65",
+      "commit": "60a483e429705a26a3099b303174d3356b833672",
       "library": {
         "name": "usdaeco-bonsai",
-        "version": "0.1.5",
+        "version": "0.1.6",
         "kind": "integration",
         "tier": "integration",
         "requires": {
@@ -611,23 +611,23 @@
         "licence": "MIT"
       },
       "purpose": "Bonsai host for driver-based USD exchange",
-      "status": "Version 0.1.5 composes the complete base publication with toolchain v0.3.8, retaining sync v0.5.2, core v0.9.2 and axis v0.1.2. Native readback respects the transaction's disconnect scope and prepares imported profile sweeps for editing. Measured results and deviations are recorded in [facility acceptance](facility-acceptance.md).",
+      "status": "Version 0.1.6 composes the complete base publication with toolchain v0.3.10, sync v0.5.5, core v0.9.5 and axis v0.1.5. Native readback respects the transaction's disconnect scope and prepares imported profile sweeps for editing. Measured results and deviations are recorded in [public re-pin acceptance](public-repin.md).",
       "example": "examples/roundtrip/README.md",
       "licence": "MIT",
       "source_sha256": {
-        "library.json": "b878ea9881424f23182bdf8c63419f265fa426943de8d8727241cc10e3ca46d7",
-        "README.md": "615df50de07d4485bfe8d7fa2550ab9d897938ec6d84a27acf57b0a6207b26de",
-        "docs/usecase.md": "718e16d2e446d8c70024cb11034345c7a4c09d7e1adfed6988762d407920107b",
+        "library.json": "bee92ea914e6bd3851e786dbde236ba12fe9735cb379b40e69adf5690050a847",
+        "README.md": "9925bd1f3f01d7cd23d04543a2ce77469b0275051cd9666d85a874cceae51d3f",
+        "docs/usecase.md": "7ddf33dfa419354e566272ee7af76c1e2cb313423389fd0086b4451f8329c6ca",
         "LICENSE": "60e8f136d45a66bfebf67b95a7b276fa7b59a2f809f8efcd73b74523d1b8087f"
       }
     },
     {
       "name": "usdaeco-revit",
       "available": true,
-      "commit": "6840bbe8d1a42ffa4c456038e7ba42b8bc22acce",
+      "commit": "9530d755e5375ec452308c525d238f6890f28531",
       "library": {
         "name": "usdaeco-revit",
-        "version": "0.1.4",
+        "version": "0.1.5",
         "kind": "integration",
         "tier": "integration",
         "licence": "MIT",
@@ -638,13 +638,13 @@
         }
       },
       "purpose": "Revit host for driver-based USD exchange",
-      "status": "Version 0.1.4, using toolchain v0.3.8 and data centre v0.4.6; other pins are unchanged. Current results and deviations are in [facility replay verification](facility-replay-verification.md); [acceptance.md](acceptance.md) preserves earlier release evidence.",
+      "status": "Version 0.1.5, using toolchain v0.3.10 and data centre v0.4.9; all eleven public release pins are recorded in dependencies.json; supported ranges are unchanged. Current results and deviations are in [public re-pin verification](public-repin-verification.md); [acceptance.md](acceptance.md) preserves earlier release evidence.",
       "example": "examples/roundtrip/README.md",
       "licence": "MIT",
       "source_sha256": {
-        "library.json": "4b1185578c9f05483814ea4e408f73281849e8bc36e511366c2f837ddd084c9f",
-        "README.md": "edc6ee0d2065ffedd9d1731b4853962a7a7c9f1ce0839a9aa271470d1a13c377",
-        "docs/usecase.md": "d4166bae78b1c9b4bf1a9e788fe874576989abffa4da05b85ac906effbbe6ef7",
+        "library.json": "69d930fa2b3239ae3f1d274af92415cc506a8b3d5b3d9e3d4f4d81f38a9b4f59",
+        "README.md": "7a19b571d5ad45ef328456cc2d570d546bfa5b99d8f72827a055d583dc5a0636",
+        "docs/usecase.md": "807ad239f25555b3f68d42910b0c232ebb7768838b9d186e9d3a617daaee7606",
         "LICENSE": "202a23a57b429d91028dc1b4f62b6342bad6bc3ee294d20c58f363fac184e346"
       }
     },
@@ -676,23 +676,23 @@
     {
       "name": "usdaeco-board",
       "available": true,
-      "commit": "7af8ca6a48d80bcef1fb8718b9e76c6e1a67890d",
+      "commit": "cbc31890d3cd23c3c656de52008d9ff5c406195d",
       "library": {
         "name": "usdaeco-board",
-        "version": "0.1.4",
+        "version": "0.1.5",
         "kind": "board",
         "tier": "board",
         "requires": {},
         "licence": "MIT"
       },
       "purpose": "the family, with evidence",
-      "status": "Version 0.1.4. The generator supports the released layouts as well as the common skeleton. `site/summary.json` records counts for each local generation; generated pages and private configuration are intentionally untracked.",
+      "status": "Version 0.1.5. The generator supports the released layouts as well as the common skeleton. `site/summary.json` records counts for each local generation; generated pages and private configuration are intentionally untracked.",
       "example": "docs/static-export.md",
       "licence": "MIT",
       "source_sha256": {
-        "library.json": "1642f026e0917a2230df9f69ea6d407afeee118f506619bebd9e675c3d5a37dc",
-        "README.md": "463b6a5c8d3f185be993349182ad3ef7e2700f35f6cc580688b9dafdb8884a9d",
-        "docs/usecase.md": "43115b06c27f381274a6530d0de2b458780ddeef0cb502fc9235c4fafab88e0c",
+        "library.json": "aa0de1aaf5b1a9b12d96f8d5fea33c90ffcdeb0e4d29da8dd79d439a6c02ad30",
+        "README.md": "c9a0b2155b27dd3cae04ee2ba5c925cdf93bc29f7e772be16282f412621293a3",
+        "docs/usecase.md": "56c2e40331da42d782f9fcd7dcaf2159f1e844a361ddf94e29330176de686966",
         "LICENSE": "202a23a57b429d91028dc1b4f62b6342bad6bc3ee294d20c58f363fac184e346"
       }
     },
@@ -703,7 +703,7 @@
       "candidate": true,
       "library": {
         "name": "usdaeco-scenarios",
-        "version": "0.8.0",
+        "version": "0.8.1",
         "kind": "gate",
         "tier": "gate",
         "requires": {},
@@ -714,7 +714,7 @@
       "example": null,
       "status": "Current release candidate; its structure and regressions run without recursion. Measured full and fast results are recorded in acceptance; this card does not establish tag publication.",
       "source_sha256": {
-        "library.json": "b8ac656e8ff3ccaaf4115e5a9fe3d0e6a25ed78f831ebb9b171ec43fac9bf1d8"
+        "library.json": "fb814265b12dc2b2dc2fa6952793aec9b0a3c9caf061bdb2c49125347ad7d676"
       }
     },
     {
@@ -896,32 +896,32 @@
     {
       "name": "usdSolid",
       "available": true,
-      "commit": "5792a6f56de3a7f881a73ba11b3635871cd2dc4e",
+      "commit": "0ebd0a9e24f90e99c2f01f6f2db2aa278ce05e7d",
       "library": {
         "name": "usdSolid",
-        "version": "0.1.5",
+        "version": "0.1.6",
         "licence": "MIT",
         "kind": "kit",
         "tier": "toolchain",
         "requires": {}
       },
       "purpose": "boundary representation schemas for OpenUSD",
-      "status": "Version **0.1.5** pins the two published toolchain tags above. Both tags were verified on GitHub and the forge; the three external OpenUSD source pins and all requirement ranges are unchanged.",
+      "status": "Version **0.1.6** updates the release documentation and retains the two published toolchain tags above. Both tags were verified on GitHub and the forge; the three external OpenUSD source pins and all requirement ranges are unchanged.",
       "example": null,
       "licence": "MIT",
       "source_sha256": {
-        "library.json": "979fb82a370cca28f3c4da0c69edac5619fcbbfa3ad2e50ca12294161934bc52",
-        "README.md": "8de52d908870e649d5f07bf1f0c91df0cfe5ae2668f0d0b73b4b4f5d7e8f2a87",
+        "library.json": "3cbbaf4f173c091775678bb3e86e027ea5fa48a64bade2de0eceb76cc6b37521",
+        "README.md": "81d0c9ba18e599deea983a9661824af181b42d9d7f544986cb846c675cf2a237",
         "LICENSE": "202a23a57b429d91028dc1b4f62b6342bad6bc3ee294d20c58f363fac184e346"
       }
     },
     {
       "name": "usdSolidOcct",
       "available": true,
-      "commit": "0936e4e355b9ff5971ee5dbb4e8a47dcdea9e3fe",
+      "commit": "62130171e7f0c59dd2ea13f7a466d151a4fd87b6",
       "library": {
         "name": "usdSolidOcct",
-        "version": "0.1.4",
+        "version": "0.1.5",
         "kind": "kit",
         "tier": "toolchain",
         "licence": "MIT",
@@ -930,12 +930,12 @@
         }
       },
       "purpose": "UsdSolid BrepArray and OCCT bridge",
-      "status": "Version 0.1.4 updates all three family inputs to public release tags. The usdSolid source input reuses its native packages with explicit schema, validator and fixture sources at their unchanged upstream revisions. The native runtime was rebuilt and all 90 closure paths were published and verified. All 73 regenerated output layers, 40 fixture layers and the generated schema are byte-identical to the previous runtime. See the [current verification record](docs/public-repin.md) for checks and the remaining public-access verification for usdSolid. The native gate passes 31 checks and pytest passes 61 tests. The single offline flake check was interrupted after expanding into additional bootstrap/source builds; its completion remains for review.",
+      "status": "Version 0.1.5 makes the verification documentation self-contained and aligns release metadata. The evidence below records the v0.1.4 runtime; the v0.1.5 native rebuild and cache receipt regeneration remain pending review.",
       "example": null,
       "licence": "MIT",
       "source_sha256": {
-        "library.json": "7a00d621cc6c535f5c4fd2257e18d41dc43ff4f9b334c1ad84e0420ed1c2a0e3",
-        "README.md": "418177a00f33aea34bd0d31ce4700d6439651d8b6cb604c98f48e1db42adcba5",
+        "library.json": "e62f2a6a48182a533764444aa7fe50c176c3daecf71e995476cf9735b3971c6c",
+        "README.md": "1309f75f5a65dc8158ac3fbc4e33bdd189885d238e1a552f901f38706704a267",
         "LICENSE": "202a23a57b429d91028dc1b4f62b6342bad6bc3ee294d20c58f363fac184e346"
       }
     }

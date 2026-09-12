@@ -1,17 +1,25 @@
 {
-  "version": "0.8.0",
+  "version": "0.8.1",
   "structure": {
     "checks": 29,
     "failed": 0
   },
   "pytest": {
-    "passed": 134,
-    "evidence": "acceptance-fast.json"
+    "passed": 135,
+    "evidence": [
+      "acceptance.json",
+      "acceptance-fast.json"
+    ]
   },
   "sanitization": {
-    "files": 122,
+    "files": 131,
     "violations": [],
     "passed": true
+  },
+  "currentDocs": {
+    "files": 13,
+    "retiredNameMentions": 0,
+    "historicalEvidenceExcluded": true
   },
   "diffCheck": "passed",
   "index": {
@@ -22,16 +30,54 @@
     "steps": 5,
     "renders": 5
   },
+  "links": {
+    "roots": 45,
+    "failed": 0,
+    "kitRoots": 4
+  },
+  "drift": {
+    "declarations": 125,
+    "mismatches": 0,
+    "floorsUnchanged": 24
+  },
+  "full": {
+    "checks": 124,
+    "failed": 3,
+    "notRun": 25,
+    "seconds": 1222.26,
+    "runs": 1
+  },
+  "fast": {
+    "checks": 53,
+    "failed": 0,
+    "notRun": 23,
+    "seconds": 79.37,
+    "runs": 1
+  },
+  "focusedCorrection": {
+    "evidence": "minimal-source-correction.json",
+    "coreChecks": 71,
+    "axisChecks": 54,
+    "failed": 0
+  },
   "nix": {
     "attempts": 1,
-    "status": "not-proven"
+    "status": "not-proven",
+    "exitCode": 1,
+    "seconds": 0.11,
+    "reason": "Sandbox denied daemon socket before input evaluation"
   },
+  "fullGateStartCommit": "e8f5b5ba4ec77dd7380a1b7fbfeee1558dfdf28e",
+  "runnerCorrectionCommit": "7a3f8e5c627acfa56b96fa108d33e20d9e7d70ac",
   "sha256": {
-    "family.json": "ba1c6b6357e3617bf0e3bf43e6be640d76500434523643b6b9e15ef18eddd064",
-    "dependencies.json": "a166aa96e7b457de361f607aecd49581f889cc6dcd130b9903dbdcc8a67c8b0c",
-    "docs/acceptance.json": "b2783d0e62d9cff1d4d34fe03997ee3282ee279869d3aca3f0e5dfb3681f28ca",
-    "docs/acceptance-fast.json": "8b3e1594736c7baa70b55ca840b40b6e8da50bb30fb4eb3e2e8f9c82152f0f83",
-    "docs/buildup-correction.json": "b5ca64b49ffce112f426e95d6f679917f91c507fe94f15c369fe1465dec378df",
-    "docs/family/index.json": "1dd091ee51f284603971fea1e99951a5518e4f6b5faab51eda7bcf92ca128577"
+    "family.json": "69f48001f3797f91823e052c43f1bee9a01d3bfb23c3f6a1c6e4192be660cc8e",
+    "dependencies.json": "86cf09e7737729baba22ebeafb1276698353b994b2da73f5f2dbfc9eb7008719",
+    "check_all.py": "98a8b2aa53dff76ab1c22071fdd953e3e27c2eb21fc33cb775c10291cbb9e97f",
+    "tools/usdaeco_scenarios/suite_inputs.py": "31a428d95df3263a6a1c828e1ed2c6f11f1c10963e524ce6e5a7c5f459402a70",
+    "testenv/test_suite_inputs.py": "9aa9c61ad3258a3cf228159c8a5a112d79ef3d0d28b222af38d2cd1b746a1bb2",
+    "docs/acceptance.json": "f7d11de95ec6352498bad4cf8c9ca25e569b183193b7b05cee774ebba4b6b436",
+    "docs/acceptance-fast.json": "796ae5319d0975d6447529206d451856e86180b41f624d6df0a1db3e4ec67e2e",
+    "docs/minimal-source-correction.json": "900383929fd75bbfc79221a7f70b174320efa75460d650d92b5757b858e12f2f",
+    "docs/family/index.json": "3ece894e383f79e2a648b5ee16cae1a37e1ca8af0b9076e145963865592dfe83"
   }
 }

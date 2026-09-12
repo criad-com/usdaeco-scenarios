@@ -1,49 +1,64 @@
-# Release packaging acceptance — 0.8.0
+# Release packaging acceptance — 0.8.1
 
-[family.json](../family.json) selects the public train `aeco-0.8.0`.
+[family.json](../family.json) selects public train `aeco-0.8.1`.
 Every active reference in [dependencies.json](../dependencies.json) and the
-flake uses a release tag under the public `criad-com` organization. Resolved
-commit identities are recorded in run evidence because public orphan releases
-can differ from the internal mirror's commits. Historical fixtures retain their
-own declarations and never satisfy direct requirements.
+flake uses a release tag under `criad-com`. The public floors are unchanged
+from 0.8.0; all 125 direct declarations lie inside their train intervals.
+Historical fixtures retain their own declarations and never waive direct drift.
 
 ## Sources and execution scopes
 
-The inventory contains 24 entries: 22 released dependencies, the scenarios
-candidate and private, unpinned metadata. Twenty-one dependencies have Python
-acceptance suites; the generic build kit has no semantic library manifest or
-Python gate. Its public floor still applies to direct dependency pins. The
-index reports its missing source card explicitly and marks scenarios as the
-current candidate, without claiming that its tag has already been published.
+The inventory contains 24 entries: 22 released dependencies, this candidate
+and private, unpinned metadata. Twenty-one dependencies have Python acceptance
+suites. The generic build kit has no semantic source card or Python gate;
+its public floor is still checked. The index explicitly identifies the
+candidate without claiming its release tag has been published.
 
-The gate clones exact tags into a fresh disposable root, audits their resolved
-commits and clean source state, and builds seven codeless consumer libraries.
-All eight core validators must import and load through UsdValidation.
-Repository suites select their own declared toolchains and inputs; consumer
-builds and scenarios lint use toolchain v0.3.10. The data-centre publication
-uses its vendored, byte-qualified generation fixtures while modern dependency
-builds use its validation core. Fixtures with recorded historical revisions
-remain separate from active public pins.
+The gate acquired tagged sources in a fresh root through the internal mirror,
+then audited and built disposable copies. The source inventory records resolved
+commits and trees. Public-only acquisition was not exercised. No stable sibling
+checkout was modified, and no previous suite report was reused.
 
-Full acceptance uses available Blender and immutable native Solid runtimes.
-The native suites verify compiled-source and dependency receipts using their
-own compatible subprocesses. No dependency installation or native rebuild is
-performed. Live integration and native-template gaps retain NOT RUN rows.
+Seven consumer libraries build together and all eight core validators load
+through UsdValidation. Suites use their declared toolchains and inputs;
+consumer builds and scenarios lint use toolchain v0.3.10. Generation fixtures
+remain separate from modern validation inputs and current-train consumers.
+Core and axis declare a data-centre dependency while their published examples
+use minimal sources. Their corrected suite environment retains declared source
+discovery and clears data-centre ROOT/STAGE example overrides. Build-up retains
+its explicitly selected data-centre example source.
+
+The native suites used existing immutable runtimes matching usdSolid v0.1.6
+and usdSolidOcct v0.1.5. Both passed build-revision, installed-metadata and
+compiled-source checks. No dependency installation or native rebuild was made.
+Blender/Bonsai scenarios executed; omitted native-template, executable CCTV
+and live integration scenarios keep their explicit NOT RUN reasons.
 
 ## Full and fast profiles
 
-Follow the [README](../README.md), with a fresh output directory per profile.
-The full profile runs released suites, publication reproductions, derived
-consumers and regressions. The 360-second budget includes source isolation,
-builds, suites and consumer checks. Four independent suites run concurrently.
-The fast profile checks source pins, committed publication inventories,
-relocated vanilla USD stages and local regressions. It marks full suite and
-consumer reproductions NOT RUN, and does not establish publication parity.
+The original [acceptance](acceptance.md) records one fresh full run and one
+separate fast measurement. Full: **124 checks, 3 failed, 25 not run; 96 PASS;
+1222.26 s**. Failed rows are core, axis and the 360-second budget.
+The minimal-source environment correction
+passes a regression and separate complete core and axis suites, **71/71** and
+**54/54**, recorded in
+[minimal-source-correction.json](minimal-source-correction.json). These focused
+results do not replace the original full failures.
 
-[Acceptance](acceptance.md) records the single full run, the separate fast
-measurement and exact failures. Upstream direct pins below their public floors
-remain drift even when those older tags can be retrieved from the internal
-archive. This run does not establish public-only fresh-root reproduction.
+The fast profile passes its executed checks and time budget. It checks source
+pins, committed inventories, relocated plugin-free stages and local regressions.
+It omits full suites and fresh consumer reproductions, marking them NOT RUN;
+fast success does not establish publication parity. The reviewer is reproducing
+the corrected complete full run and will record its measured result at merge;
+that result is not yet proven here.
+
+The subsequent [release correction](release-correction.json) records fast
+**53 checks, 0 failed, 23 not run; 79.96 s**, **139 passing pytest tests**, **29/0
+lint**, **45/45 link roots** and **24 fresh index rows**. This run starts without
+a hub checkout: index and drift share a temporary source fetched at the hub's
+released tag, and no semantic suite is claimed for it. An initial correction
+fast run exposed the drift checks' need for the same source; its failure is
+retained in the receipt. No additional full or Nix run was made.
 
 ## Nix
 
@@ -53,16 +68,17 @@ Exactly one offline attempt was made:
 nix flake check --offline --no-update-lock-file --option restrict-eval true --option allowed-uris '' --option substituters ''
 ```
 
-Outbound IP connections were denied for the attempt. It exited 1 after
-0.13 seconds while resolving the uncached public board v0.1.4 input. Nix is
-not proven. No retry or lockfile is committed. See [receipt](nix-evidence.json).
+The network-denied sandbox also denied access to the Nix daemon socket. The
+attempt exited 1 in 0.11 seconds before input evaluation; Nix is not proven.
+No retry or lockfile is committed. See the [receipt](nix-evidence.json).
+The README describes the external registry and input-override workflow.
 
 ## Historical evidence
 
-The [preceding full report](acceptance-0.7.1.json),
-[fast report](acceptance-fast-0.7.1.json), [acceptance narrative](acceptance-0.7.1.md)
-and [packaging record](packaging-0.7.1.md) preserve the earlier runner diagnosis.
-The focused harness, source-alias and evaluator-idempotence proofs remain in
-[harness-proof.json](harness-proof.json) and
-[consumer-correction.json](consumer-correction.json). Their embedded versions
-define their scope; they are not current PASS evidence.
+The [preceding full report](acceptance-0.8.0.json),
+[fast report](acceptance-fast-0.8.0.json), [narrative](acceptance-0.8.0.md),
+[drift](drift-0.8.0.md) and [packaging](packaging-0.8.0.md) preserve the earlier
+measurements. Their embedded versions define their scope. The previous
+build-up correction is now covered by its passing suite in this full run.
+Historical evidence and CHANGELOG retain the retired repository vocabulary;
+current documentation has no such references.

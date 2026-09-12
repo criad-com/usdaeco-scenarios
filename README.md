@@ -18,7 +18,7 @@ build kit is inventoried separately from the executable semantic suites.
 ## The example
 
 <!-- demo:start -->
-Walk through `demo-datacentre-01` in train `aeco-0.8.0`. Each step uses its repository's released findings and one recorded render. Public links name intended mirror locations; network availability is not checked.
+Walk through `demo-datacentre-01` in train `aeco-0.8.1`. Each step uses its repository's released findings and one recorded render. Public links name intended mirror locations; network availability is not checked.
 
 **1. CCTV** — Start with visibility: 45 sensors generate 45 sectors. CriticalDoors covers 11/11 fixed targets; Privacy reports 0 covered exclusions.
 
@@ -131,7 +131,7 @@ for every direct input. No private registry or lockfile belongs in this tree.
 
 ## Family
 
-Train `aeco-0.8.0` uses core v0.9.5, axis v0.1.5 and toolchain v0.3.10.
+Train `aeco-0.8.1` uses core v0.9.5, axis v0.1.5 and toolchain v0.3.10.
 Datacentre v0.4.9 supplies the published variants; repeat v0.2.1 supplies the
 repeated-floor example. Requirements are ranges copied from released manifests.
 Inventory validation admits the private metadata entry; separate strict
@@ -161,14 +161,19 @@ roundtrip; `baselines/`: synthetic inputs; `docs/`: acceptance and provenance.
 
 ## Status
 
-Version 0.8.0 candidate. Full: **124 checks, 5 failed, 25 not run; 94 PASS; 1247.70 s**.
-Fast: **53 checks, 3 failed, 23 not run; 27 PASS; 79.25 s**. Drift: **32 upstream direct pins**.
-Local structure: **29/0**; pytest: **134 passed**. Build-up's runner correction
-passes a separate **67/67** suite. Four upstream broken links and the full
-wall-clock budget remain unresolved; complete acceptance is not proven.
-The [acceptance report](docs/acceptance.md) preserves the original measurements,
-[focused correction](docs/buildup-correction.json) and historical evidence.
-See [remaining work](BLOCKED.md). NOT RUN never counts as PASS.
+Version 0.8.1 candidate. Full: **124 checks, 3 failed, 25 not run; 96 PASS; 1222.26 s**.
+Fast: **53 checks, 0 failed, 23 not run; 30 PASS; 79.37 s**. Drift: **0/125**.
+The full run passes **19/21 suites** and **45/45 documentation roots**.
+Corrected core and axis suites separately pass **71/71** and **54/54**.
+Local structure: **29/0**; pytest: **135 passed** in the recorded acceptance.
+The [release correction](docs/release-correction.json) passes fast **53 checks,
+0 failed, 23 not run; 79.96 s**, including **139 pytest tests**, **29/0 lint**,
+**45/45 link roots** and **24 fresh index rows** with no pre-existing hub checkout.
+The reviewer is reproducing the corrected complete full run and will record
+its measured result at merge; that result is not yet proven here.
+The full budget fails; Nix remains not proven after one offline attempt.
+See [acceptance](docs/acceptance.md) and [packaging](docs/packaging.md) for
+measured results and deviations. NOT RUN never counts as PASS.
 
 ## Licence
 

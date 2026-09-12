@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.8.1 — public train closure
+
+- Advance IFC, Revit, Bonsai, board and both native kit releases; retain the public dependency floors.
+- Refresh the five-example walkthrough and the 24-row tagged family index.
+- Preserve the 0.8.0 evidence and measure one fresh full gate plus the fast profile.
+- Sweep current documentation for the retired repeated-floor repository name; retain historical evidence.
+- Fix minimal-source selection for core and axis while retaining build-up's declared data-centre input; focused suites pass 71/71 and 54/54.
+- Record drift 0/125; full 124 checks, 3 failed, 25 not run in 1222.26 s; fast 53 checks, 0 failed, 23 not run in 79.37 s. Preserve the original full failures under the single-run limit.
+
 ## 0.8.0 — public train
 
 - Select the public release tags and first public floors for all 24 family entries.

@@ -1,0 +1,65 @@
+{
+  "version": "0.8.1",
+  "runnerCommit": "7a3f8e5c627acfa56b96fa108d33e20d9e7d70ac",
+  "method": "Reused check_environment from check_all.py with the full run sources and declared inputs",
+  "suites": [
+    {
+      "repo": "usdaeco-core",
+      "ref": "v0.9.5",
+      "checks": 71,
+      "failed": 0,
+      "seconds": 219.19,
+      "exitCode": 0,
+      "passed": true,
+      "scope": "Focused corrected suite; original full measurement retained",
+      "inputs": {
+        "toolchain": {
+          "repo": "usdaeco-toolchain",
+          "ref": "v0.3.10",
+          "revision": "59d3da5ff5114089b54efaaae38efdd7fe1b8e73",
+          "scope": "direct"
+        },
+        "datacentre": {
+          "repo": "usdaeco-datacentre",
+          "ref": "v0.4.8",
+          "revision": "9e22b14c4909e50806805e735f93b1b425ac48cb",
+          "scope": "direct"
+        }
+      },
+      "exampleOverrides": "Minimal source: data-centre ROOT and STAGE unset; declared SOURCE retained"
+    },
+    {
+      "repo": "usdaeco-axis",
+      "ref": "v0.1.5",
+      "checks": 54,
+      "failed": 0,
+      "seconds": 43.51,
+      "exitCode": 0,
+      "passed": true,
+      "scope": "Focused corrected suite; original full measurement retained",
+      "inputs": {
+        "toolchain": {
+          "repo": "usdaeco-toolchain",
+          "ref": "v0.3.10",
+          "revision": "59d3da5ff5114089b54efaaae38efdd7fe1b8e73",
+          "scope": "direct"
+        },
+        "core": {
+          "repo": "usdaeco-core",
+          "ref": "v0.9.4",
+          "revision": "80a099e14e7bb825b207548d0a4f8a93e9ffa62f",
+          "scope": "direct"
+        },
+        "datacentre": {
+          "repo": "usdaeco-datacentre",
+          "ref": "v0.4.8",
+          "revision": "9e22b14c4909e50806805e735f93b1b425ac48cb",
+          "scope": "direct"
+        }
+      },
+      "exampleOverrides": "Minimal source: data-centre ROOT and STAGE unset; declared SOURCE retained"
+    }
+  ],
+  "passed": true,
+  "fullGateRerun": false
+}

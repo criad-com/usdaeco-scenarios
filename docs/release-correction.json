@@ -1,0 +1,182 @@
+{
+  "version": "0.8.1",
+  "correctionCommit": "233c3a2e29a879451e967cb1dfecc80c320640fd",
+  "method": "Fast profile in a new output directory, with every acquired source except aeco-toolchain available. The hub is read from its released tag in a temporary directory shared by index and drift checks.",
+  "hub": {
+    "ref": "v0.4.0",
+    "revision": "71c86d54aa1e4be180a301a089d9a40e727758cb",
+    "preExistingCheckout": false,
+    "checkoutLeftInAcquisitionRoot": false,
+    "suiteClaimed": false,
+    "semanticSourceCardAvailable": false
+  },
+  "fast": {
+    "checks": 53,
+    "counts": {
+      "PASS": 30,
+      "FAIL": 0,
+      "NOT RUN": 23
+    },
+    "seconds": 79.96,
+    "rows": [
+      {
+        "gate": "drift dependency train intervals",
+        "passed": true,
+        "status": "PASS",
+        "result": "125/125; 0 mismatches"
+      },
+      {
+        "gate": "family index freshness",
+        "passed": true,
+        "status": "PASS",
+        "result": "24 rows; tagged sources and explicit current candidate"
+      },
+      {
+        "gate": "links before builds",
+        "passed": true,
+        "status": "PASS",
+        "result": "45/45 roots"
+      },
+      {
+        "gate": "core validator registry",
+        "passed": true,
+        "status": "PASS",
+        "result": "8/8 loaded through UsdValidation"
+      },
+      {
+        "gate": "scenarios check.py",
+        "passed": true,
+        "status": "PASS",
+        "result": "29/29 structure checks; current candidate, no recursive gate"
+      },
+      {
+        "gate": "gate regression tests",
+        "passed": true,
+        "status": "PASS",
+        "result": "139 passed in 13.50s"
+      },
+      {
+        "gate": "sanitization",
+        "passed": true,
+        "status": "PASS",
+        "result": "131 files; 0 violations"
+      },
+      {
+        "gate": "links at end",
+        "passed": true,
+        "status": "PASS",
+        "result": "45/45 roots"
+      },
+      {
+        "gate": "family wall-clock budget",
+        "passed": true,
+        "status": "PASS",
+        "result": "79.95s / 360s; fast profile; 4 suite processes; source isolation, builds, suites and consumers included"
+      }
+    ]
+  },
+  "firstCorrectionFast": {
+    "checks": 53,
+    "counts": {
+      "PASS": 29,
+      "FAIL": 1,
+      "NOT RUN": 23
+    },
+    "seconds": 86.95,
+    "failures": [
+      {
+        "gate": "drift dependency train intervals",
+        "passed": false,
+        "status": "FAIL",
+        "result": "121/125; 4 mismatches",
+        "evidence": [
+          {
+            "repo": "usdSolid",
+            "check": "pin aeco-toolchain",
+            "passed": false,
+            "detail": "aeco-toolchain declared v0.4.0; train [v0.4.0, v0.4.0]; declared ref revision mismatch or unavailable",
+            "dependency": "aeco-toolchain",
+            "ref": "v0.4.0",
+            "floor": "v0.4.0",
+            "released": "v0.4.0",
+            "reasons": [
+              "declared ref revision mismatch or unavailable"
+            ],
+            "version": "0.4.0"
+          },
+          {
+            "repo": "usdSolidOcct",
+            "check": "pin aeco-toolchain",
+            "passed": false,
+            "detail": "aeco-toolchain declared v0.4.0; train [v0.4.0, v0.4.0]; declared ref revision mismatch or unavailable",
+            "dependency": "aeco-toolchain",
+            "ref": "v0.4.0",
+            "floor": "v0.4.0",
+            "released": "v0.4.0",
+            "reasons": [
+              "declared ref revision mismatch or unavailable"
+            ],
+            "version": "0.4.0"
+          },
+          {
+            "repo": "usdaeco-cctv-exec",
+            "check": "pin aeco-toolchain",
+            "passed": false,
+            "detail": "aeco-toolchain declared v0.4.0; train [v0.4.0, v0.4.0]; declared ref revision mismatch or unavailable",
+            "dependency": "aeco-toolchain",
+            "ref": "v0.4.0",
+            "floor": "v0.4.0",
+            "released": "v0.4.0",
+            "reasons": [
+              "declared ref revision mismatch or unavailable"
+            ],
+            "version": "0.4.0"
+          },
+          {
+            "repo": "usdaeco-toolchain",
+            "check": "pin aeco-toolchain",
+            "passed": false,
+            "detail": "aeco-toolchain declared v0.4.0; train [v0.4.0, v0.4.0]; declared ref revision mismatch or unavailable",
+            "dependency": "aeco-toolchain",
+            "ref": "v0.4.0",
+            "floor": "v0.4.0",
+            "released": "v0.4.0",
+            "reasons": [
+              "declared ref revision mismatch or unavailable"
+            ],
+            "version": "0.4.0"
+          }
+        ]
+      }
+    ],
+    "resolution": "The missing hub checkout also prevented four drift revision audits; both checks now share the temporary tagged source."
+  },
+  "originalFullEvidence": "acceptance.json",
+  "focusedSuiteEvidence": "minimal-source-correction.json",
+  "correctedFullRun": "Reviewer reproduction; result to be recorded at merge, not yet proven here",
+  "fullRunsThisCorrection": 0,
+  "nixAttemptsThisCorrection": 0,
+  "sha256": {
+    "check_all.py": "9f37638aae2c0e262b558fa9d7ac17be2bd9c389cab5f17ca95acbd679fa0f7c",
+    "tools/usdaeco_scenarios/index.py": "24b86ad82ba1a7910332b06ff64108d5f97b87e2d2c7e836bf5963ba671d751d",
+    "testenv/test_family_index.py": "e98072ec90c6a98c122cfa0f97a55dc6d93a64ad81891daae9d41b40279d44a9",
+    "docs/acceptance.json": "f7d11de95ec6352498bad4cf8c9ca25e569b183193b7b05cee774ebba4b6b436",
+    "docs/acceptance-fast.json": "796ae5319d0975d6447529206d451856e86180b41f624d6df0a1db3e4ec67e2e",
+    "docs/family/index.json": "3ece894e383f79e2a648b5ee16cae1a37e1ca8af0b9076e145963865592dfe83"
+  },
+  "finalDocumentation": {
+    "links": {
+      "roots": 45,
+      "failed": 0,
+      "kitRoots": 4
+    },
+    "sanitization": {
+      "files": 132,
+      "violations": [],
+      "passed": true
+    },
+    "diffCheck": "passed",
+    "transientFileAbsent": true,
+    "transientFileLinks": 0
+  }
+}

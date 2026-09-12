@@ -93,7 +93,7 @@ def main():
     output = args.output.resolve()
     output.mkdir(parents=True, exist_ok=True)
     started_gate = time.monotonic()
-    rows, report = [], {"repositories": {}, "libraries": {}, "version": "0.8.0", "train": "aeco-0.8.0", "profile": args.profile}
+    rows, report = [], {"repositories": {}, "libraries": {}, "version": "0.8.1", "train": "aeco-0.8.1", "profile": args.profile}
     placeholder_root = Path(os.environ.get('AECO_FAMILY_ROOT', ROOT / 'out/family'))
 
     def save():
@@ -164,15 +164,16 @@ def main():
     indexed = {entry['name']: entry for entry in inventory['repos']}
     sys.path.insert(0, str(ROOT / 'tools'))
     from usdaeco_scenarios.drift import audit as drift_audit
-    drift = drift_audit(inventory, {repository_name(n): paths[n] for n in available} | {'usdaeco-scenarios': ROOT},
-                        tag_sources={'aeco-toolchain': placeholder_root / 'aeco-toolchain'})
+    from usdaeco_scenarios.index import fresh_check, released_sources
+    with released_sources(inventory['repos'], placeholder_root) as index_sources:
+        drift = drift_audit(inventory, {repository_name(n): paths[n] for n in available} | {'usdaeco-scenarios': ROOT},
+                            tag_sources={'aeco-toolchain': index_sources / 'aeco-toolchain'})
+        index_result = fresh_check(ROOT / 'docs/family/README.md', family=ROOT / 'family.json', repos=index_sources)
     report['drift'] = drift
     for key, title in [('pins', 'drift dependency train intervals'), ('ranges', 'drift requirement ranges'), ('stories', 'drift use-case publication contracts')]:
         checks = drift[key]
         record(title, bool(checks) and all(r['passed'] for r in checks),
                f"{sum(r['passed'] for r in checks)}/{len(checks)}; {sum(not r['passed'] for r in checks)} mismatches", evidence=checks)
-    from usdaeco_scenarios.index import fresh_check
-    index_result = fresh_check(ROOT / 'docs/family/README.md', family=ROOT / 'family.json', repos=placeholder_root)
     record('family index freshness', bool(index_result), index_result.detail)
     manifest_matches = []
     for name in available:

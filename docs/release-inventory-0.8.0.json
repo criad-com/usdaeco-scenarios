@@ -1,6 +1,6 @@
 {
-  "version": "0.8.1",
-  "train": "aeco-0.8.1",
+  "version": "0.8.0",
+  "train": "aeco-0.8.0",
   "transport": "internal mirror; public names and release tags are the input contract",
   "publicOnlyReproduction": "not-proven",
   "sources": [
@@ -87,26 +87,26 @@
     {
       "repo": "usdaeco-ifc",
       "floor": "v0.2.2",
-      "released": "v0.2.3",
+      "released": "v0.2.2",
       "scope": "tagged-source",
-      "revision": "50a4cd0bd198622007980b6daf895e0dbfda3249",
-      "tree": "54c40e33da54dd36b8a492c65db347fedbab612a"
+      "revision": "8eb72e89af15e8642d914948384fe73038cc7817",
+      "tree": "19f40e60db5aef8749dd72a82deb80fe4437baf6"
     },
     {
       "repo": "usdaeco-bonsai",
       "floor": "v0.1.5",
-      "released": "v0.1.6",
+      "released": "v0.1.5",
       "scope": "tagged-source",
-      "revision": "60a483e429705a26a3099b303174d3356b833672",
-      "tree": "91585eb9b345c0f92fd78a0a028f6ac40cf2a03c"
+      "revision": "9742443ad9acbe928f758c6be341e97d8ed89e65",
+      "tree": "785a3decac22e794b65c0fee9555be33dab545ff"
     },
     {
       "repo": "usdaeco-revit",
       "floor": "v0.1.4",
-      "released": "v0.1.5",
+      "released": "v0.1.4",
       "scope": "tagged-source",
-      "revision": "9530d755e5375ec452308c525d238f6890f28531",
-      "tree": "4f17f0c6a9ed94f015930b1a522f3c4659a94401"
+      "revision": "6840bbe8d1a42ffa4c456038e7ba42b8bc22acce",
+      "tree": "f61314c9a812d357cddded763b2a0e5557cdd4dd"
     },
     {
       "repo": "usdaeco-datacentre",
@@ -119,26 +119,24 @@
     {
       "repo": "usdaeco-board",
       "floor": "v0.1.4",
-      "released": "v0.1.5",
+      "released": "v0.1.4",
       "scope": "tagged-source",
-      "revision": "cbc31890d3cd23c3c656de52008d9ff5c406195d",
-      "tree": "02a89622b9c47768ff2272a261251008608df4e6"
+      "revision": "7af8ca6a48d80bcef1fb8718b9e76c6e1a67890d",
+      "tree": "d974aa0667ff4a8bbe062a52891ee354d9b8e4e1"
     },
     {
       "repo": "usdaeco-scenarios",
       "floor": "v0.8.0",
-      "released": "v0.8.1",
+      "released": "v0.8.0",
       "scope": "current-candidate",
-      "revision": null,
-      "tree": null
+      "revision": null
     },
     {
       "repo": "usdaeco-meta",
       "floor": null,
       "released": null,
       "scope": "private-unpinned",
-      "revision": null,
-      "tree": null
+      "revision": null
     },
     {
       "repo": "usdaeco-plan",
@@ -183,18 +181,66 @@
     {
       "repo": "usdSolid",
       "floor": "v0.1.4",
-      "released": "v0.1.6",
+      "released": "v0.1.5",
       "scope": "tagged-source",
-      "revision": "0ebd0a9e24f90e99c2f01f6f2db2aa278ce05e7d",
-      "tree": "952665b74f7015eb5b8ecb51179ae33c23f652b6"
+      "revision": "5792a6f56de3a7f881a73ba11b3635871cd2dc4e",
+      "tree": "6fd78f1c926114f8b31666d242c2583fb977955f"
     },
     {
       "repo": "usdSolidOcct",
       "floor": "v0.1.3",
-      "released": "v0.1.5",
+      "released": "v0.1.4",
       "scope": "tagged-source",
-      "revision": "62130171e7f0c59dd2ea13f7a466d151a4fd87b6",
-      "tree": "57a6038ac48d23c54fec0c58683c7d39cee65deb"
+      "revision": "0936e4e355b9ff5971ee5dbb4e8a47dcdea9e3fe",
+      "tree": "c7c2c7f3f83382fbe9aca75ffdcdf1668a986ca8"
     }
-  ]
+  ],
+  "full": {
+    "PASS": 94,
+    "FAIL": 5,
+    "NOT RUN": 25,
+    "checks": 124,
+    "seconds": 1247.7
+  },
+  "fast": {
+    "PASS": 27,
+    "FAIL": 3,
+    "NOT RUN": 23,
+    "checks": 53,
+    "seconds": 79.25
+  },
+  "driftCount": 32,
+  "fullStartedAtCommit": "e941f40",
+  "runnerCorrectionCommit": "291ebc4",
+  "focusedCorrection": {
+    "repo": "usdaeco-buildup",
+    "ref": "v0.2.5",
+    "checks": 67,
+    "failed": 0,
+    "passed": true,
+    "seconds": 72.71,
+    "exit_code": 0,
+    "scope": "Focused suite in the existing isolated full-run source; family gate not rerun",
+    "correction": "Retain the explicitly declared datacentre input for section publication",
+    "inputs": {
+      "core": {
+        "repo": "usdaeco-core",
+        "ref": "v0.9.4",
+        "revision": "80a099e14e7bb825b207548d0a4f8a93e9ffa62f",
+        "scope": "direct"
+      },
+      "toolchain": {
+        "repo": "usdaeco-toolchain",
+        "ref": "v0.3.10",
+        "revision": "59d3da5ff5114089b54efaaae38efdd7fe1b8e73",
+        "scope": "direct"
+      },
+      "datacentre": {
+        "repo": "usdaeco-datacentre",
+        "ref": "v0.4.8",
+        "revision": "9e22b14c4909e50806805e735f93b1b425ac48cb",
+        "scope": "direct"
+      }
+    }
+  }
 }

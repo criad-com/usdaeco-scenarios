@@ -38,9 +38,23 @@ def test_declared_toolchain_is_not_replaced_by_train_harness(tmp_path):
 
 def test_section_publication_keeps_its_declared_facility(tmp_path):
     path = tmp_path / 'dependencies.json'
+    (tmp_path / 'library.json').write_text(json.dumps(dict(name='usdAecoBuildUp')))
     env = {'AECO_DATACENTRE_ROOT': 'selected-release', 'TOOLCHAIN_DIR': 'selected-kit'}
     path.write_text(json.dumps(dict(repos={'datacentre': dict(repo='usdaeco-datacentre', ref='v0.4.8')})))
     assert example_environment(tmp_path, env) == env
     path.write_text(json.dumps(dict(repos={})))
     assert example_environment(tmp_path, env) == {'TOOLCHAIN_DIR': 'selected-kit'}
+    assert env['AECO_DATACENTRE_ROOT'] == 'selected-release'
+
+
+def test_minimal_suites_do_not_turn_a_declared_pin_into_an_example_override(tmp_path):
+    (tmp_path / 'dependencies.json').write_text(json.dumps(dict(repos={
+        'datacentre': dict(repo='usdaeco-datacentre', ref='v0.4.8')})))
+    env = {'AECO_DATACENTRE_ROOT': 'selected-release',
+           'AECO_DATACENTRE_STAGE': 'selected-stage',
+           'AECO_DATACENTRE_SOURCE': 'declared-source', 'TOOLCHAIN_DIR': 'selected-kit'}
+    for library in ('usdAeco', 'usdAecoAxis'):
+        (tmp_path / 'library.json').write_text(json.dumps(dict(name=library)))
+        assert example_environment(tmp_path, env) == {
+            'AECO_DATACENTRE_SOURCE': 'declared-source', 'TOOLCHAIN_DIR': 'selected-kit'}
     assert env['AECO_DATACENTRE_ROOT'] == 'selected-release'

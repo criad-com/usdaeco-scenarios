@@ -55,21 +55,21 @@
       "modified": false
     },
     "ifc": {
-      "revision": "50a4cd0bd198622007980b6daf895e0dbfda3249",
-      "expected": "50a4cd0bd198622007980b6daf895e0dbfda3249",
-      "base_tag": "v0.2.3",
+      "revision": "8eb72e89af15e8642d914948384fe73038cc7817",
+      "expected": "8eb72e89af15e8642d914948384fe73038cc7817",
+      "base_tag": "v0.2.2",
       "modified": false
     },
     "bonsai": {
-      "revision": "60a483e429705a26a3099b303174d3356b833672",
-      "expected": "60a483e429705a26a3099b303174d3356b833672",
-      "base_tag": "v0.1.6",
+      "revision": "9742443ad9acbe928f758c6be341e97d8ed89e65",
+      "expected": "9742443ad9acbe928f758c6be341e97d8ed89e65",
+      "base_tag": "v0.1.5",
       "modified": false
     },
     "revit": {
-      "revision": "9530d755e5375ec452308c525d238f6890f28531",
-      "expected": "9530d755e5375ec452308c525d238f6890f28531",
-      "base_tag": "v0.1.5",
+      "revision": "6840bbe8d1a42ffa4c456038e7ba42b8bc22acce",
+      "expected": "6840bbe8d1a42ffa4c456038e7ba42b8bc22acce",
+      "base_tag": "v0.1.4",
       "modified": false
     },
     "datacentre": {
@@ -79,9 +79,9 @@
       "modified": false
     },
     "board": {
-      "revision": "cbc31890d3cd23c3c656de52008d9ff5c406195d",
-      "expected": "cbc31890d3cd23c3c656de52008d9ff5c406195d",
-      "base_tag": "v0.1.5",
+      "revision": "7af8ca6a48d80bcef1fb8718b9e76c6e1a67890d",
+      "expected": "7af8ca6a48d80bcef1fb8718b9e76c6e1a67890d",
+      "base_tag": "v0.1.4",
       "modified": false
     },
     "plan": {
@@ -115,33 +115,33 @@
       "modified": false
     },
     "usdSolid": {
-      "revision": "0ebd0a9e24f90e99c2f01f6f2db2aa278ce05e7d",
-      "expected": "0ebd0a9e24f90e99c2f01f6f2db2aa278ce05e7d",
-      "base_tag": "v0.1.6",
+      "revision": "5792a6f56de3a7f881a73ba11b3635871cd2dc4e",
+      "expected": "5792a6f56de3a7f881a73ba11b3635871cd2dc4e",
+      "base_tag": "v0.1.5",
       "modified": false
     },
     "usdSolidOcct": {
-      "revision": "62130171e7f0c59dd2ea13f7a466d151a4fd87b6",
-      "expected": "62130171e7f0c59dd2ea13f7a466d151a4fd87b6",
-      "base_tag": "v0.1.5",
+      "revision": "0936e4e355b9ff5971ee5dbb4e8a47dcdea9e3fe",
+      "expected": "0936e4e355b9ff5971ee5dbb4e8a47dcdea9e3fe",
+      "base_tag": "v0.1.4",
       "modified": false
     }
   },
   "libraries": {
     "core": {
-      "passed": false,
+      "passed": true,
       "checks": 71,
-      "failed": 6,
-      "seconds": 11.56,
+      "failed": 0,
+      "seconds": 223.19,
       "notRun": [],
       "notRunCount": 0,
       "ref": "v0.9.5"
     },
     "axis": {
-      "passed": false,
+      "passed": true,
       "checks": 54,
-      "failed": 1,
-      "seconds": 15.08,
+      "failed": 0,
+      "seconds": 43.82,
       "notRun": [],
       "notRunCount": 0,
       "ref": "v0.1.5"
@@ -150,16 +150,16 @@
       "passed": true,
       "checks": 65,
       "failed": 0,
-      "seconds": 618.87,
+      "seconds": 617.48,
       "notRun": [],
       "notRunCount": 0,
       "ref": "v0.3.10"
     },
     "buildup": {
-      "passed": true,
+      "passed": false,
       "checks": 67,
-      "failed": 0,
-      "seconds": 74.13,
+      "failed": 1,
+      "seconds": 24.15,
       "notRun": [],
       "notRunCount": 0,
       "ref": "v0.2.5"
@@ -168,7 +168,7 @@
       "passed": true,
       "checks": 87,
       "failed": 0,
-      "seconds": 71.19,
+      "seconds": 71.26,
       "notRun": [],
       "notRunCount": 0,
       "ref": "v0.2.5"
@@ -177,7 +177,7 @@
       "passed": true,
       "checks": 82,
       "failed": 0,
-      "seconds": 94.4,
+      "seconds": 93.77,
       "notRun": [],
       "notRunCount": 0,
       "ref": "v0.2.5"
@@ -186,7 +186,7 @@
       "passed": true,
       "checks": 159,
       "failed": 0,
-      "seconds": 117.47,
+      "seconds": 117.43,
       "notRun": [
         "real-data gate: opt-in input is absent or CI is enabled"
       ],
@@ -228,7 +228,7 @@
       "passed": true,
       "checks": 52,
       "failed": 0,
-      "seconds": 8.19,
+      "seconds": 7.48,
       "notRun": [],
       "notRunCount": 0,
       "ref": "v0.5.5"
@@ -237,37 +237,37 @@
       "passed": true,
       "checks": 101,
       "failed": 0,
-      "seconds": 633.71,
+      "seconds": 639.06,
       "notRun": [],
       "notRunCount": 0,
-      "ref": "v0.2.3"
+      "ref": "v0.2.2"
     },
     "bonsai": {
       "passed": true,
       "checks": 70,
       "failed": 0,
-      "seconds": 304.94,
+      "seconds": 303.29,
       "notRun": [],
       "notRunCount": 0,
-      "ref": "v0.1.6"
+      "ref": "v0.1.5"
     },
     "revit": {
       "passed": true,
       "checks": 52,
       "failed": 0,
-      "seconds": 90.99,
+      "seconds": 91.69,
       "notRun": [
         "Revit live gate; see docs/acceptance.md",
         "live Revit execution  \u2014 AECO_REVIT_ENDPOINT is unset; offline receipts are not native evidence"
       ],
       "notRunCount": 1,
-      "ref": "v0.1.5"
+      "ref": "v0.1.4"
     },
     "datacentre": {
       "passed": true,
       "checks": 204,
       "failed": 0,
-      "seconds": 797.45,
+      "seconds": 794.04,
       "notRun": [
         "native Revit floors \u2014 Base only; further native family work required, including pods and ceilings",
         "native Revit pod \u2014 Base only; further native family work required, including pods and ceilings",
@@ -281,16 +281,16 @@
       "passed": true,
       "checks": 70,
       "failed": 0,
-      "seconds": 23.04,
+      "seconds": 23.06,
       "notRun": [],
       "notRunCount": 0,
-      "ref": "v0.1.5"
+      "ref": "v0.1.4"
     },
     "plan": {
       "passed": true,
       "checks": 51,
       "failed": 0,
-      "seconds": 148.71,
+      "seconds": 149.52,
       "notRun": [
         "private real-project XER  \u2014 Private client data is excluded and was never read.",
         "Nix dependency evaluation  \u2014 One offline attempt recorded in docs/acceptance.md; an incomplete build is not a pass."
@@ -302,7 +302,7 @@
       "passed": true,
       "checks": 48,
       "failed": 0,
-      "seconds": 243.53,
+      "seconds": 240.49,
       "notRun": [],
       "notRunCount": 0,
       "ref": "v0.1.3"
@@ -311,7 +311,7 @@
       "passed": true,
       "checks": 48,
       "failed": 0,
-      "seconds": 141.65,
+      "seconds": 143.12,
       "notRun": [],
       "notRunCount": 0,
       "ref": "v0.2.3"
@@ -320,7 +320,7 @@
       "passed": true,
       "checks": 50,
       "failed": 0,
-      "seconds": 122.0,
+      "seconds": 121.13,
       "notRun": [],
       "notRunCount": 0,
       "ref": "v0.1.5"
@@ -329,7 +329,7 @@
       "passed": true,
       "checks": 44,
       "failed": 0,
-      "seconds": 106.91,
+      "seconds": 106.84,
       "notRun": [],
       "notRunCount": 0,
       "ref": "v0.2.1"
@@ -338,23 +338,23 @@
       "passed": true,
       "checks": 29,
       "failed": 0,
-      "seconds": 9.51,
+      "seconds": 9.34,
       "notRun": [],
       "notRunCount": 0,
-      "ref": "v0.1.6"
+      "ref": "v0.1.5"
     },
     "usdSolidOcct": {
       "passed": true,
       "checks": 31,
       "failed": 0,
-      "seconds": 11.67,
+      "seconds": 11.74,
       "notRun": [],
       "notRunCount": 0,
-      "ref": "v0.1.5"
+      "ref": "v0.1.4"
     }
   },
-  "version": "0.8.1",
-  "train": "aeco-0.8.1",
+  "version": "0.8.0",
+  "train": "aeco-0.8.0",
   "profile": "full",
   "rows": [
     {
@@ -377,9 +377,9 @@
     },
     {
       "gate": "drift dependency train intervals",
-      "passed": true,
-      "status": "PASS",
-      "result": "125/125; 0 mismatches",
+      "passed": false,
+      "status": "FAIL",
+      "result": "93/125; 32 mismatches",
       "evidence": [
         {
           "repo": "usdSolid",
@@ -433,11 +433,11 @@
           "repo": "usdSolidOcct",
           "check": "pin usdSolid",
           "passed": true,
-          "detail": "usdSolid declared v0.1.4; train [v0.1.4, v0.1.6]; inside train",
+          "detail": "usdSolid declared v0.1.4; train [v0.1.4, v0.1.5]; inside train",
           "dependency": "usdSolid",
           "ref": "v0.1.4",
           "floor": "v0.1.4",
-          "released": "v0.1.6",
+          "released": "v0.1.5",
           "reasons": [],
           "version": "0.1.4"
         },
@@ -481,157 +481,179 @@
           "repo": "usdaeco-board",
           "check": "pin toolchain",
           "passed": true,
-          "detail": "usdaeco-toolchain declared v0.3.10; train [v0.3.8, v0.3.10]; inside train",
+          "detail": "usdaeco-toolchain declared v0.3.8; train [v0.3.8, v0.3.10]; inside train",
           "dependency": "usdaeco-toolchain",
-          "ref": "v0.3.10",
+          "ref": "v0.3.8",
           "floor": "v0.3.8",
           "released": "v0.3.10",
           "reasons": [],
-          "version": "0.3.10"
+          "version": "0.3.8"
         },
         {
           "repo": "usdaeco-board",
           "check": "pin scenarios",
-          "passed": true,
-          "detail": "usdaeco-scenarios declared v0.8.0; train [v0.8.0, v0.8.1]; inside train",
+          "passed": false,
+          "detail": "usdaeco-scenarios declared v0.6.0; train [v0.8.0, v0.8.0]; outside train interval",
           "dependency": "usdaeco-scenarios",
-          "ref": "v0.8.0",
+          "ref": "v0.6.0",
           "floor": "v0.8.0",
-          "released": "v0.8.1",
-          "reasons": [],
-          "version": "0.8.0"
+          "released": "v0.8.0",
+          "reasons": [
+            "outside train interval"
+          ],
+          "version": "0.6.0"
         },
         {
           "repo": "usdaeco-bonsai",
           "check": "pin toolchain",
           "passed": true,
-          "detail": "usdaeco-toolchain declared v0.3.10; train [v0.3.8, v0.3.10]; inside train",
+          "detail": "usdaeco-toolchain declared v0.3.8; train [v0.3.8, v0.3.10]; inside train",
           "dependency": "usdaeco-toolchain",
-          "ref": "v0.3.10",
+          "ref": "v0.3.8",
           "floor": "v0.3.8",
           "released": "v0.3.10",
           "reasons": [],
-          "version": "0.3.10"
+          "version": "0.3.8"
         },
         {
           "repo": "usdaeco-bonsai",
           "check": "pin core",
-          "passed": true,
-          "detail": "usdaeco-core declared v0.9.5; train [v0.9.4, v0.9.5]; inside train",
+          "passed": false,
+          "detail": "usdaeco-core declared v0.9.2; train [v0.9.4, v0.9.5]; outside train interval",
           "dependency": "usdaeco-core",
-          "ref": "v0.9.5",
+          "ref": "v0.9.2",
           "floor": "v0.9.4",
           "released": "v0.9.5",
-          "reasons": [],
-          "version": "0.9.5"
+          "reasons": [
+            "outside train interval"
+          ],
+          "version": "0.9.2"
         },
         {
           "repo": "usdaeco-bonsai",
           "check": "pin sync",
-          "passed": true,
-          "detail": "usdaeco-sync declared v0.5.5; train [v0.5.4, v0.5.5]; inside train",
+          "passed": false,
+          "detail": "usdaeco-sync declared v0.5.2; train [v0.5.4, v0.5.5]; outside train interval",
           "dependency": "usdaeco-sync",
-          "ref": "v0.5.5",
+          "ref": "v0.5.2",
           "floor": "v0.5.4",
           "released": "v0.5.5",
-          "reasons": [],
-          "version": "0.5.5"
+          "reasons": [
+            "outside train interval"
+          ],
+          "version": "0.5.2"
         },
         {
           "repo": "usdaeco-bonsai",
           "check": "pin datacentre",
-          "passed": true,
-          "detail": "usdaeco-datacentre declared v0.4.9; train [v0.4.8, v0.4.9]; inside train",
+          "passed": false,
+          "detail": "usdaeco-datacentre declared v0.4.6; train [v0.4.8, v0.4.9]; outside train interval",
           "dependency": "usdaeco-datacentre",
-          "ref": "v0.4.9",
+          "ref": "v0.4.6",
           "floor": "v0.4.8",
           "released": "v0.4.9",
-          "reasons": [],
-          "version": "0.4.9"
+          "reasons": [
+            "outside train interval"
+          ],
+          "version": "0.4.6"
         },
         {
           "repo": "usdaeco-bonsai",
           "check": "pin scenarios",
-          "passed": true,
-          "detail": "usdaeco-scenarios declared v0.8.0; train [v0.8.0, v0.8.1]; inside train",
+          "passed": false,
+          "detail": "usdaeco-scenarios declared v0.6.0; train [v0.8.0, v0.8.0]; outside train interval",
           "dependency": "usdaeco-scenarios",
-          "ref": "v0.8.0",
+          "ref": "v0.6.0",
           "floor": "v0.8.0",
-          "released": "v0.8.1",
-          "reasons": [],
-          "version": "0.8.0"
+          "released": "v0.8.0",
+          "reasons": [
+            "outside train interval"
+          ],
+          "version": "0.6.0"
         },
         {
           "repo": "usdaeco-bonsai",
           "check": "pin cctv",
-          "passed": true,
-          "detail": "usdaeco-cctv declared v0.5.6; train [v0.5.5, v0.5.6]; inside train",
+          "passed": false,
+          "detail": "usdaeco-cctv declared v0.5.2; train [v0.5.5, v0.5.6]; outside train interval",
           "dependency": "usdaeco-cctv",
-          "ref": "v0.5.6",
+          "ref": "v0.5.2",
           "floor": "v0.5.5",
           "released": "v0.5.6",
-          "reasons": [],
-          "version": "0.5.6"
+          "reasons": [
+            "outside train interval"
+          ],
+          "version": "0.5.2"
         },
         {
           "repo": "usdaeco-bonsai",
           "check": "pin buildup",
-          "passed": true,
-          "detail": "usdaeco-buildup declared v0.2.5; train [v0.2.4, v0.2.5]; inside train",
+          "passed": false,
+          "detail": "usdaeco-buildup declared v0.2.1; train [v0.2.4, v0.2.5]; outside train interval",
           "dependency": "usdaeco-buildup",
-          "ref": "v0.2.5",
+          "ref": "v0.2.1",
           "floor": "v0.2.4",
           "released": "v0.2.5",
-          "reasons": [],
-          "version": "0.2.5"
+          "reasons": [
+            "outside train interval"
+          ],
+          "version": "0.2.1"
         },
         {
           "repo": "usdaeco-bonsai",
           "check": "pin wall",
-          "passed": true,
-          "detail": "usdaeco-wall declared v0.2.5; train [v0.2.4, v0.2.5]; inside train",
+          "passed": false,
+          "detail": "usdaeco-wall declared v0.2.1; train [v0.2.4, v0.2.5]; outside train interval",
           "dependency": "usdaeco-wall",
-          "ref": "v0.2.5",
+          "ref": "v0.2.1",
           "floor": "v0.2.4",
           "released": "v0.2.5",
-          "reasons": [],
-          "version": "0.2.5"
+          "reasons": [
+            "outside train interval"
+          ],
+          "version": "0.2.1"
         },
         {
           "repo": "usdaeco-bonsai",
           "check": "pin pipe",
-          "passed": true,
-          "detail": "usdaeco-pipe declared v0.2.5; train [v0.2.4, v0.2.5]; inside train",
+          "passed": false,
+          "detail": "usdaeco-pipe declared v0.2.1; train [v0.2.4, v0.2.5]; outside train interval",
           "dependency": "usdaeco-pipe",
-          "ref": "v0.2.5",
+          "ref": "v0.2.1",
           "floor": "v0.2.4",
           "released": "v0.2.5",
-          "reasons": [],
-          "version": "0.2.5"
+          "reasons": [
+            "outside train interval"
+          ],
+          "version": "0.2.1"
         },
         {
           "repo": "usdaeco-bonsai",
           "check": "pin ifc",
-          "passed": true,
-          "detail": "usdaeco-ifc declared v0.2.2; train [v0.2.2, v0.2.3]; inside train",
+          "passed": false,
+          "detail": "usdaeco-ifc declared v0.2.0; train [v0.2.2, v0.2.2]; outside train interval",
           "dependency": "usdaeco-ifc",
-          "ref": "v0.2.2",
+          "ref": "v0.2.0",
           "floor": "v0.2.2",
-          "released": "v0.2.3",
-          "reasons": [],
-          "version": "0.2.2"
+          "released": "v0.2.2",
+          "reasons": [
+            "outside train interval"
+          ],
+          "version": "0.2.0"
         },
         {
           "repo": "usdaeco-bonsai",
           "check": "pin axis",
-          "passed": true,
-          "detail": "usdaeco-axis declared v0.1.5; train [v0.1.4, v0.1.5]; inside train",
+          "passed": false,
+          "detail": "usdaeco-axis declared v0.1.2; train [v0.1.4, v0.1.5]; outside train interval",
           "dependency": "usdaeco-axis",
-          "ref": "v0.1.5",
+          "ref": "v0.1.2",
           "floor": "v0.1.4",
           "released": "v0.1.5",
-          "reasons": [],
-          "version": "0.1.5"
+          "reasons": [
+            "outside train interval"
+          ],
+          "version": "0.1.2"
         },
         {
           "repo": "usdaeco-buildup",
@@ -709,11 +731,11 @@
           "repo": "usdaeco-cctv",
           "check": "pin ifc",
           "passed": true,
-          "detail": "usdaeco-ifc declared v0.2.2; train [v0.2.2, v0.2.3]; inside train",
+          "detail": "usdaeco-ifc declared v0.2.2; train [v0.2.2, v0.2.2]; inside train",
           "dependency": "usdaeco-ifc",
           "ref": "v0.2.2",
           "floor": "v0.2.2",
-          "released": "v0.2.3",
+          "released": "v0.2.2",
           "reasons": [],
           "version": "0.2.2"
         },
@@ -829,11 +851,11 @@
           "repo": "usdaeco-clash",
           "check": "pin ifc",
           "passed": true,
-          "detail": "usdaeco-ifc declared v0.2.2; train [v0.2.2, v0.2.3]; inside train",
+          "detail": "usdaeco-ifc declared v0.2.2; train [v0.2.2, v0.2.2]; inside train",
           "dependency": "usdaeco-ifc",
           "ref": "v0.2.2",
           "floor": "v0.2.2",
-          "released": "v0.2.3",
+          "released": "v0.2.2",
           "reasons": [],
           "version": "0.2.2"
         },
@@ -841,11 +863,11 @@
           "repo": "usdaeco-clash",
           "check": "pin usdSolid",
           "passed": true,
-          "detail": "usdSolid declared v0.1.5; train [v0.1.4, v0.1.6]; inside train",
+          "detail": "usdSolid declared v0.1.5; train [v0.1.4, v0.1.5]; inside train",
           "dependency": "usdSolid",
           "ref": "v0.1.5",
           "floor": "v0.1.4",
-          "released": "v0.1.6",
+          "released": "v0.1.5",
           "reasons": [],
           "version": "0.1.5"
         },
@@ -853,11 +875,11 @@
           "repo": "usdaeco-clash",
           "check": "pin usdSolidOcct",
           "passed": true,
-          "detail": "usdSolidOcct declared v0.1.4; train [v0.1.3, v0.1.5]; inside train",
+          "detail": "usdSolidOcct declared v0.1.4; train [v0.1.3, v0.1.4]; inside train",
           "dependency": "usdSolidOcct",
           "ref": "v0.1.4",
           "floor": "v0.1.3",
-          "released": "v0.1.5",
+          "released": "v0.1.4",
           "reasons": [],
           "version": "0.1.4"
         },
@@ -949,11 +971,11 @@
           "repo": "usdaeco-datacentre",
           "check": "pin revit",
           "passed": true,
-          "detail": "usdaeco-revit declared v0.1.4; train [v0.1.4, v0.1.5]; inside train",
+          "detail": "usdaeco-revit declared v0.1.4; train [v0.1.4, v0.1.4]; inside train",
           "dependency": "usdaeco-revit",
           "ref": "v0.1.4",
           "floor": "v0.1.4",
-          "released": "v0.1.5",
+          "released": "v0.1.4",
           "reasons": [],
           "version": "0.1.4"
         },
@@ -985,145 +1007,167 @@
           "repo": "usdaeco-ifc",
           "check": "pin toolchain",
           "passed": true,
-          "detail": "usdaeco-toolchain declared v0.3.10; train [v0.3.8, v0.3.10]; inside train",
+          "detail": "usdaeco-toolchain declared v0.3.8; train [v0.3.8, v0.3.10]; inside train",
           "dependency": "usdaeco-toolchain",
-          "ref": "v0.3.10",
+          "ref": "v0.3.8",
           "floor": "v0.3.8",
           "released": "v0.3.10",
           "reasons": [],
-          "version": "0.3.10"
+          "version": "0.3.8"
         },
         {
           "repo": "usdaeco-ifc",
           "check": "pin core",
-          "passed": true,
-          "detail": "usdaeco-core declared v0.9.5; train [v0.9.4, v0.9.5]; inside train",
+          "passed": false,
+          "detail": "usdaeco-core declared v0.9.2; train [v0.9.4, v0.9.5]; outside train interval",
           "dependency": "usdaeco-core",
-          "ref": "v0.9.5",
+          "ref": "v0.9.2",
           "floor": "v0.9.4",
           "released": "v0.9.5",
-          "reasons": [],
-          "version": "0.9.5"
+          "reasons": [
+            "outside train interval"
+          ],
+          "version": "0.9.2"
         },
         {
           "repo": "usdaeco-ifc",
           "check": "pin sync",
-          "passed": true,
-          "detail": "usdaeco-sync declared v0.5.5; train [v0.5.4, v0.5.5]; inside train",
+          "passed": false,
+          "detail": "usdaeco-sync declared v0.5.2; train [v0.5.4, v0.5.5]; outside train interval",
           "dependency": "usdaeco-sync",
-          "ref": "v0.5.5",
+          "ref": "v0.5.2",
           "floor": "v0.5.4",
           "released": "v0.5.5",
-          "reasons": [],
-          "version": "0.5.5"
+          "reasons": [
+            "outside train interval"
+          ],
+          "version": "0.5.2"
         },
         {
           "repo": "usdaeco-ifc",
           "check": "pin datacentre",
-          "passed": true,
-          "detail": "usdaeco-datacentre declared v0.4.9; train [v0.4.8, v0.4.9]; inside train",
+          "passed": false,
+          "detail": "usdaeco-datacentre declared v0.4.5; train [v0.4.8, v0.4.9]; outside train interval",
           "dependency": "usdaeco-datacentre",
-          "ref": "v0.4.9",
+          "ref": "v0.4.5",
           "floor": "v0.4.8",
           "released": "v0.4.9",
-          "reasons": [],
-          "version": "0.4.9"
+          "reasons": [
+            "outside train interval"
+          ],
+          "version": "0.4.5"
         },
         {
           "repo": "usdaeco-ifc",
           "check": "pin scenarios",
-          "passed": true,
-          "detail": "usdaeco-scenarios declared v0.8.0; train [v0.8.0, v0.8.1]; inside train",
+          "passed": false,
+          "detail": "usdaeco-scenarios declared v0.6.0; train [v0.8.0, v0.8.0]; outside train interval",
           "dependency": "usdaeco-scenarios",
-          "ref": "v0.8.0",
+          "ref": "v0.6.0",
           "floor": "v0.8.0",
-          "released": "v0.8.1",
-          "reasons": [],
-          "version": "0.8.0"
+          "released": "v0.8.0",
+          "reasons": [
+            "outside train interval"
+          ],
+          "version": "0.6.0"
         },
         {
           "repo": "usdaeco-ifc",
           "check": "pin cctv",
-          "passed": true,
-          "detail": "usdaeco-cctv declared v0.5.6; train [v0.5.5, v0.5.6]; inside train",
+          "passed": false,
+          "detail": "usdaeco-cctv declared v0.5.2; train [v0.5.5, v0.5.6]; outside train interval",
           "dependency": "usdaeco-cctv",
-          "ref": "v0.5.6",
+          "ref": "v0.5.2",
           "floor": "v0.5.5",
           "released": "v0.5.6",
-          "reasons": [],
-          "version": "0.5.6"
+          "reasons": [
+            "outside train interval"
+          ],
+          "version": "0.5.2"
         },
         {
           "repo": "usdaeco-ifc",
           "check": "pin buildup",
-          "passed": true,
-          "detail": "usdaeco-buildup declared v0.2.5; train [v0.2.4, v0.2.5]; inside train",
+          "passed": false,
+          "detail": "usdaeco-buildup declared v0.2.1; train [v0.2.4, v0.2.5]; outside train interval",
           "dependency": "usdaeco-buildup",
-          "ref": "v0.2.5",
+          "ref": "v0.2.1",
           "floor": "v0.2.4",
           "released": "v0.2.5",
-          "reasons": [],
-          "version": "0.2.5"
+          "reasons": [
+            "outside train interval"
+          ],
+          "version": "0.2.1"
         },
         {
           "repo": "usdaeco-ifc",
           "check": "pin wall",
-          "passed": true,
-          "detail": "usdaeco-wall declared v0.2.5; train [v0.2.4, v0.2.5]; inside train",
+          "passed": false,
+          "detail": "usdaeco-wall declared v0.2.1; train [v0.2.4, v0.2.5]; outside train interval",
           "dependency": "usdaeco-wall",
-          "ref": "v0.2.5",
+          "ref": "v0.2.1",
           "floor": "v0.2.4",
           "released": "v0.2.5",
-          "reasons": [],
-          "version": "0.2.5"
+          "reasons": [
+            "outside train interval"
+          ],
+          "version": "0.2.1"
         },
         {
           "repo": "usdaeco-ifc",
           "check": "pin pipe",
-          "passed": true,
-          "detail": "usdaeco-pipe declared v0.2.5; train [v0.2.4, v0.2.5]; inside train",
+          "passed": false,
+          "detail": "usdaeco-pipe declared v0.2.1; train [v0.2.4, v0.2.5]; outside train interval",
           "dependency": "usdaeco-pipe",
-          "ref": "v0.2.5",
+          "ref": "v0.2.1",
           "floor": "v0.2.4",
           "released": "v0.2.5",
-          "reasons": [],
-          "version": "0.2.5"
+          "reasons": [
+            "outside train interval"
+          ],
+          "version": "0.2.1"
         },
         {
           "repo": "usdaeco-ifc",
           "check": "pin axis",
-          "passed": true,
-          "detail": "usdaeco-axis declared v0.1.5; train [v0.1.4, v0.1.5]; inside train",
+          "passed": false,
+          "detail": "usdaeco-axis declared v0.1.2; train [v0.1.4, v0.1.5]; outside train interval",
           "dependency": "usdaeco-axis",
-          "ref": "v0.1.5",
+          "ref": "v0.1.2",
           "floor": "v0.1.4",
           "released": "v0.1.5",
-          "reasons": [],
-          "version": "0.1.5"
+          "reasons": [
+            "outside train interval"
+          ],
+          "version": "0.1.2"
         },
         {
           "repo": "usdaeco-ifc",
           "check": "pin usdSolid",
-          "passed": true,
-          "detail": "usdSolid declared v0.1.5; train [v0.1.4, v0.1.6]; inside train",
+          "passed": false,
+          "detail": "usdSolid declared v0.1.0; train [v0.1.4, v0.1.5]; outside train interval",
           "dependency": "usdSolid",
-          "ref": "v0.1.5",
+          "ref": "v0.1.0",
           "floor": "v0.1.4",
-          "released": "v0.1.6",
-          "reasons": [],
-          "version": "0.1.5"
+          "released": "v0.1.5",
+          "reasons": [
+            "outside train interval"
+          ],
+          "version": "0.1.0"
         },
         {
           "repo": "usdaeco-ifc",
           "check": "pin usdSolidOcct",
-          "passed": true,
-          "detail": "usdSolidOcct declared v0.1.4; train [v0.1.3, v0.1.5]; inside train",
+          "passed": false,
+          "detail": "usdSolidOcct declared v0.1.0; train [v0.1.3, v0.1.4]; outside train interval",
           "dependency": "usdSolidOcct",
-          "ref": "v0.1.4",
+          "ref": "v0.1.0",
           "floor": "v0.1.3",
-          "released": "v0.1.5",
-          "reasons": [],
-          "version": "0.1.4"
+          "released": "v0.1.4",
+          "reasons": [
+            "outside train interval"
+          ],
+          "version": "0.1.0"
         },
         {
           "repo": "usdaeco-pipe",
@@ -1177,11 +1221,11 @@
           "repo": "usdaeco-pipe",
           "check": "pin ifc",
           "passed": true,
-          "detail": "usdaeco-ifc declared v0.2.2; train [v0.2.2, v0.2.3]; inside train",
+          "detail": "usdaeco-ifc declared v0.2.2; train [v0.2.2, v0.2.2]; inside train",
           "dependency": "usdaeco-ifc",
           "ref": "v0.2.2",
           "floor": "v0.2.2",
-          "released": "v0.2.3",
+          "released": "v0.2.2",
           "reasons": [],
           "version": "0.2.2"
         },
@@ -1297,133 +1341,153 @@
           "repo": "usdaeco-revit",
           "check": "pin toolchain",
           "passed": true,
-          "detail": "usdaeco-toolchain declared v0.3.10; train [v0.3.8, v0.3.10]; inside train",
+          "detail": "usdaeco-toolchain declared v0.3.8; train [v0.3.8, v0.3.10]; inside train",
           "dependency": "usdaeco-toolchain",
-          "ref": "v0.3.10",
+          "ref": "v0.3.8",
           "floor": "v0.3.8",
           "released": "v0.3.10",
           "reasons": [],
-          "version": "0.3.10"
+          "version": "0.3.8"
         },
         {
           "repo": "usdaeco-revit",
           "check": "pin core",
-          "passed": true,
-          "detail": "usdaeco-core declared v0.9.5; train [v0.9.4, v0.9.5]; inside train",
+          "passed": false,
+          "detail": "usdaeco-core declared v0.9.2; train [v0.9.4, v0.9.5]; outside train interval",
           "dependency": "usdaeco-core",
-          "ref": "v0.9.5",
+          "ref": "v0.9.2",
           "floor": "v0.9.4",
           "released": "v0.9.5",
-          "reasons": [],
-          "version": "0.9.5"
+          "reasons": [
+            "outside train interval"
+          ],
+          "version": "0.9.2"
         },
         {
           "repo": "usdaeco-revit",
           "check": "pin sync",
-          "passed": true,
-          "detail": "usdaeco-sync declared v0.5.5; train [v0.5.4, v0.5.5]; inside train",
+          "passed": false,
+          "detail": "usdaeco-sync declared v0.5.2; train [v0.5.4, v0.5.5]; outside train interval",
           "dependency": "usdaeco-sync",
-          "ref": "v0.5.5",
+          "ref": "v0.5.2",
           "floor": "v0.5.4",
           "released": "v0.5.5",
-          "reasons": [],
-          "version": "0.5.5"
+          "reasons": [
+            "outside train interval"
+          ],
+          "version": "0.5.2"
         },
         {
           "repo": "usdaeco-revit",
           "check": "pin datacentre",
-          "passed": true,
-          "detail": "usdaeco-datacentre declared v0.4.9; train [v0.4.8, v0.4.9]; inside train",
+          "passed": false,
+          "detail": "usdaeco-datacentre declared v0.4.6; train [v0.4.8, v0.4.9]; outside train interval",
           "dependency": "usdaeco-datacentre",
-          "ref": "v0.4.9",
+          "ref": "v0.4.6",
           "floor": "v0.4.8",
           "released": "v0.4.9",
-          "reasons": [],
-          "version": "0.4.9"
+          "reasons": [
+            "outside train interval"
+          ],
+          "version": "0.4.6"
         },
         {
           "repo": "usdaeco-revit",
           "check": "pin scenarios",
-          "passed": true,
-          "detail": "usdaeco-scenarios declared v0.8.0; train [v0.8.0, v0.8.1]; inside train",
+          "passed": false,
+          "detail": "usdaeco-scenarios declared v0.6.0; train [v0.8.0, v0.8.0]; outside train interval",
           "dependency": "usdaeco-scenarios",
-          "ref": "v0.8.0",
+          "ref": "v0.6.0",
           "floor": "v0.8.0",
-          "released": "v0.8.1",
-          "reasons": [],
-          "version": "0.8.0"
+          "released": "v0.8.0",
+          "reasons": [
+            "outside train interval"
+          ],
+          "version": "0.6.0"
         },
         {
           "repo": "usdaeco-revit",
           "check": "pin cctv",
-          "passed": true,
-          "detail": "usdaeco-cctv declared v0.5.6; train [v0.5.5, v0.5.6]; inside train",
+          "passed": false,
+          "detail": "usdaeco-cctv declared v0.5.2; train [v0.5.5, v0.5.6]; outside train interval",
           "dependency": "usdaeco-cctv",
-          "ref": "v0.5.6",
+          "ref": "v0.5.2",
           "floor": "v0.5.5",
           "released": "v0.5.6",
-          "reasons": [],
-          "version": "0.5.6"
+          "reasons": [
+            "outside train interval"
+          ],
+          "version": "0.5.2"
         },
         {
           "repo": "usdaeco-revit",
           "check": "pin buildup",
-          "passed": true,
-          "detail": "usdaeco-buildup declared v0.2.5; train [v0.2.4, v0.2.5]; inside train",
+          "passed": false,
+          "detail": "usdaeco-buildup declared v0.2.1; train [v0.2.4, v0.2.5]; outside train interval",
           "dependency": "usdaeco-buildup",
-          "ref": "v0.2.5",
+          "ref": "v0.2.1",
           "floor": "v0.2.4",
           "released": "v0.2.5",
-          "reasons": [],
-          "version": "0.2.5"
+          "reasons": [
+            "outside train interval"
+          ],
+          "version": "0.2.1"
         },
         {
           "repo": "usdaeco-revit",
           "check": "pin wall",
-          "passed": true,
-          "detail": "usdaeco-wall declared v0.2.5; train [v0.2.4, v0.2.5]; inside train",
+          "passed": false,
+          "detail": "usdaeco-wall declared v0.2.1; train [v0.2.4, v0.2.5]; outside train interval",
           "dependency": "usdaeco-wall",
-          "ref": "v0.2.5",
+          "ref": "v0.2.1",
           "floor": "v0.2.4",
           "released": "v0.2.5",
-          "reasons": [],
-          "version": "0.2.5"
+          "reasons": [
+            "outside train interval"
+          ],
+          "version": "0.2.1"
         },
         {
           "repo": "usdaeco-revit",
           "check": "pin pipe",
-          "passed": true,
-          "detail": "usdaeco-pipe declared v0.2.5; train [v0.2.4, v0.2.5]; inside train",
+          "passed": false,
+          "detail": "usdaeco-pipe declared v0.2.1; train [v0.2.4, v0.2.5]; outside train interval",
           "dependency": "usdaeco-pipe",
-          "ref": "v0.2.5",
+          "ref": "v0.2.1",
           "floor": "v0.2.4",
           "released": "v0.2.5",
-          "reasons": [],
-          "version": "0.2.5"
+          "reasons": [
+            "outside train interval"
+          ],
+          "version": "0.2.1"
         },
         {
           "repo": "usdaeco-revit",
           "check": "pin ifc",
-          "passed": true,
-          "detail": "usdaeco-ifc declared v0.2.2; train [v0.2.2, v0.2.3]; inside train",
+          "passed": false,
+          "detail": "usdaeco-ifc declared v0.2.0; train [v0.2.2, v0.2.2]; outside train interval",
           "dependency": "usdaeco-ifc",
-          "ref": "v0.2.2",
+          "ref": "v0.2.0",
           "floor": "v0.2.2",
-          "released": "v0.2.3",
-          "reasons": [],
-          "version": "0.2.2"
+          "released": "v0.2.2",
+          "reasons": [
+            "outside train interval"
+          ],
+          "version": "0.2.0"
         },
         {
           "repo": "usdaeco-revit",
           "check": "pin axis",
-          "passed": true,
-          "detail": "usdaeco-axis declared v0.1.5; train [v0.1.4, v0.1.5]; inside train",
+          "passed": false,
+          "detail": "usdaeco-axis declared v0.1.2; train [v0.1.4, v0.1.5]; outside train interval",
           "dependency": "usdaeco-axis",
-          "ref": "v0.1.5",
+          "ref": "v0.1.2",
           "floor": "v0.1.4",
           "released": "v0.1.5",
-          "reasons": [],
-          "version": "0.1.5"
+          "reasons": [
+            "outside train interval"
+          ],
+          "version": "0.1.2"
         },
         {
           "repo": "usdaeco-scenarios",
@@ -1537,37 +1601,37 @@
           "repo": "usdaeco-scenarios",
           "check": "pin ifc",
           "passed": true,
-          "detail": "usdaeco-ifc declared v0.2.3; train [v0.2.2, v0.2.3]; inside train",
+          "detail": "usdaeco-ifc declared v0.2.2; train [v0.2.2, v0.2.2]; inside train",
           "dependency": "usdaeco-ifc",
-          "ref": "v0.2.3",
+          "ref": "v0.2.2",
           "floor": "v0.2.2",
-          "released": "v0.2.3",
+          "released": "v0.2.2",
           "reasons": [],
-          "version": "0.2.3"
+          "version": "0.2.2"
         },
         {
           "repo": "usdaeco-scenarios",
           "check": "pin bonsai",
           "passed": true,
-          "detail": "usdaeco-bonsai declared v0.1.6; train [v0.1.5, v0.1.6]; inside train",
+          "detail": "usdaeco-bonsai declared v0.1.5; train [v0.1.5, v0.1.5]; inside train",
           "dependency": "usdaeco-bonsai",
-          "ref": "v0.1.6",
+          "ref": "v0.1.5",
           "floor": "v0.1.5",
-          "released": "v0.1.6",
+          "released": "v0.1.5",
           "reasons": [],
-          "version": "0.1.6"
+          "version": "0.1.5"
         },
         {
           "repo": "usdaeco-scenarios",
           "check": "pin revit",
           "passed": true,
-          "detail": "usdaeco-revit declared v0.1.5; train [v0.1.4, v0.1.5]; inside train",
+          "detail": "usdaeco-revit declared v0.1.4; train [v0.1.4, v0.1.4]; inside train",
           "dependency": "usdaeco-revit",
-          "ref": "v0.1.5",
+          "ref": "v0.1.4",
           "floor": "v0.1.4",
-          "released": "v0.1.5",
+          "released": "v0.1.4",
           "reasons": [],
-          "version": "0.1.5"
+          "version": "0.1.4"
         },
         {
           "repo": "usdaeco-scenarios",
@@ -1585,13 +1649,13 @@
           "repo": "usdaeco-scenarios",
           "check": "pin board",
           "passed": true,
-          "detail": "usdaeco-board declared v0.1.5; train [v0.1.4, v0.1.5]; inside train",
+          "detail": "usdaeco-board declared v0.1.4; train [v0.1.4, v0.1.4]; inside train",
           "dependency": "usdaeco-board",
-          "ref": "v0.1.5",
+          "ref": "v0.1.4",
           "floor": "v0.1.4",
-          "released": "v0.1.5",
+          "released": "v0.1.4",
           "reasons": [],
-          "version": "0.1.5"
+          "version": "0.1.4"
         },
         {
           "repo": "usdaeco-scenarios",
@@ -1657,25 +1721,25 @@
           "repo": "usdaeco-scenarios",
           "check": "pin usdSolid",
           "passed": true,
-          "detail": "usdSolid declared v0.1.6; train [v0.1.4, v0.1.6]; inside train",
+          "detail": "usdSolid declared v0.1.5; train [v0.1.4, v0.1.5]; inside train",
           "dependency": "usdSolid",
-          "ref": "v0.1.6",
+          "ref": "v0.1.5",
           "floor": "v0.1.4",
-          "released": "v0.1.6",
+          "released": "v0.1.5",
           "reasons": [],
-          "version": "0.1.6"
+          "version": "0.1.5"
         },
         {
           "repo": "usdaeco-scenarios",
           "check": "pin usdSolidOcct",
           "passed": true,
-          "detail": "usdSolidOcct declared v0.1.5; train [v0.1.3, v0.1.5]; inside train",
+          "detail": "usdSolidOcct declared v0.1.4; train [v0.1.3, v0.1.4]; inside train",
           "dependency": "usdSolidOcct",
-          "ref": "v0.1.5",
+          "ref": "v0.1.4",
           "floor": "v0.1.3",
-          "released": "v0.1.5",
+          "released": "v0.1.4",
           "reasons": [],
-          "version": "0.1.5"
+          "version": "0.1.4"
         },
         {
           "repo": "usdaeco-solid",
@@ -1729,11 +1793,11 @@
           "repo": "usdaeco-solid",
           "check": "pin ifc",
           "passed": true,
-          "detail": "usdaeco-ifc declared v0.2.2; train [v0.2.2, v0.2.3]; inside train",
+          "detail": "usdaeco-ifc declared v0.2.2; train [v0.2.2, v0.2.2]; inside train",
           "dependency": "usdaeco-ifc",
           "ref": "v0.2.2",
           "floor": "v0.2.2",
-          "released": "v0.2.3",
+          "released": "v0.2.2",
           "reasons": [],
           "version": "0.2.2"
         },
@@ -1741,11 +1805,11 @@
           "repo": "usdaeco-solid",
           "check": "pin usdSolid",
           "passed": true,
-          "detail": "usdSolid declared v0.1.4; train [v0.1.4, v0.1.6]; inside train",
+          "detail": "usdSolid declared v0.1.4; train [v0.1.4, v0.1.5]; inside train",
           "dependency": "usdSolid",
           "ref": "v0.1.4",
           "floor": "v0.1.4",
-          "released": "v0.1.6",
+          "released": "v0.1.5",
           "reasons": [],
           "version": "0.1.4"
         },
@@ -1753,11 +1817,11 @@
           "repo": "usdaeco-solid",
           "check": "pin usdSolidOcct",
           "passed": true,
-          "detail": "usdSolidOcct declared v0.1.3; train [v0.1.3, v0.1.5]; inside train",
+          "detail": "usdSolidOcct declared v0.1.3; train [v0.1.3, v0.1.4]; inside train",
           "dependency": "usdSolidOcct",
           "ref": "v0.1.3",
           "floor": "v0.1.3",
-          "released": "v0.1.5",
+          "released": "v0.1.4",
           "reasons": [],
           "version": "0.1.3"
         },
@@ -1861,11 +1925,11 @@
           "repo": "usdaeco-wall",
           "check": "pin ifc",
           "passed": true,
-          "detail": "usdaeco-ifc declared v0.2.2; train [v0.2.2, v0.2.3]; inside train",
+          "detail": "usdaeco-ifc declared v0.2.2; train [v0.2.2, v0.2.2]; inside train",
           "dependency": "usdaeco-ifc",
           "ref": "v0.2.2",
           "floor": "v0.2.2",
-          "released": "v0.2.3",
+          "released": "v0.2.2",
           "reasons": [],
           "version": "0.2.2"
         },
@@ -1893,7 +1957,7 @@
           "repo": "usdSolidOcct",
           "check": "requires usdSolid",
           "passed": true,
-          "detail": ">=0.1,<0.2; declared versions ['0.1.4']; train 0.1.6"
+          "detail": ">=0.1,<0.2; declared versions ['0.1.4']; train 0.1.5"
         },
         {
           "repo": "usdaeco-axis",
@@ -1905,19 +1969,19 @@
           "repo": "usdaeco-bonsai",
           "check": "requires usdAeco",
           "passed": true,
-          "detail": ">=0.9,<1.0; declared versions ['0.9.5']; train 0.9.5"
+          "detail": ">=0.9,<1.0; declared versions ['0.9.2']; train 0.9.5"
         },
         {
           "repo": "usdaeco-bonsai",
           "check": "requires usdAecoSync",
           "passed": true,
-          "detail": ">=0.5,<0.6; declared versions ['0.5.5']; train 0.5.5"
+          "detail": ">=0.5,<0.6; declared versions ['0.5.2']; train 0.5.5"
         },
         {
           "repo": "usdaeco-bonsai",
           "check": "requires usdAecoAxis",
           "passed": true,
-          "detail": ">=0.1,<0.2; declared versions ['0.1.5']; train 0.1.5"
+          "detail": ">=0.1,<0.2; declared versions ['0.1.2']; train 0.1.5"
         },
         {
           "repo": "usdaeco-buildup",
@@ -1959,37 +2023,37 @@
           "repo": "usdaeco-datacentre",
           "check": "requires usdaeco-revit",
           "passed": true,
-          "detail": ">=0.1,<0.2; declared versions ['0.1.4']; train 0.1.5"
+          "detail": ">=0.1,<0.2; declared versions ['0.1.4']; train 0.1.4"
         },
         {
           "repo": "usdaeco-ifc",
           "check": "requires usdAeco",
           "passed": true,
-          "detail": ">=0.9,<1.0; declared versions ['0.9.5']; train 0.9.5"
+          "detail": ">=0.9,<1.0; declared versions ['0.9.2']; train 0.9.5"
         },
         {
           "repo": "usdaeco-ifc",
           "check": "requires usdAecoSync",
           "passed": true,
-          "detail": ">=0.5,<0.6; declared versions ['0.5.5']; train 0.5.5"
+          "detail": ">=0.5,<0.6; declared versions ['0.5.2']; train 0.5.5"
         },
         {
           "repo": "usdaeco-ifc",
           "check": "requires usdAecoAxis",
           "passed": true,
-          "detail": ">=0.1,<0.2; declared versions ['0.1.5']; train 0.1.5"
+          "detail": ">=0.1,<0.2; declared versions ['0.1.2']; train 0.1.5"
         },
         {
           "repo": "usdaeco-ifc",
           "check": "requires usdSolid",
           "passed": true,
-          "detail": ">=0.1,<0.2; declared versions ['0.1.5']; train 0.1.6"
+          "detail": ">=0.1,<0.2; declared versions ['0.1.0']; train 0.1.5"
         },
         {
           "repo": "usdaeco-ifc",
           "check": "requires usdSolidOcct",
           "passed": true,
-          "detail": ">=0.1,<0.2; declared versions ['0.1.4']; train 0.1.5"
+          "detail": ">=0.1,<0.2; declared versions ['0.1.0']; train 0.1.4"
         },
         {
           "repo": "usdaeco-pipe",
@@ -2031,19 +2095,19 @@
           "repo": "usdaeco-revit",
           "check": "requires usdAeco",
           "passed": true,
-          "detail": ">=0.9,<1.0; declared versions ['0.9.5']; train 0.9.5"
+          "detail": ">=0.9,<1.0; declared versions ['0.9.2']; train 0.9.5"
         },
         {
           "repo": "usdaeco-revit",
           "check": "requires usdAecoSync",
           "passed": true,
-          "detail": ">=0.5,<0.6; declared versions ['0.5.5']; train 0.5.5"
+          "detail": ">=0.5,<0.6; declared versions ['0.5.2']; train 0.5.5"
         },
         {
           "repo": "usdaeco-revit",
           "check": "requires usdAecoAxis",
           "passed": true,
-          "detail": ">=0.1,<0.2; declared versions ['0.1.5']; train 0.1.5"
+          "detail": ">=0.1,<0.2; declared versions ['0.1.2']; train 0.1.5"
         },
         {
           "repo": "usdaeco-solid",
@@ -2055,19 +2119,19 @@
           "repo": "usdaeco-solid",
           "check": "requires usdaeco-ifc",
           "passed": true,
-          "detail": ">=0.2,<0.3; declared versions ['0.2.2']; train 0.2.3"
+          "detail": ">=0.2,<0.3; declared versions ['0.2.2']; train 0.2.2"
         },
         {
           "repo": "usdaeco-solid",
           "check": "requires usdSolid",
           "passed": true,
-          "detail": ">=0.1,<0.2; declared versions ['0.1.4']; train 0.1.6"
+          "detail": ">=0.1,<0.2; declared versions ['0.1.4']; train 0.1.5"
         },
         {
           "repo": "usdaeco-solid",
           "check": "requires usdSolidOcct",
           "passed": true,
-          "detail": ">=0.1,<0.2; declared versions ['0.1.3']; train 0.1.5"
+          "detail": ">=0.1,<0.2; declared versions ['0.1.3']; train 0.1.4"
         },
         {
           "repo": "usdaeco-sync",
@@ -2307,17 +2371,17 @@
         {
           "name": "ifc tag",
           "passed": true,
-          "detail": "v0.2.3"
+          "detail": "v0.2.2"
         },
         {
           "name": "bonsai tag",
           "passed": true,
-          "detail": "v0.1.6"
+          "detail": "v0.1.5"
         },
         {
           "name": "revit tag",
           "passed": true,
-          "detail": "v0.1.5"
+          "detail": "v0.1.4"
         },
         {
           "name": "datacentre tag",
@@ -2327,7 +2391,7 @@
         {
           "name": "board tag",
           "passed": true,
-          "detail": "v0.1.5"
+          "detail": "v0.1.4"
         },
         {
           "name": "plan tag",
@@ -2357,12 +2421,12 @@
         {
           "name": "usdSolid tag",
           "passed": true,
-          "detail": "v0.1.6"
+          "detail": "v0.1.5"
         },
         {
           "name": "usdSolidOcct tag",
           "passed": true,
-          "detail": "v0.1.5"
+          "detail": "v0.1.4"
         },
         {
           "name": "axis requires usdAeco",
@@ -2442,12 +2506,12 @@
         {
           "name": "ifc requires usdSolid",
           "passed": true,
-          "detail": ">=0.1,<0.2 against schema 0.1.6"
+          "detail": ">=0.1,<0.2 against schema 0.1.5"
         },
         {
           "name": "ifc requires usdSolidOcct",
           "passed": true,
-          "detail": ">=0.1,<0.2 against schema 0.1.5"
+          "detail": ">=0.1,<0.2 against schema 0.1.4"
         },
         {
           "name": "bonsai requires usdAeco",
@@ -2482,7 +2546,7 @@
         {
           "name": "datacentre requires usdaeco-revit",
           "passed": true,
-          "detail": ">=0.1,<0.2 against schema 0.1.5"
+          "detail": ">=0.1,<0.2 against schema 0.1.4"
         },
         {
           "name": "plan requires usdAeco",
@@ -2507,17 +2571,17 @@
         {
           "name": "solid requires usdaeco-ifc",
           "passed": true,
-          "detail": ">=0.2,<0.3 against schema 0.2.3"
+          "detail": ">=0.2,<0.3 against schema 0.2.2"
         },
         {
           "name": "solid requires usdSolid",
           "passed": true,
-          "detail": ">=0.1,<0.2 against schema 0.1.6"
+          "detail": ">=0.1,<0.2 against schema 0.1.5"
         },
         {
           "name": "solid requires usdSolidOcct",
           "passed": true,
-          "detail": ">=0.1,<0.2 against schema 0.1.5"
+          "detail": ">=0.1,<0.2 against schema 0.1.4"
         },
         {
           "name": "repeat requires usdAeco",
@@ -2537,7 +2601,7 @@
         {
           "name": "usdSolidOcct requires usdSolid",
           "passed": true,
-          "detail": ">=0.1,<0.2 against schema 0.1.6"
+          "detail": ">=0.1,<0.2 against schema 0.1.5"
         }
       ]
     },
@@ -2575,19 +2639,19 @@
     },
     {
       "gate": "links before builds",
-      "passed": true,
-      "status": "PASS",
-      "result": "45/45 roots",
+      "passed": false,
+      "status": "FAIL",
+      "result": "42/45 roots; usdSolid/README.md: BLOCKED.md; usdSolid/README.md: BLOCKED.md; usdSolid/docs/verification.md: ../BLOCKED.md; usdSolidOcct/docs/public-repin.md: ../BLOCKED.md",
       "evidence": [
         {
           "root": "usdaeco-scenarios/README.md",
           "passed": true,
-          "detail": "8 links resolve (anchors and remote URLs skipped)"
+          "detail": "10 links resolve (anchors and remote URLs skipped)"
         },
         {
           "root": "usdaeco-scenarios/docs",
           "passed": true,
-          "detail": "76 links resolve (anchors and remote URLs skipped)"
+          "detail": "37 links resolve (anchors and remote URLs skipped)"
         },
         {
           "root": "usdaeco-scenarios/demo",
@@ -2687,12 +2751,12 @@
         {
           "root": "usdaeco-ifc/README.md",
           "passed": true,
-          "detail": "13 links resolve (anchors and remote URLs skipped)"
+          "detail": "12 links resolve (anchors and remote URLs skipped)"
         },
         {
           "root": "usdaeco-ifc/docs",
           "passed": true,
-          "detail": "8 links resolve (anchors and remote URLs skipped)"
+          "detail": "6 links resolve (anchors and remote URLs skipped)"
         },
         {
           "root": "usdaeco-bonsai/README.md",
@@ -2702,7 +2766,7 @@
         {
           "root": "usdaeco-bonsai/docs",
           "passed": true,
-          "detail": "12 links resolve (anchors and remote URLs skipped)"
+          "detail": "9 links resolve (anchors and remote URLs skipped)"
         },
         {
           "root": "usdaeco-revit/README.md",
@@ -2712,7 +2776,7 @@
         {
           "root": "usdaeco-revit/docs",
           "passed": true,
-          "detail": "13 links resolve (anchors and remote URLs skipped)"
+          "detail": "11 links resolve (anchors and remote URLs skipped)"
         },
         {
           "root": "usdaeco-datacentre/README.md",
@@ -2727,12 +2791,12 @@
         {
           "root": "usdaeco-board/README.md",
           "passed": true,
-          "detail": "9 links resolve (anchors and remote URLs skipped)"
+          "detail": "8 links resolve (anchors and remote URLs skipped)"
         },
         {
           "root": "usdaeco-board/docs",
           "passed": true,
-          "detail": "8 links resolve (anchors and remote URLs skipped)"
+          "detail": "7 links resolve (anchors and remote URLs skipped)"
         },
         {
           "root": "usdaeco-plan/README.md",
@@ -2786,13 +2850,13 @@
         },
         {
           "root": "usdSolid/README.md",
-          "passed": true,
-          "detail": "6 links resolve (anchors and remote URLs skipped)"
+          "passed": false,
+          "detail": "usdSolid/README.md: BLOCKED.md; usdSolid/README.md: BLOCKED.md"
         },
         {
           "root": "usdSolid/docs",
-          "passed": true,
-          "detail": "3 links resolve (anchors and remote URLs skipped)"
+          "passed": false,
+          "detail": "usdSolid/docs/verification.md: ../BLOCKED.md"
         },
         {
           "root": "usdSolidOcct/README.md",
@@ -2801,8 +2865,8 @@
         },
         {
           "root": "usdSolidOcct/docs",
-          "passed": true,
-          "detail": "9 links resolve (anchors and remote URLs skipped)"
+          "passed": false,
+          "detail": "usdSolidOcct/docs/public-repin.md: ../BLOCKED.md"
         }
       ]
     },
@@ -2814,15 +2878,15 @@
     },
     {
       "gate": "core check.py",
-      "passed": false,
-      "status": "FAIL",
-      "result": "65/71; 0 NOT RUN; 11.56s"
+      "passed": true,
+      "status": "PASS",
+      "result": "71/71; 0 NOT RUN; 223.19s"
     },
     {
       "gate": "axis check.py",
-      "passed": false,
-      "status": "FAIL",
-      "result": "53/54; 0 NOT RUN; 15.08s"
+      "passed": true,
+      "status": "PASS",
+      "result": "54/54; 0 NOT RUN; 43.82s"
     },
     {
       "gate": "toolchain native templates",
@@ -2834,31 +2898,31 @@
       "gate": "toolchain check.py",
       "passed": true,
       "status": "PASS",
-      "result": "65/65; 0 NOT RUN; 618.87s"
+      "result": "65/65; 0 NOT RUN; 617.48s"
     },
     {
       "gate": "buildup check.py",
-      "passed": true,
-      "status": "PASS",
-      "result": "67/67; 0 NOT RUN; 74.13s"
+      "passed": false,
+      "status": "FAIL",
+      "result": "66/67; 0 NOT RUN; 24.15s"
     },
     {
       "gate": "wall check.py",
       "passed": true,
       "status": "PASS",
-      "result": "87/87; 0 NOT RUN; 71.19s"
+      "result": "87/87; 0 NOT RUN; 71.26s"
     },
     {
       "gate": "pipe check.py",
       "passed": true,
       "status": "PASS",
-      "result": "82/82; 0 NOT RUN; 94.4s"
+      "result": "82/82; 0 NOT RUN; 93.77s"
     },
     {
       "gate": "cctv check.py",
       "passed": true,
       "status": "PASS",
-      "result": "159/159; 0 NOT RUN; 117.47s"
+      "result": "159/159; 0 NOT RUN; 117.43s"
     },
     {
       "gate": "cctv-exec check.py",
@@ -2870,13 +2934,13 @@
       "gate": "sync check.py",
       "passed": true,
       "status": "PASS",
-      "result": "52/52; 0 NOT RUN; 8.19s"
+      "result": "52/52; 0 NOT RUN; 7.48s"
     },
     {
       "gate": "ifc check.py",
       "passed": true,
       "status": "PASS",
-      "result": "101/101; 0 NOT RUN; 633.71s"
+      "result": "101/101; 0 NOT RUN; 639.06s"
     },
     {
       "gate": "ifc scenarios",
@@ -2900,7 +2964,7 @@
       "gate": "bonsai check.py",
       "passed": true,
       "status": "PASS",
-      "result": "70/70; 0 NOT RUN; 304.94s"
+      "result": "70/70; 0 NOT RUN; 303.29s"
     },
     {
       "gate": "bonsai scenarios",
@@ -2918,61 +2982,61 @@
       "gate": "revit check.py",
       "passed": true,
       "status": "PASS",
-      "result": "51/52; 1 NOT RUN; 90.99s"
+      "result": "51/52; 1 NOT RUN; 91.69s"
     },
     {
       "gate": "datacentre check.py",
       "passed": true,
       "status": "PASS",
-      "result": "200/204; 4 NOT RUN; 797.45s"
+      "result": "200/204; 4 NOT RUN; 794.04s"
     },
     {
       "gate": "board check.py",
       "passed": true,
       "status": "PASS",
-      "result": "70/70; 0 NOT RUN; 23.04s"
+      "result": "70/70; 0 NOT RUN; 23.06s"
     },
     {
       "gate": "plan check.py",
       "passed": true,
       "status": "PASS",
-      "result": "49/51; 2 NOT RUN; 148.71s"
+      "result": "49/51; 2 NOT RUN; 149.52s"
     },
     {
       "gate": "compliance check.py",
       "passed": true,
       "status": "PASS",
-      "result": "48/48; 0 NOT RUN; 243.53s"
+      "result": "48/48; 0 NOT RUN; 240.49s"
     },
     {
       "gate": "clash check.py",
       "passed": true,
       "status": "PASS",
-      "result": "48/48; 0 NOT RUN; 141.65s"
+      "result": "48/48; 0 NOT RUN; 143.12s"
     },
     {
       "gate": "solid check.py",
       "passed": true,
       "status": "PASS",
-      "result": "50/50; 0 NOT RUN; 122.0s"
+      "result": "50/50; 0 NOT RUN; 121.13s"
     },
     {
       "gate": "repeat check.py",
       "passed": true,
       "status": "PASS",
-      "result": "44/44; 0 NOT RUN; 106.91s"
+      "result": "44/44; 0 NOT RUN; 106.84s"
     },
     {
       "gate": "usdSolid check.py",
       "passed": true,
       "status": "PASS",
-      "result": "29/29; 0 NOT RUN; 9.51s"
+      "result": "29/29; 0 NOT RUN; 9.34s"
     },
     {
       "gate": "usdSolidOcct check.py",
       "passed": true,
       "status": "PASS",
-      "result": "31/31; 0 NOT RUN; 11.67s"
+      "result": "31/31; 0 NOT RUN; 11.74s"
     },
     {
       "gate": "wall published clash compatibility",
@@ -3771,14 +3835,14 @@
           "normalizedSha256": "026239a6b30f7a5e429719f54fe6a58b8f6187d5e78d306ee8724bd32397c2cb",
           "operation": "freshPublication",
           "primCount": 13145,
-          "seconds": 71.238
+          "seconds": 71.253
         },
         {
           "normalizedBytes": 16721342,
           "normalizedSha256": "026239a6b30f7a5e429719f54fe6a58b8f6187d5e78d306ee8724bd32397c2cb",
           "operation": "reflattenOwnLayers",
           "primCount": 13145,
-          "seconds": 2.35
+          "seconds": 2.304
         }
       ]
     },
@@ -3856,7 +3920,7 @@
             "title": "door study with the example's defaults: every door identify, fixed coverage, no findings",
             "failures": [],
             "study": {
-              "seconds": 0.10189020773395896,
+              "seconds": 0.1030526664108038,
               "views": 6,
               "rays": 31104,
               "viewsComputed": 6,
@@ -3954,7 +4018,7 @@
             "title": "a temporary hoarding across Cam_2's sightline to Door_2 changes nothing (phase filter)",
             "failures": [],
             "study": {
-              "seconds": 0.07870562514290214,
+              "seconds": 0.07885370822623372,
               "views": 6,
               "rays": 31104,
               "viewsComputed": 6,
@@ -4054,7 +4118,7 @@
             "title": "phases += temporary: the hoarding counts and Door_2 is uncovered, the message names the hoarding",
             "failures": [],
             "study": {
-              "seconds": 0.07907762518152595,
+              "seconds": 0.07909991685301065,
               "views": 6,
               "rays": 31104,
               "viewsComputed": 6,
@@ -4160,7 +4224,7 @@
             "title": "a bare mesh in Cam_3's view: counted as an obstacle, cctvUnclassifiedInView, doors still covered, shell clipped",
             "failures": [],
             "study": {
-              "seconds": 0.0816716249100864,
+              "seconds": 0.08156691631302238,
               "views": 6,
               "rays": 31104,
               "viewsComputed": 6,
@@ -4268,7 +4332,7 @@
             "title": "an element with no authored phase in a view: obstacle plus cctvUnphasedInView",
             "failures": [],
             "study": {
-              "seconds": 0.0823298329487443,
+              "seconds": 0.08204058324918151,
               "views": 6,
               "rays": 31104,
               "viewsComputed": 6,
@@ -4377,7 +4441,7 @@
             "title": "the cable tray drops 0.65 m into Cam_1's sightline: Door_1 is PTZ-only (warn; error under security), duty 0.375; incremental re-run",
             "failures": [],
             "study": {
-              "seconds": 0.09000279195606709,
+              "seconds": 0.09009908372536302,
               "views": 6,
               "rays": 31104,
               "viewsComputed": 5,
@@ -4505,7 +4569,7 @@
             "title": "an edit after the run without re-running: cctvStudyStale",
             "failures": [],
             "study": {
-              "seconds": 0.07840679120272398,
+              "seconds": 0.07971750013530254,
               "views": 6,
               "rays": 31104,
               "viewsComputed": 6,
@@ -4611,7 +4675,7 @@
             "title": "a data-hall space in exclusions with a camera looking in: cctvExclusionCovered",
             "failures": [],
             "study": {
-              "seconds": 0.0829687500372529,
+              "seconds": 0.08460179204121232,
               "views": 6,
               "rays": 31104,
               "viewsComputed": 6,
@@ -4720,7 +4784,7 @@
             "title": "maxTargetDistance 3 m with Cam_3 moved 1 m back from Door_3: cctvTargetTooFar",
             "failures": [],
             "study": {
-              "seconds": 0.07746408320963383,
+              "seconds": 0.07932333275675774,
               "views": 6,
               "rays": 31104,
               "viewsComputed": 6,
@@ -4826,7 +4890,7 @@
             "title": "night mode with IR reach shorter than every door distance (2.5 m domes, 5 m PTZ): every door drops to none",
             "failures": [],
             "study": {
-              "seconds": 0.07580845803022385,
+              "seconds": 0.07709687482565641,
               "views": 6,
               "rays": 31104,
               "viewsComputed": 6,
@@ -4934,7 +4998,7 @@
             "title": "ptzPolicy = presets on the tray case: no PTZ finding, Door_1 identify from the preset",
             "failures": [],
             "study": {
-              "seconds": 0.07832608325406909,
+              "seconds": 0.07945729093626142,
               "views": 6,
               "rays": 31104,
               "viewsComputed": 6,
@@ -5042,7 +5106,7 @@
             "title": "a radar head (pixels 0,0) and a study requiring density 0: the gate it sees is covered at the ladder's floor level",
             "failures": [],
             "study": {
-              "seconds": 0.08900999976322055,
+              "seconds": 0.09292962495237589,
               "views": 7,
               "rays": 36288,
               "viewsComputed": 7,
@@ -5162,7 +5226,7 @@
             "title": "ptzPolicy = envelope: the reach is sampled at 15 degree steps, a Coverage_Envelope shell is written and the reach counts",
             "failures": [],
             "study": {
-              "seconds": 1.8476530001498759,
+              "seconds": 1.8474001670256257,
               "views": 178,
               "rays": 922752,
               "viewsComputed": 178,
@@ -5952,7 +6016,7 @@
             "title": "a local 0.8 m tray segment invalidates two views; four cached views survive",
             "failures": [],
             "study": {
-              "seconds": 0.08371995901688933,
+              "seconds": 0.08323237486183643,
               "views": 6,
               "rays": 31104,
               "viewsComputed": 2,
@@ -6050,7 +6114,7 @@
             "title": "Demolished sole fixed provider cannot cover Door_1",
             "failures": [],
             "study": {
-              "seconds": 0.030309541150927544,
+              "seconds": 0.03086429089307785,
               "views": 2,
               "rays": 10368,
               "viewsComputed": 2,
@@ -6130,7 +6194,7 @@
             "title": "Demolished target is outside the active target set",
             "failures": [],
             "study": {
-              "seconds": 0.08026816695928574,
+              "seconds": 0.0739138750359416,
               "views": 6,
               "rays": 31104,
               "viewsComputed": 6,
@@ -6576,15 +6640,15 @@
       "gate": "DC-render lobby",
       "passed": true,
       "status": "PASS",
-      "result": "576x360; 94792 bytes; mean 0.683819; standard deviation 0.246987",
+      "result": "576x360; 94501 bytes; mean 0.683801; standard deviation 0.246994",
       "evidence": {
         "path": "renders/lobby.png",
-        "sha256": "a82f9a486c900619675e25d520a747d8fc8e9c6b4857c7855fca32bc66d579c6",
+        "sha256": "f4af8d330f69d4ab02b00d9197fe8282eeb2483e86b030b475126a81498fe22d",
         "width": 576,
         "height": 360,
-        "bytes": 94792,
-        "meanLuminance": 0.6838187081026083,
-        "stdLuminance": 0.2469865766477856,
+        "bytes": 94501,
+        "meanLuminance": 0.6838007702054587,
+        "stdLuminance": 0.24699386270196907,
         "overlayColourPixels": 1728
       }
     },
@@ -6592,32 +6656,32 @@
       "gate": "DC-render lookthrough",
       "passed": true,
       "status": "PASS",
-      "result": "576x360; 353665 bytes; mean 0.650421; standard deviation 0.264520",
+      "result": "576x360; 353111 bytes; mean 0.650497; standard deviation 0.264581",
       "evidence": {
         "path": "renders/lookthrough.png",
-        "sha256": "02e2c355241d61bbeba411d95c60be62bd71cc31177f00e303504eba47c1702f",
+        "sha256": "2ee8840f641f1bd79cb8517532a2252b014a46c306adc901e2f8541b8c49fe24",
         "width": 576,
         "height": 360,
-        "bytes": 353665,
-        "meanLuminance": 0.6504207269766703,
-        "stdLuminance": 0.2645198257616761,
-        "overlayColourPixels": 48112
+        "bytes": 353111,
+        "meanLuminance": 0.6504972526817053,
+        "stdLuminance": 0.2645809322304431,
+        "overlayColourPixels": 47971
       }
     },
     {
       "gate": "DC-render overview",
       "passed": true,
       "status": "PASS",
-      "result": "576x360; 87496 bytes; mean 0.162685; standard deviation 0.320391",
+      "result": "576x360; 87019 bytes; mean 0.162678; standard deviation 0.320430",
       "evidence": {
         "path": "renders/overview.png",
-        "sha256": "36cde2d707616f9248135ed1a2071f9f236d9cf2f05afcbddeb65df6bb7d3008",
+        "sha256": "88f28d8dca1ad31ad628f9c810384c9dc73df451ea3e1e5f9f2e6045ce84033c",
         "width": 576,
         "height": 360,
-        "bytes": 87496,
-        "meanLuminance": 0.1626851066592532,
-        "stdLuminance": 0.3203912005104257,
-        "overlayColourPixels": 2747
+        "bytes": 87019,
+        "meanLuminance": 0.16267804301697528,
+        "stdLuminance": 0.3204298277662918,
+        "overlayColourPixels": 2715
       }
     },
     {
@@ -6629,41 +6693,41 @@
         "renders": [
           {
             "path": "renders/lobby.png",
-            "sha256": "a82f9a486c900619675e25d520a747d8fc8e9c6b4857c7855fca32bc66d579c6",
+            "sha256": "f4af8d330f69d4ab02b00d9197fe8282eeb2483e86b030b475126a81498fe22d",
             "width": 576,
             "height": 360,
-            "bytes": 94792
+            "bytes": 94501
           },
           {
             "path": "renders/lookthrough.png",
-            "sha256": "02e2c355241d61bbeba411d95c60be62bd71cc31177f00e303504eba47c1702f",
+            "sha256": "2ee8840f641f1bd79cb8517532a2252b014a46c306adc901e2f8541b8c49fe24",
             "width": 576,
             "height": 360,
-            "bytes": 353665
+            "bytes": 353111
           },
           {
             "path": "renders/overview.png",
-            "sha256": "36cde2d707616f9248135ed1a2071f9f236d9cf2f05afcbddeb65df6bb7d3008",
+            "sha256": "88f28d8dca1ad31ad628f9c810384c9dc73df451ea3e1e5f9f2e6045ce84033c",
             "width": 576,
             "height": 360,
-            "bytes": 87496
+            "bytes": 87019
           }
         ],
         "content": {
           "lobby": {
-            "meanLuminance": 0.6838187081026083,
-            "stdLuminance": 0.2469865766477856,
+            "meanLuminance": 0.6838007702054587,
+            "stdLuminance": 0.24699386270196907,
             "overlayColourPixels": 1728
           },
           "lookthrough": {
-            "meanLuminance": 0.6504207269766703,
-            "stdLuminance": 0.2645198257616761,
-            "overlayColourPixels": 48112
+            "meanLuminance": 0.6504972526817053,
+            "stdLuminance": 0.2645809322304431,
+            "overlayColourPixels": 47971
           },
           "overview": {
-            "meanLuminance": 0.1626851066592532,
-            "stdLuminance": 0.3203912005104257,
-            "overlayColourPixels": 2747
+            "meanLuminance": 0.16267804301697528,
+            "stdLuminance": 0.3204298277662918,
+            "overlayColourPixels": 2715
           }
         }
       }
@@ -6830,41 +6894,41 @@
       "gate": "DC-budget",
       "passed": true,
       "status": "PASS",
-      "result": "40.774s; 240s budget",
+      "result": "41.016s; 240s budget",
       "evidence": {}
     },
     {
       "gate": "gate regression tests",
       "passed": true,
       "status": "PASS",
-      "result": "135 passed in 13.63s"
+      "result": "134 passed in 13.47s"
     },
     {
       "gate": "sanitization",
       "passed": true,
       "status": "PASS",
-      "result": "130 files; 0 violations",
+      "result": "118 files; 0 violations",
       "evidence": {
-        "files": 130,
+        "files": 118,
         "violations": [],
         "passed": true
       }
     },
     {
       "gate": "links at end",
-      "passed": true,
-      "status": "PASS",
-      "result": "45/45 roots",
+      "passed": false,
+      "status": "FAIL",
+      "result": "42/45 roots; usdSolid/README.md: BLOCKED.md; usdSolid/README.md: BLOCKED.md; usdSolid/docs/verification.md: ../BLOCKED.md; usdSolidOcct/docs/public-repin.md: ../BLOCKED.md",
       "evidence": [
         {
           "root": "usdaeco-scenarios/README.md",
           "passed": true,
-          "detail": "8 links resolve (anchors and remote URLs skipped)"
+          "detail": "10 links resolve (anchors and remote URLs skipped)"
         },
         {
           "root": "usdaeco-scenarios/docs",
           "passed": true,
-          "detail": "76 links resolve (anchors and remote URLs skipped)"
+          "detail": "42 links resolve (anchors and remote URLs skipped)"
         },
         {
           "root": "usdaeco-scenarios/demo",
@@ -6964,12 +7028,12 @@
         {
           "root": "usdaeco-ifc/README.md",
           "passed": true,
-          "detail": "13 links resolve (anchors and remote URLs skipped)"
+          "detail": "12 links resolve (anchors and remote URLs skipped)"
         },
         {
           "root": "usdaeco-ifc/docs",
           "passed": true,
-          "detail": "8 links resolve (anchors and remote URLs skipped)"
+          "detail": "6 links resolve (anchors and remote URLs skipped)"
         },
         {
           "root": "usdaeco-bonsai/README.md",
@@ -6979,7 +7043,7 @@
         {
           "root": "usdaeco-bonsai/docs",
           "passed": true,
-          "detail": "12 links resolve (anchors and remote URLs skipped)"
+          "detail": "9 links resolve (anchors and remote URLs skipped)"
         },
         {
           "root": "usdaeco-revit/README.md",
@@ -6989,7 +7053,7 @@
         {
           "root": "usdaeco-revit/docs",
           "passed": true,
-          "detail": "13 links resolve (anchors and remote URLs skipped)"
+          "detail": "11 links resolve (anchors and remote URLs skipped)"
         },
         {
           "root": "usdaeco-datacentre/README.md",
@@ -7004,12 +7068,12 @@
         {
           "root": "usdaeco-board/README.md",
           "passed": true,
-          "detail": "9 links resolve (anchors and remote URLs skipped)"
+          "detail": "8 links resolve (anchors and remote URLs skipped)"
         },
         {
           "root": "usdaeco-board/docs",
           "passed": true,
-          "detail": "8 links resolve (anchors and remote URLs skipped)"
+          "detail": "7 links resolve (anchors and remote URLs skipped)"
         },
         {
           "root": "usdaeco-plan/README.md",
@@ -7063,13 +7127,13 @@
         },
         {
           "root": "usdSolid/README.md",
-          "passed": true,
-          "detail": "6 links resolve (anchors and remote URLs skipped)"
+          "passed": false,
+          "detail": "usdSolid/README.md: BLOCKED.md; usdSolid/README.md: BLOCKED.md"
         },
         {
           "root": "usdSolid/docs",
-          "passed": true,
-          "detail": "3 links resolve (anchors and remote URLs skipped)"
+          "passed": false,
+          "detail": "usdSolid/docs/verification.md: ../BLOCKED.md"
         },
         {
           "root": "usdSolidOcct/README.md",
@@ -7078,8 +7142,8 @@
         },
         {
           "root": "usdSolidOcct/docs",
-          "passed": true,
-          "detail": "9 links resolve (anchors and remote URLs skipped)"
+          "passed": false,
+          "detail": "usdSolidOcct/docs/public-repin.md: ../BLOCKED.md"
         }
       ]
     },
@@ -7087,15 +7151,15 @@
       "gate": "family wall-clock budget",
       "passed": false,
       "status": "FAIL",
-      "result": "1222.25s / 360s; full profile; 4 suite processes; source isolation, builds, suites and consumers included"
+      "result": "1247.7s / 360s; full profile; 4 suite processes; source isolation, builds, suites and consumers included"
     }
   ],
   "passed": false,
   "fullAcceptance": false,
-  "seconds": 1222.26,
+  "seconds": 1247.7,
   "counts": {
-    "PASS": 96,
-    "FAIL": 3,
+    "PASS": 94,
+    "FAIL": 5,
     "NOT RUN": 25
   },
   "drift": {
@@ -7152,11 +7216,11 @@
         "repo": "usdSolidOcct",
         "check": "pin usdSolid",
         "passed": true,
-        "detail": "usdSolid declared v0.1.4; train [v0.1.4, v0.1.6]; inside train",
+        "detail": "usdSolid declared v0.1.4; train [v0.1.4, v0.1.5]; inside train",
         "dependency": "usdSolid",
         "ref": "v0.1.4",
         "floor": "v0.1.4",
-        "released": "v0.1.6",
+        "released": "v0.1.5",
         "reasons": [],
         "version": "0.1.4"
       },
@@ -7200,157 +7264,179 @@
         "repo": "usdaeco-board",
         "check": "pin toolchain",
         "passed": true,
-        "detail": "usdaeco-toolchain declared v0.3.10; train [v0.3.8, v0.3.10]; inside train",
+        "detail": "usdaeco-toolchain declared v0.3.8; train [v0.3.8, v0.3.10]; inside train",
         "dependency": "usdaeco-toolchain",
-        "ref": "v0.3.10",
+        "ref": "v0.3.8",
         "floor": "v0.3.8",
         "released": "v0.3.10",
         "reasons": [],
-        "version": "0.3.10"
+        "version": "0.3.8"
       },
       {
         "repo": "usdaeco-board",
         "check": "pin scenarios",
-        "passed": true,
-        "detail": "usdaeco-scenarios declared v0.8.0; train [v0.8.0, v0.8.1]; inside train",
+        "passed": false,
+        "detail": "usdaeco-scenarios declared v0.6.0; train [v0.8.0, v0.8.0]; outside train interval",
         "dependency": "usdaeco-scenarios",
-        "ref": "v0.8.0",
+        "ref": "v0.6.0",
         "floor": "v0.8.0",
-        "released": "v0.8.1",
-        "reasons": [],
-        "version": "0.8.0"
+        "released": "v0.8.0",
+        "reasons": [
+          "outside train interval"
+        ],
+        "version": "0.6.0"
       },
       {
         "repo": "usdaeco-bonsai",
         "check": "pin toolchain",
         "passed": true,
-        "detail": "usdaeco-toolchain declared v0.3.10; train [v0.3.8, v0.3.10]; inside train",
+        "detail": "usdaeco-toolchain declared v0.3.8; train [v0.3.8, v0.3.10]; inside train",
         "dependency": "usdaeco-toolchain",
-        "ref": "v0.3.10",
+        "ref": "v0.3.8",
         "floor": "v0.3.8",
         "released": "v0.3.10",
         "reasons": [],
-        "version": "0.3.10"
+        "version": "0.3.8"
       },
       {
         "repo": "usdaeco-bonsai",
         "check": "pin core",
-        "passed": true,
-        "detail": "usdaeco-core declared v0.9.5; train [v0.9.4, v0.9.5]; inside train",
+        "passed": false,
+        "detail": "usdaeco-core declared v0.9.2; train [v0.9.4, v0.9.5]; outside train interval",
         "dependency": "usdaeco-core",
-        "ref": "v0.9.5",
+        "ref": "v0.9.2",
         "floor": "v0.9.4",
         "released": "v0.9.5",
-        "reasons": [],
-        "version": "0.9.5"
+        "reasons": [
+          "outside train interval"
+        ],
+        "version": "0.9.2"
       },
       {
         "repo": "usdaeco-bonsai",
         "check": "pin sync",
-        "passed": true,
-        "detail": "usdaeco-sync declared v0.5.5; train [v0.5.4, v0.5.5]; inside train",
+        "passed": false,
+        "detail": "usdaeco-sync declared v0.5.2; train [v0.5.4, v0.5.5]; outside train interval",
         "dependency": "usdaeco-sync",
-        "ref": "v0.5.5",
+        "ref": "v0.5.2",
         "floor": "v0.5.4",
         "released": "v0.5.5",
-        "reasons": [],
-        "version": "0.5.5"
+        "reasons": [
+          "outside train interval"
+        ],
+        "version": "0.5.2"
       },
       {
         "repo": "usdaeco-bonsai",
         "check": "pin datacentre",
-        "passed": true,
-        "detail": "usdaeco-datacentre declared v0.4.9; train [v0.4.8, v0.4.9]; inside train",
+        "passed": false,
+        "detail": "usdaeco-datacentre declared v0.4.6; train [v0.4.8, v0.4.9]; outside train interval",
         "dependency": "usdaeco-datacentre",
-        "ref": "v0.4.9",
+        "ref": "v0.4.6",
         "floor": "v0.4.8",
         "released": "v0.4.9",
-        "reasons": [],
-        "version": "0.4.9"
+        "reasons": [
+          "outside train interval"
+        ],
+        "version": "0.4.6"
       },
       {
         "repo": "usdaeco-bonsai",
         "check": "pin scenarios",
-        "passed": true,
-        "detail": "usdaeco-scenarios declared v0.8.0; train [v0.8.0, v0.8.1]; inside train",
+        "passed": false,
+        "detail": "usdaeco-scenarios declared v0.6.0; train [v0.8.0, v0.8.0]; outside train interval",
         "dependency": "usdaeco-scenarios",
-        "ref": "v0.8.0",
+        "ref": "v0.6.0",
         "floor": "v0.8.0",
-        "released": "v0.8.1",
-        "reasons": [],
-        "version": "0.8.0"
+        "released": "v0.8.0",
+        "reasons": [
+          "outside train interval"
+        ],
+        "version": "0.6.0"
       },
       {
         "repo": "usdaeco-bonsai",
         "check": "pin cctv",
-        "passed": true,
-        "detail": "usdaeco-cctv declared v0.5.6; train [v0.5.5, v0.5.6]; inside train",
+        "passed": false,
+        "detail": "usdaeco-cctv declared v0.5.2; train [v0.5.5, v0.5.6]; outside train interval",
         "dependency": "usdaeco-cctv",
-        "ref": "v0.5.6",
+        "ref": "v0.5.2",
         "floor": "v0.5.5",
         "released": "v0.5.6",
-        "reasons": [],
-        "version": "0.5.6"
+        "reasons": [
+          "outside train interval"
+        ],
+        "version": "0.5.2"
       },
       {
         "repo": "usdaeco-bonsai",
         "check": "pin buildup",
-        "passed": true,
-        "detail": "usdaeco-buildup declared v0.2.5; train [v0.2.4, v0.2.5]; inside train",
+        "passed": false,
+        "detail": "usdaeco-buildup declared v0.2.1; train [v0.2.4, v0.2.5]; outside train interval",
         "dependency": "usdaeco-buildup",
-        "ref": "v0.2.5",
+        "ref": "v0.2.1",
         "floor": "v0.2.4",
         "released": "v0.2.5",
-        "reasons": [],
-        "version": "0.2.5"
+        "reasons": [
+          "outside train interval"
+        ],
+        "version": "0.2.1"
       },
       {
         "repo": "usdaeco-bonsai",
         "check": "pin wall",
-        "passed": true,
-        "detail": "usdaeco-wall declared v0.2.5; train [v0.2.4, v0.2.5]; inside train",
+        "passed": false,
+        "detail": "usdaeco-wall declared v0.2.1; train [v0.2.4, v0.2.5]; outside train interval",
         "dependency": "usdaeco-wall",
-        "ref": "v0.2.5",
+        "ref": "v0.2.1",
         "floor": "v0.2.4",
         "released": "v0.2.5",
-        "reasons": [],
-        "version": "0.2.5"
+        "reasons": [
+          "outside train interval"
+        ],
+        "version": "0.2.1"
       },
       {
         "repo": "usdaeco-bonsai",
         "check": "pin pipe",
-        "passed": true,
-        "detail": "usdaeco-pipe declared v0.2.5; train [v0.2.4, v0.2.5]; inside train",
+        "passed": false,
+        "detail": "usdaeco-pipe declared v0.2.1; train [v0.2.4, v0.2.5]; outside train interval",
         "dependency": "usdaeco-pipe",
-        "ref": "v0.2.5",
+        "ref": "v0.2.1",
         "floor": "v0.2.4",
         "released": "v0.2.5",
-        "reasons": [],
-        "version": "0.2.5"
+        "reasons": [
+          "outside train interval"
+        ],
+        "version": "0.2.1"
       },
       {
         "repo": "usdaeco-bonsai",
         "check": "pin ifc",
-        "passed": true,
-        "detail": "usdaeco-ifc declared v0.2.2; train [v0.2.2, v0.2.3]; inside train",
+        "passed": false,
+        "detail": "usdaeco-ifc declared v0.2.0; train [v0.2.2, v0.2.2]; outside train interval",
         "dependency": "usdaeco-ifc",
-        "ref": "v0.2.2",
+        "ref": "v0.2.0",
         "floor": "v0.2.2",
-        "released": "v0.2.3",
-        "reasons": [],
-        "version": "0.2.2"
+        "released": "v0.2.2",
+        "reasons": [
+          "outside train interval"
+        ],
+        "version": "0.2.0"
       },
       {
         "repo": "usdaeco-bonsai",
         "check": "pin axis",
-        "passed": true,
-        "detail": "usdaeco-axis declared v0.1.5; train [v0.1.4, v0.1.5]; inside train",
+        "passed": false,
+        "detail": "usdaeco-axis declared v0.1.2; train [v0.1.4, v0.1.5]; outside train interval",
         "dependency": "usdaeco-axis",
-        "ref": "v0.1.5",
+        "ref": "v0.1.2",
         "floor": "v0.1.4",
         "released": "v0.1.5",
-        "reasons": [],
-        "version": "0.1.5"
+        "reasons": [
+          "outside train interval"
+        ],
+        "version": "0.1.2"
       },
       {
         "repo": "usdaeco-buildup",
@@ -7428,11 +7514,11 @@
         "repo": "usdaeco-cctv",
         "check": "pin ifc",
         "passed": true,
-        "detail": "usdaeco-ifc declared v0.2.2; train [v0.2.2, v0.2.3]; inside train",
+        "detail": "usdaeco-ifc declared v0.2.2; train [v0.2.2, v0.2.2]; inside train",
         "dependency": "usdaeco-ifc",
         "ref": "v0.2.2",
         "floor": "v0.2.2",
-        "released": "v0.2.3",
+        "released": "v0.2.2",
         "reasons": [],
         "version": "0.2.2"
       },
@@ -7548,11 +7634,11 @@
         "repo": "usdaeco-clash",
         "check": "pin ifc",
         "passed": true,
-        "detail": "usdaeco-ifc declared v0.2.2; train [v0.2.2, v0.2.3]; inside train",
+        "detail": "usdaeco-ifc declared v0.2.2; train [v0.2.2, v0.2.2]; inside train",
         "dependency": "usdaeco-ifc",
         "ref": "v0.2.2",
         "floor": "v0.2.2",
-        "released": "v0.2.3",
+        "released": "v0.2.2",
         "reasons": [],
         "version": "0.2.2"
       },
@@ -7560,11 +7646,11 @@
         "repo": "usdaeco-clash",
         "check": "pin usdSolid",
         "passed": true,
-        "detail": "usdSolid declared v0.1.5; train [v0.1.4, v0.1.6]; inside train",
+        "detail": "usdSolid declared v0.1.5; train [v0.1.4, v0.1.5]; inside train",
         "dependency": "usdSolid",
         "ref": "v0.1.5",
         "floor": "v0.1.4",
-        "released": "v0.1.6",
+        "released": "v0.1.5",
         "reasons": [],
         "version": "0.1.5"
       },
@@ -7572,11 +7658,11 @@
         "repo": "usdaeco-clash",
         "check": "pin usdSolidOcct",
         "passed": true,
-        "detail": "usdSolidOcct declared v0.1.4; train [v0.1.3, v0.1.5]; inside train",
+        "detail": "usdSolidOcct declared v0.1.4; train [v0.1.3, v0.1.4]; inside train",
         "dependency": "usdSolidOcct",
         "ref": "v0.1.4",
         "floor": "v0.1.3",
-        "released": "v0.1.5",
+        "released": "v0.1.4",
         "reasons": [],
         "version": "0.1.4"
       },
@@ -7668,11 +7754,11 @@
         "repo": "usdaeco-datacentre",
         "check": "pin revit",
         "passed": true,
-        "detail": "usdaeco-revit declared v0.1.4; train [v0.1.4, v0.1.5]; inside train",
+        "detail": "usdaeco-revit declared v0.1.4; train [v0.1.4, v0.1.4]; inside train",
         "dependency": "usdaeco-revit",
         "ref": "v0.1.4",
         "floor": "v0.1.4",
-        "released": "v0.1.5",
+        "released": "v0.1.4",
         "reasons": [],
         "version": "0.1.4"
       },
@@ -7704,145 +7790,167 @@
         "repo": "usdaeco-ifc",
         "check": "pin toolchain",
         "passed": true,
-        "detail": "usdaeco-toolchain declared v0.3.10; train [v0.3.8, v0.3.10]; inside train",
+        "detail": "usdaeco-toolchain declared v0.3.8; train [v0.3.8, v0.3.10]; inside train",
         "dependency": "usdaeco-toolchain",
-        "ref": "v0.3.10",
+        "ref": "v0.3.8",
         "floor": "v0.3.8",
         "released": "v0.3.10",
         "reasons": [],
-        "version": "0.3.10"
+        "version": "0.3.8"
       },
       {
         "repo": "usdaeco-ifc",
         "check": "pin core",
-        "passed": true,
-        "detail": "usdaeco-core declared v0.9.5; train [v0.9.4, v0.9.5]; inside train",
+        "passed": false,
+        "detail": "usdaeco-core declared v0.9.2; train [v0.9.4, v0.9.5]; outside train interval",
         "dependency": "usdaeco-core",
-        "ref": "v0.9.5",
+        "ref": "v0.9.2",
         "floor": "v0.9.4",
         "released": "v0.9.5",
-        "reasons": [],
-        "version": "0.9.5"
+        "reasons": [
+          "outside train interval"
+        ],
+        "version": "0.9.2"
       },
       {
         "repo": "usdaeco-ifc",
         "check": "pin sync",
-        "passed": true,
-        "detail": "usdaeco-sync declared v0.5.5; train [v0.5.4, v0.5.5]; inside train",
+        "passed": false,
+        "detail": "usdaeco-sync declared v0.5.2; train [v0.5.4, v0.5.5]; outside train interval",
         "dependency": "usdaeco-sync",
-        "ref": "v0.5.5",
+        "ref": "v0.5.2",
         "floor": "v0.5.4",
         "released": "v0.5.5",
-        "reasons": [],
-        "version": "0.5.5"
+        "reasons": [
+          "outside train interval"
+        ],
+        "version": "0.5.2"
       },
       {
         "repo": "usdaeco-ifc",
         "check": "pin datacentre",
-        "passed": true,
-        "detail": "usdaeco-datacentre declared v0.4.9; train [v0.4.8, v0.4.9]; inside train",
+        "passed": false,
+        "detail": "usdaeco-datacentre declared v0.4.5; train [v0.4.8, v0.4.9]; outside train interval",
         "dependency": "usdaeco-datacentre",
-        "ref": "v0.4.9",
+        "ref": "v0.4.5",
         "floor": "v0.4.8",
         "released": "v0.4.9",
-        "reasons": [],
-        "version": "0.4.9"
+        "reasons": [
+          "outside train interval"
+        ],
+        "version": "0.4.5"
       },
       {
         "repo": "usdaeco-ifc",
         "check": "pin scenarios",
-        "passed": true,
-        "detail": "usdaeco-scenarios declared v0.8.0; train [v0.8.0, v0.8.1]; inside train",
+        "passed": false,
+        "detail": "usdaeco-scenarios declared v0.6.0; train [v0.8.0, v0.8.0]; outside train interval",
         "dependency": "usdaeco-scenarios",
-        "ref": "v0.8.0",
+        "ref": "v0.6.0",
         "floor": "v0.8.0",
-        "released": "v0.8.1",
-        "reasons": [],
-        "version": "0.8.0"
+        "released": "v0.8.0",
+        "reasons": [
+          "outside train interval"
+        ],
+        "version": "0.6.0"
       },
       {
         "repo": "usdaeco-ifc",
         "check": "pin cctv",
-        "passed": true,
-        "detail": "usdaeco-cctv declared v0.5.6; train [v0.5.5, v0.5.6]; inside train",
+        "passed": false,
+        "detail": "usdaeco-cctv declared v0.5.2; train [v0.5.5, v0.5.6]; outside train interval",
         "dependency": "usdaeco-cctv",
-        "ref": "v0.5.6",
+        "ref": "v0.5.2",
         "floor": "v0.5.5",
         "released": "v0.5.6",
-        "reasons": [],
-        "version": "0.5.6"
+        "reasons": [
+          "outside train interval"
+        ],
+        "version": "0.5.2"
       },
       {
         "repo": "usdaeco-ifc",
         "check": "pin buildup",
-        "passed": true,
-        "detail": "usdaeco-buildup declared v0.2.5; train [v0.2.4, v0.2.5]; inside train",
+        "passed": false,
+        "detail": "usdaeco-buildup declared v0.2.1; train [v0.2.4, v0.2.5]; outside train interval",
         "dependency": "usdaeco-buildup",
-        "ref": "v0.2.5",
+        "ref": "v0.2.1",
         "floor": "v0.2.4",
         "released": "v0.2.5",
-        "reasons": [],
-        "version": "0.2.5"
+        "reasons": [
+          "outside train interval"
+        ],
+        "version": "0.2.1"
       },
       {
         "repo": "usdaeco-ifc",
         "check": "pin wall",
-        "passed": true,
-        "detail": "usdaeco-wall declared v0.2.5; train [v0.2.4, v0.2.5]; inside train",
+        "passed": false,
+        "detail": "usdaeco-wall declared v0.2.1; train [v0.2.4, v0.2.5]; outside train interval",
         "dependency": "usdaeco-wall",
-        "ref": "v0.2.5",
+        "ref": "v0.2.1",
         "floor": "v0.2.4",
         "released": "v0.2.5",
-        "reasons": [],
-        "version": "0.2.5"
+        "reasons": [
+          "outside train interval"
+        ],
+        "version": "0.2.1"
       },
       {
         "repo": "usdaeco-ifc",
         "check": "pin pipe",
-        "passed": true,
-        "detail": "usdaeco-pipe declared v0.2.5; train [v0.2.4, v0.2.5]; inside train",
+        "passed": false,
+        "detail": "usdaeco-pipe declared v0.2.1; train [v0.2.4, v0.2.5]; outside train interval",
         "dependency": "usdaeco-pipe",
-        "ref": "v0.2.5",
+        "ref": "v0.2.1",
         "floor": "v0.2.4",
         "released": "v0.2.5",
-        "reasons": [],
-        "version": "0.2.5"
+        "reasons": [
+          "outside train interval"
+        ],
+        "version": "0.2.1"
       },
       {
         "repo": "usdaeco-ifc",
         "check": "pin axis",
-        "passed": true,
-        "detail": "usdaeco-axis declared v0.1.5; train [v0.1.4, v0.1.5]; inside train",
+        "passed": false,
+        "detail": "usdaeco-axis declared v0.1.2; train [v0.1.4, v0.1.5]; outside train interval",
         "dependency": "usdaeco-axis",
-        "ref": "v0.1.5",
+        "ref": "v0.1.2",
         "floor": "v0.1.4",
         "released": "v0.1.5",
-        "reasons": [],
-        "version": "0.1.5"
+        "reasons": [
+          "outside train interval"
+        ],
+        "version": "0.1.2"
       },
       {
         "repo": "usdaeco-ifc",
         "check": "pin usdSolid",
-        "passed": true,
-        "detail": "usdSolid declared v0.1.5; train [v0.1.4, v0.1.6]; inside train",
+        "passed": false,
+        "detail": "usdSolid declared v0.1.0; train [v0.1.4, v0.1.5]; outside train interval",
         "dependency": "usdSolid",
-        "ref": "v0.1.5",
+        "ref": "v0.1.0",
         "floor": "v0.1.4",
-        "released": "v0.1.6",
-        "reasons": [],
-        "version": "0.1.5"
+        "released": "v0.1.5",
+        "reasons": [
+          "outside train interval"
+        ],
+        "version": "0.1.0"
       },
       {
         "repo": "usdaeco-ifc",
         "check": "pin usdSolidOcct",
-        "passed": true,
-        "detail": "usdSolidOcct declared v0.1.4; train [v0.1.3, v0.1.5]; inside train",
+        "passed": false,
+        "detail": "usdSolidOcct declared v0.1.0; train [v0.1.3, v0.1.4]; outside train interval",
         "dependency": "usdSolidOcct",
-        "ref": "v0.1.4",
+        "ref": "v0.1.0",
         "floor": "v0.1.3",
-        "released": "v0.1.5",
-        "reasons": [],
-        "version": "0.1.4"
+        "released": "v0.1.4",
+        "reasons": [
+          "outside train interval"
+        ],
+        "version": "0.1.0"
       },
       {
         "repo": "usdaeco-pipe",
@@ -7896,11 +8004,11 @@
         "repo": "usdaeco-pipe",
         "check": "pin ifc",
         "passed": true,
-        "detail": "usdaeco-ifc declared v0.2.2; train [v0.2.2, v0.2.3]; inside train",
+        "detail": "usdaeco-ifc declared v0.2.2; train [v0.2.2, v0.2.2]; inside train",
         "dependency": "usdaeco-ifc",
         "ref": "v0.2.2",
         "floor": "v0.2.2",
-        "released": "v0.2.3",
+        "released": "v0.2.2",
         "reasons": [],
         "version": "0.2.2"
       },
@@ -8016,133 +8124,153 @@
         "repo": "usdaeco-revit",
         "check": "pin toolchain",
         "passed": true,
-        "detail": "usdaeco-toolchain declared v0.3.10; train [v0.3.8, v0.3.10]; inside train",
+        "detail": "usdaeco-toolchain declared v0.3.8; train [v0.3.8, v0.3.10]; inside train",
         "dependency": "usdaeco-toolchain",
-        "ref": "v0.3.10",
+        "ref": "v0.3.8",
         "floor": "v0.3.8",
         "released": "v0.3.10",
         "reasons": [],
-        "version": "0.3.10"
+        "version": "0.3.8"
       },
       {
         "repo": "usdaeco-revit",
         "check": "pin core",
-        "passed": true,
-        "detail": "usdaeco-core declared v0.9.5; train [v0.9.4, v0.9.5]; inside train",
+        "passed": false,
+        "detail": "usdaeco-core declared v0.9.2; train [v0.9.4, v0.9.5]; outside train interval",
         "dependency": "usdaeco-core",
-        "ref": "v0.9.5",
+        "ref": "v0.9.2",
         "floor": "v0.9.4",
         "released": "v0.9.5",
-        "reasons": [],
-        "version": "0.9.5"
+        "reasons": [
+          "outside train interval"
+        ],
+        "version": "0.9.2"
       },
       {
         "repo": "usdaeco-revit",
         "check": "pin sync",
-        "passed": true,
-        "detail": "usdaeco-sync declared v0.5.5; train [v0.5.4, v0.5.5]; inside train",
+        "passed": false,
+        "detail": "usdaeco-sync declared v0.5.2; train [v0.5.4, v0.5.5]; outside train interval",
         "dependency": "usdaeco-sync",
-        "ref": "v0.5.5",
+        "ref": "v0.5.2",
         "floor": "v0.5.4",
         "released": "v0.5.5",
-        "reasons": [],
-        "version": "0.5.5"
+        "reasons": [
+          "outside train interval"
+        ],
+        "version": "0.5.2"
       },
       {
         "repo": "usdaeco-revit",
         "check": "pin datacentre",
-        "passed": true,
-        "detail": "usdaeco-datacentre declared v0.4.9; train [v0.4.8, v0.4.9]; inside train",
+        "passed": false,
+        "detail": "usdaeco-datacentre declared v0.4.6; train [v0.4.8, v0.4.9]; outside train interval",
         "dependency": "usdaeco-datacentre",
-        "ref": "v0.4.9",
+        "ref": "v0.4.6",
         "floor": "v0.4.8",
         "released": "v0.4.9",
-        "reasons": [],
-        "version": "0.4.9"
+        "reasons": [
+          "outside train interval"
+        ],
+        "version": "0.4.6"
       },
       {
         "repo": "usdaeco-revit",
         "check": "pin scenarios",
-        "passed": true,
-        "detail": "usdaeco-scenarios declared v0.8.0; train [v0.8.0, v0.8.1]; inside train",
+        "passed": false,
+        "detail": "usdaeco-scenarios declared v0.6.0; train [v0.8.0, v0.8.0]; outside train interval",
         "dependency": "usdaeco-scenarios",
-        "ref": "v0.8.0",
+        "ref": "v0.6.0",
         "floor": "v0.8.0",
-        "released": "v0.8.1",
-        "reasons": [],
-        "version": "0.8.0"
+        "released": "v0.8.0",
+        "reasons": [
+          "outside train interval"
+        ],
+        "version": "0.6.0"
       },
       {
         "repo": "usdaeco-revit",
         "check": "pin cctv",
-        "passed": true,
-        "detail": "usdaeco-cctv declared v0.5.6; train [v0.5.5, v0.5.6]; inside train",
+        "passed": false,
+        "detail": "usdaeco-cctv declared v0.5.2; train [v0.5.5, v0.5.6]; outside train interval",
         "dependency": "usdaeco-cctv",
-        "ref": "v0.5.6",
+        "ref": "v0.5.2",
         "floor": "v0.5.5",
         "released": "v0.5.6",
-        "reasons": [],
-        "version": "0.5.6"
+        "reasons": [
+          "outside train interval"
+        ],
+        "version": "0.5.2"
       },
       {
         "repo": "usdaeco-revit",
         "check": "pin buildup",
-        "passed": true,
-        "detail": "usdaeco-buildup declared v0.2.5; train [v0.2.4, v0.2.5]; inside train",
+        "passed": false,
+        "detail": "usdaeco-buildup declared v0.2.1; train [v0.2.4, v0.2.5]; outside train interval",
         "dependency": "usdaeco-buildup",
-        "ref": "v0.2.5",
+        "ref": "v0.2.1",
         "floor": "v0.2.4",
         "released": "v0.2.5",
-        "reasons": [],
-        "version": "0.2.5"
+        "reasons": [
+          "outside train interval"
+        ],
+        "version": "0.2.1"
       },
       {
         "repo": "usdaeco-revit",
         "check": "pin wall",
-        "passed": true,
-        "detail": "usdaeco-wall declared v0.2.5; train [v0.2.4, v0.2.5]; inside train",
+        "passed": false,
+        "detail": "usdaeco-wall declared v0.2.1; train [v0.2.4, v0.2.5]; outside train interval",
         "dependency": "usdaeco-wall",
-        "ref": "v0.2.5",
+        "ref": "v0.2.1",
         "floor": "v0.2.4",
         "released": "v0.2.5",
-        "reasons": [],
-        "version": "0.2.5"
+        "reasons": [
+          "outside train interval"
+        ],
+        "version": "0.2.1"
       },
       {
         "repo": "usdaeco-revit",
         "check": "pin pipe",
-        "passed": true,
-        "detail": "usdaeco-pipe declared v0.2.5; train [v0.2.4, v0.2.5]; inside train",
+        "passed": false,
+        "detail": "usdaeco-pipe declared v0.2.1; train [v0.2.4, v0.2.5]; outside train interval",
         "dependency": "usdaeco-pipe",
-        "ref": "v0.2.5",
+        "ref": "v0.2.1",
         "floor": "v0.2.4",
         "released": "v0.2.5",
-        "reasons": [],
-        "version": "0.2.5"
+        "reasons": [
+          "outside train interval"
+        ],
+        "version": "0.2.1"
       },
       {
         "repo": "usdaeco-revit",
         "check": "pin ifc",
-        "passed": true,
-        "detail": "usdaeco-ifc declared v0.2.2; train [v0.2.2, v0.2.3]; inside train",
+        "passed": false,
+        "detail": "usdaeco-ifc declared v0.2.0; train [v0.2.2, v0.2.2]; outside train interval",
         "dependency": "usdaeco-ifc",
-        "ref": "v0.2.2",
+        "ref": "v0.2.0",
         "floor": "v0.2.2",
-        "released": "v0.2.3",
-        "reasons": [],
-        "version": "0.2.2"
+        "released": "v0.2.2",
+        "reasons": [
+          "outside train interval"
+        ],
+        "version": "0.2.0"
       },
       {
         "repo": "usdaeco-revit",
         "check": "pin axis",
-        "passed": true,
-        "detail": "usdaeco-axis declared v0.1.5; train [v0.1.4, v0.1.5]; inside train",
+        "passed": false,
+        "detail": "usdaeco-axis declared v0.1.2; train [v0.1.4, v0.1.5]; outside train interval",
         "dependency": "usdaeco-axis",
-        "ref": "v0.1.5",
+        "ref": "v0.1.2",
         "floor": "v0.1.4",
         "released": "v0.1.5",
-        "reasons": [],
-        "version": "0.1.5"
+        "reasons": [
+          "outside train interval"
+        ],
+        "version": "0.1.2"
       },
       {
         "repo": "usdaeco-scenarios",
@@ -8256,37 +8384,37 @@
         "repo": "usdaeco-scenarios",
         "check": "pin ifc",
         "passed": true,
-        "detail": "usdaeco-ifc declared v0.2.3; train [v0.2.2, v0.2.3]; inside train",
+        "detail": "usdaeco-ifc declared v0.2.2; train [v0.2.2, v0.2.2]; inside train",
         "dependency": "usdaeco-ifc",
-        "ref": "v0.2.3",
+        "ref": "v0.2.2",
         "floor": "v0.2.2",
-        "released": "v0.2.3",
+        "released": "v0.2.2",
         "reasons": [],
-        "version": "0.2.3"
+        "version": "0.2.2"
       },
       {
         "repo": "usdaeco-scenarios",
         "check": "pin bonsai",
         "passed": true,
-        "detail": "usdaeco-bonsai declared v0.1.6; train [v0.1.5, v0.1.6]; inside train",
+        "detail": "usdaeco-bonsai declared v0.1.5; train [v0.1.5, v0.1.5]; inside train",
         "dependency": "usdaeco-bonsai",
-        "ref": "v0.1.6",
+        "ref": "v0.1.5",
         "floor": "v0.1.5",
-        "released": "v0.1.6",
+        "released": "v0.1.5",
         "reasons": [],
-        "version": "0.1.6"
+        "version": "0.1.5"
       },
       {
         "repo": "usdaeco-scenarios",
         "check": "pin revit",
         "passed": true,
-        "detail": "usdaeco-revit declared v0.1.5; train [v0.1.4, v0.1.5]; inside train",
+        "detail": "usdaeco-revit declared v0.1.4; train [v0.1.4, v0.1.4]; inside train",
         "dependency": "usdaeco-revit",
-        "ref": "v0.1.5",
+        "ref": "v0.1.4",
         "floor": "v0.1.4",
-        "released": "v0.1.5",
+        "released": "v0.1.4",
         "reasons": [],
-        "version": "0.1.5"
+        "version": "0.1.4"
       },
       {
         "repo": "usdaeco-scenarios",
@@ -8304,13 +8432,13 @@
         "repo": "usdaeco-scenarios",
         "check": "pin board",
         "passed": true,
-        "detail": "usdaeco-board declared v0.1.5; train [v0.1.4, v0.1.5]; inside train",
+        "detail": "usdaeco-board declared v0.1.4; train [v0.1.4, v0.1.4]; inside train",
         "dependency": "usdaeco-board",
-        "ref": "v0.1.5",
+        "ref": "v0.1.4",
         "floor": "v0.1.4",
-        "released": "v0.1.5",
+        "released": "v0.1.4",
         "reasons": [],
-        "version": "0.1.5"
+        "version": "0.1.4"
       },
       {
         "repo": "usdaeco-scenarios",
@@ -8376,25 +8504,25 @@
         "repo": "usdaeco-scenarios",
         "check": "pin usdSolid",
         "passed": true,
-        "detail": "usdSolid declared v0.1.6; train [v0.1.4, v0.1.6]; inside train",
+        "detail": "usdSolid declared v0.1.5; train [v0.1.4, v0.1.5]; inside train",
         "dependency": "usdSolid",
-        "ref": "v0.1.6",
+        "ref": "v0.1.5",
         "floor": "v0.1.4",
-        "released": "v0.1.6",
+        "released": "v0.1.5",
         "reasons": [],
-        "version": "0.1.6"
+        "version": "0.1.5"
       },
       {
         "repo": "usdaeco-scenarios",
         "check": "pin usdSolidOcct",
         "passed": true,
-        "detail": "usdSolidOcct declared v0.1.5; train [v0.1.3, v0.1.5]; inside train",
+        "detail": "usdSolidOcct declared v0.1.4; train [v0.1.3, v0.1.4]; inside train",
         "dependency": "usdSolidOcct",
-        "ref": "v0.1.5",
+        "ref": "v0.1.4",
         "floor": "v0.1.3",
-        "released": "v0.1.5",
+        "released": "v0.1.4",
         "reasons": [],
-        "version": "0.1.5"
+        "version": "0.1.4"
       },
       {
         "repo": "usdaeco-solid",
@@ -8448,11 +8576,11 @@
         "repo": "usdaeco-solid",
         "check": "pin ifc",
         "passed": true,
-        "detail": "usdaeco-ifc declared v0.2.2; train [v0.2.2, v0.2.3]; inside train",
+        "detail": "usdaeco-ifc declared v0.2.2; train [v0.2.2, v0.2.2]; inside train",
         "dependency": "usdaeco-ifc",
         "ref": "v0.2.2",
         "floor": "v0.2.2",
-        "released": "v0.2.3",
+        "released": "v0.2.2",
         "reasons": [],
         "version": "0.2.2"
       },
@@ -8460,11 +8588,11 @@
         "repo": "usdaeco-solid",
         "check": "pin usdSolid",
         "passed": true,
-        "detail": "usdSolid declared v0.1.4; train [v0.1.4, v0.1.6]; inside train",
+        "detail": "usdSolid declared v0.1.4; train [v0.1.4, v0.1.5]; inside train",
         "dependency": "usdSolid",
         "ref": "v0.1.4",
         "floor": "v0.1.4",
-        "released": "v0.1.6",
+        "released": "v0.1.5",
         "reasons": [],
         "version": "0.1.4"
       },
@@ -8472,11 +8600,11 @@
         "repo": "usdaeco-solid",
         "check": "pin usdSolidOcct",
         "passed": true,
-        "detail": "usdSolidOcct declared v0.1.3; train [v0.1.3, v0.1.5]; inside train",
+        "detail": "usdSolidOcct declared v0.1.3; train [v0.1.3, v0.1.4]; inside train",
         "dependency": "usdSolidOcct",
         "ref": "v0.1.3",
         "floor": "v0.1.3",
-        "released": "v0.1.5",
+        "released": "v0.1.4",
         "reasons": [],
         "version": "0.1.3"
       },
@@ -8580,11 +8708,11 @@
         "repo": "usdaeco-wall",
         "check": "pin ifc",
         "passed": true,
-        "detail": "usdaeco-ifc declared v0.2.2; train [v0.2.2, v0.2.3]; inside train",
+        "detail": "usdaeco-ifc declared v0.2.2; train [v0.2.2, v0.2.2]; inside train",
         "dependency": "usdaeco-ifc",
         "ref": "v0.2.2",
         "floor": "v0.2.2",
-        "released": "v0.2.3",
+        "released": "v0.2.2",
         "reasons": [],
         "version": "0.2.2"
       },
@@ -8606,7 +8734,7 @@
         "repo": "usdSolidOcct",
         "check": "requires usdSolid",
         "passed": true,
-        "detail": ">=0.1,<0.2; declared versions ['0.1.4']; train 0.1.6"
+        "detail": ">=0.1,<0.2; declared versions ['0.1.4']; train 0.1.5"
       },
       {
         "repo": "usdaeco-axis",
@@ -8618,19 +8746,19 @@
         "repo": "usdaeco-bonsai",
         "check": "requires usdAeco",
         "passed": true,
-        "detail": ">=0.9,<1.0; declared versions ['0.9.5']; train 0.9.5"
+        "detail": ">=0.9,<1.0; declared versions ['0.9.2']; train 0.9.5"
       },
       {
         "repo": "usdaeco-bonsai",
         "check": "requires usdAecoSync",
         "passed": true,
-        "detail": ">=0.5,<0.6; declared versions ['0.5.5']; train 0.5.5"
+        "detail": ">=0.5,<0.6; declared versions ['0.5.2']; train 0.5.5"
       },
       {
         "repo": "usdaeco-bonsai",
         "check": "requires usdAecoAxis",
         "passed": true,
-        "detail": ">=0.1,<0.2; declared versions ['0.1.5']; train 0.1.5"
+        "detail": ">=0.1,<0.2; declared versions ['0.1.2']; train 0.1.5"
       },
       {
         "repo": "usdaeco-buildup",
@@ -8672,37 +8800,37 @@
         "repo": "usdaeco-datacentre",
         "check": "requires usdaeco-revit",
         "passed": true,
-        "detail": ">=0.1,<0.2; declared versions ['0.1.4']; train 0.1.5"
+        "detail": ">=0.1,<0.2; declared versions ['0.1.4']; train 0.1.4"
       },
       {
         "repo": "usdaeco-ifc",
         "check": "requires usdAeco",
         "passed": true,
-        "detail": ">=0.9,<1.0; declared versions ['0.9.5']; train 0.9.5"
+        "detail": ">=0.9,<1.0; declared versions ['0.9.2']; train 0.9.5"
       },
       {
         "repo": "usdaeco-ifc",
         "check": "requires usdAecoSync",
         "passed": true,
-        "detail": ">=0.5,<0.6; declared versions ['0.5.5']; train 0.5.5"
+        "detail": ">=0.5,<0.6; declared versions ['0.5.2']; train 0.5.5"
       },
       {
         "repo": "usdaeco-ifc",
         "check": "requires usdAecoAxis",
         "passed": true,
-        "detail": ">=0.1,<0.2; declared versions ['0.1.5']; train 0.1.5"
+        "detail": ">=0.1,<0.2; declared versions ['0.1.2']; train 0.1.5"
       },
       {
         "repo": "usdaeco-ifc",
         "check": "requires usdSolid",
         "passed": true,
-        "detail": ">=0.1,<0.2; declared versions ['0.1.5']; train 0.1.6"
+        "detail": ">=0.1,<0.2; declared versions ['0.1.0']; train 0.1.5"
       },
       {
         "repo": "usdaeco-ifc",
         "check": "requires usdSolidOcct",
         "passed": true,
-        "detail": ">=0.1,<0.2; declared versions ['0.1.4']; train 0.1.5"
+        "detail": ">=0.1,<0.2; declared versions ['0.1.0']; train 0.1.4"
       },
       {
         "repo": "usdaeco-pipe",
@@ -8744,19 +8872,19 @@
         "repo": "usdaeco-revit",
         "check": "requires usdAeco",
         "passed": true,
-        "detail": ">=0.9,<1.0; declared versions ['0.9.5']; train 0.9.5"
+        "detail": ">=0.9,<1.0; declared versions ['0.9.2']; train 0.9.5"
       },
       {
         "repo": "usdaeco-revit",
         "check": "requires usdAecoSync",
         "passed": true,
-        "detail": ">=0.5,<0.6; declared versions ['0.5.5']; train 0.5.5"
+        "detail": ">=0.5,<0.6; declared versions ['0.5.2']; train 0.5.5"
       },
       {
         "repo": "usdaeco-revit",
         "check": "requires usdAecoAxis",
         "passed": true,
-        "detail": ">=0.1,<0.2; declared versions ['0.1.5']; train 0.1.5"
+        "detail": ">=0.1,<0.2; declared versions ['0.1.2']; train 0.1.5"
       },
       {
         "repo": "usdaeco-solid",
@@ -8768,19 +8896,19 @@
         "repo": "usdaeco-solid",
         "check": "requires usdaeco-ifc",
         "passed": true,
-        "detail": ">=0.2,<0.3; declared versions ['0.2.2']; train 0.2.3"
+        "detail": ">=0.2,<0.3; declared versions ['0.2.2']; train 0.2.2"
       },
       {
         "repo": "usdaeco-solid",
         "check": "requires usdSolid",
         "passed": true,
-        "detail": ">=0.1,<0.2; declared versions ['0.1.4']; train 0.1.6"
+        "detail": ">=0.1,<0.2; declared versions ['0.1.4']; train 0.1.5"
       },
       {
         "repo": "usdaeco-solid",
         "check": "requires usdSolidOcct",
         "passed": true,
-        "detail": ">=0.1,<0.2; declared versions ['0.1.3']; train 0.1.5"
+        "detail": ">=0.1,<0.2; declared versions ['0.1.3']; train 0.1.4"
       },
       {
         "repo": "usdaeco-sync",
@@ -9002,7 +9130,7 @@
         "declaration": {
           "path": "family.json",
           "train": "aeco-0.4.0",
-          "reason": "Fallback based on the historical train, with usdaeco-repeat renamed and updated to v0.2.1; the active family source is the scenarios pin."
+          "reason": "Historical fallback inventory asserted by check.py; the active family source is the scenarios pin."
         }
       },
       {
@@ -9406,159 +9534,6 @@
         }
       },
       {
-        "repo": "usdaeco-revit",
-        "fixture": "release-v0.1.4",
-        "declaration": {
-          "reason": "Archived v0.1.4 verification; current verification is in observations and docs/public-repin-verification.json.",
-          "verification": {
-            "version": "0.1.4",
-            "checks": 52,
-            "failed": 0,
-            "notRun": 1,
-            "structure": {
-              "checks": 29,
-              "failed": 0,
-              "toolchain": "v0.3.8"
-            },
-            "pytest": {
-              "passed": 128,
-              "skipped": 1
-            },
-            "live": {
-              "status": "NOT RUN",
-              "reason": "AECO_REVIT_ENDPOINT is unset"
-            },
-            "coreValidation": {
-              "validators": [
-                "usdAecoValidators:ClassificationChecker",
-                "usdAecoValidators:DerivedExactOnMeshChecker",
-                "usdAecoValidators:DerivedGeometryChecker",
-                "usdAecoValidators:ExactWithoutToleranceChecker",
-                "usdAecoValidators:GroupChecker",
-                "usdAecoValidators:IdentityChecker",
-                "usdAecoValidators:PortConnectivityChecker",
-                "usdAecoValidators:SpatialGrammarChecker"
-              ],
-              "errors": 0,
-              "warnings": 2,
-              "findings": [
-                {
-                  "name": "proxyClassified",
-                  "message": "/demo_datacentre_01/demo_datacentre_01_Site/Generator_Yard_B/UTIL_B is classified 'IfcBuildingElementProxy.UtilityIntake' \u2014 a proxy says nothing about kind (health metric)."
-                },
-                {
-                  "name": "proxyClassified",
-                  "message": "/demo_datacentre_01/demo_datacentre_01_Site/Generator_Yard_A/UTIL_A is classified 'IfcBuildingElementProxy.UtilityIntake' \u2014 a proxy says nothing about kind (health metric)."
-                }
-              ],
-              "sourceWarnings": 2,
-              "newWarnings": 0
-            },
-            "roundtrip": [
-              {
-                "cases": 11,
-                "driverDifferences": 0,
-                "driversCompared": 42,
-                "elements": 11,
-                "liveStatus": "NOT RUN",
-                "mode": "archived-live-summary-audit",
-                "rawReceiptReplay": "NOT PROVEN"
-              },
-              {
-                "accepted": 2,
-                "bodiesCompared": 2,
-                "driverDifferences": 0,
-                "driversCompared": 14,
-                "liveStatus": "NOT RUN",
-                "matchedIdentities": 2,
-                "mode": "offline-facility-receipt-replay",
-                "nativeMutations": 0,
-                "repeatMutations": 0,
-                "sourceCounts": {
-                  "elements": 2954,
-                  "levels": 2,
-                  "meshes": 2987,
-                  "ports": 6212,
-                  "spaces": 33,
-                  "unclassified": 2,
-                  "unparented": 0
-                },
-                "sourcePrimCount": 12266
-              }
-            ],
-            "result": {
-              "sourcePrims": 12266,
-              "publishedPrims": 12276,
-              "bytes": 1967525,
-              "crateBytes": 1659444,
-              "sourceMode": "pinned",
-              "sourceGenerator": "0.4.2",
-              "sourceRef": "v0.4.6",
-              "ResultStale": "PASS",
-              "retainedSourcePrims": 12266,
-              "addedPrims": 10,
-              "largestUsdaBytes": 10640,
-              "vanilla": {
-                "bytes": 286381,
-                "height": 600,
-                "path": "result/vanilla.png",
-                "sha256": "5cac2743332e26964283a4147cedb4199c201b3c175285c01eab03ddd943f492",
-                "width": 960
-              }
-            },
-            "relocation": {
-              "layout": "consumer and all pinned dependencies at independent nested paths",
-              "checks": 52,
-              "failed": 0,
-              "notRun": 1,
-              "pytest": {
-                "passed": 128,
-                "skipped": 1
-              },
-              "structure": {
-                "checks": 29,
-                "failed": 0
-              },
-              "ResultStale": "PASS",
-              "S29": "PASS",
-              "sourceAliasRecreated": true,
-              "archivedSessionPrims": 12273,
-              "archivedSessionCompositionErrors": 0
-            },
-            "termSweep": {
-              "S25": "PASS",
-              "crate": "PASS",
-              "oldPublicNames": 0
-            },
-            "nix": {
-              "attempts": 1,
-              "command": "nix flake check --offline --no-write-lock-file",
-              "localOverrides": true,
-              "networkSandbox": true,
-              "restrictedUriEvaluation": true,
-              "status": "NOT PROVEN",
-              "reason": "The network sandbox denied access to the Nix daemon socket before evaluation; no build ran."
-            }
-          },
-          "nix": {
-            "attempts": 1,
-            "command": "nix flake check --offline --no-write-lock-file",
-            "localOverrides": true,
-            "networkSandbox": true,
-            "restrictedUriEvaluation": true,
-            "status": "NOT PROVEN",
-            "reason": "The network sandbox denied access to the Nix daemon socket before evaluation; no build ran."
-          }
-        }
-      },
-      {
-        "repo": "usdaeco-revit",
-        "fixture": "docs/facility-replay-verification.json",
-        "declaration": {
-          "reason": "Archived v0.1.4 facility replay verification; original checked pins and measurements are preserved."
-        }
-      },
-      {
         "repo": "usdaeco-scenarios",
         "fixture": "core08",
         "declaration": {
@@ -9806,17 +9781,17 @@
     {
       "name": "ifc tag",
       "passed": true,
-      "detail": "v0.2.3"
+      "detail": "v0.2.2"
     },
     {
       "name": "bonsai tag",
       "passed": true,
-      "detail": "v0.1.6"
+      "detail": "v0.1.5"
     },
     {
       "name": "revit tag",
       "passed": true,
-      "detail": "v0.1.5"
+      "detail": "v0.1.4"
     },
     {
       "name": "datacentre tag",
@@ -9826,7 +9801,7 @@
     {
       "name": "board tag",
       "passed": true,
-      "detail": "v0.1.5"
+      "detail": "v0.1.4"
     },
     {
       "name": "plan tag",
@@ -9856,12 +9831,12 @@
     {
       "name": "usdSolid tag",
       "passed": true,
-      "detail": "v0.1.6"
+      "detail": "v0.1.5"
     },
     {
       "name": "usdSolidOcct tag",
       "passed": true,
-      "detail": "v0.1.5"
+      "detail": "v0.1.4"
     },
     {
       "name": "axis requires usdAeco",
@@ -9941,12 +9916,12 @@
     {
       "name": "ifc requires usdSolid",
       "passed": true,
-      "detail": ">=0.1,<0.2 against schema 0.1.6"
+      "detail": ">=0.1,<0.2 against schema 0.1.5"
     },
     {
       "name": "ifc requires usdSolidOcct",
       "passed": true,
-      "detail": ">=0.1,<0.2 against schema 0.1.5"
+      "detail": ">=0.1,<0.2 against schema 0.1.4"
     },
     {
       "name": "bonsai requires usdAeco",
@@ -9981,7 +9956,7 @@
     {
       "name": "datacentre requires usdaeco-revit",
       "passed": true,
-      "detail": ">=0.1,<0.2 against schema 0.1.5"
+      "detail": ">=0.1,<0.2 against schema 0.1.4"
     },
     {
       "name": "plan requires usdAeco",
@@ -10006,17 +9981,17 @@
     {
       "name": "solid requires usdaeco-ifc",
       "passed": true,
-      "detail": ">=0.2,<0.3 against schema 0.2.3"
+      "detail": ">=0.2,<0.3 against schema 0.2.2"
     },
     {
       "name": "solid requires usdSolid",
       "passed": true,
-      "detail": ">=0.1,<0.2 against schema 0.1.6"
+      "detail": ">=0.1,<0.2 against schema 0.1.5"
     },
     {
       "name": "solid requires usdSolidOcct",
       "passed": true,
-      "detail": ">=0.1,<0.2 against schema 0.1.5"
+      "detail": ">=0.1,<0.2 against schema 0.1.4"
     },
     {
       "name": "repeat requires usdAeco",
@@ -10036,7 +10011,7 @@
     {
       "name": "usdSolidOcct requires usdSolid",
       "passed": true,
-      "detail": ">=0.1,<0.2 against schema 0.1.6"
+      "detail": ">=0.1,<0.2 against schema 0.1.5"
     }
   ],
   "placeholders": {},
@@ -10242,210 +10217,210 @@
     "ifc": {
       "toolchain": {
         "repo": "usdaeco-toolchain",
-        "ref": "v0.3.10",
-        "revision": "59d3da5ff5114089b54efaaae38efdd7fe1b8e73",
+        "ref": "v0.3.8",
+        "revision": "4ec5051c419ef056dba594e64be661cb41810275",
         "scope": "direct"
       },
       "core": {
         "repo": "usdaeco-core",
-        "ref": "v0.9.5",
-        "revision": "683adc3280254bc71b396a9c64a359cc708788f4",
+        "ref": "v0.9.2",
+        "revision": "11000b2ca7a2f560bfcd1ffd439bf9b71a5f5c18",
         "scope": "direct"
       },
       "sync": {
         "repo": "usdaeco-sync",
-        "ref": "v0.5.5",
-        "revision": "2f13dffb5e29076787e6e9b81a701ce2a0ab7e8a",
+        "ref": "v0.5.2",
+        "revision": "1ed6e5d50425811c5c85326630819bc1f04a1a15",
         "scope": "direct"
       },
       "datacentre": {
         "repo": "usdaeco-datacentre",
-        "ref": "v0.4.9",
-        "revision": "00ac72998b1a92aa6c9e8422803c3350ca8dab37",
+        "ref": "v0.4.5",
+        "revision": "0b18702612ff2c268b18e3da0f3c7b62393320bb",
         "scope": "direct"
       },
       "scenarios": {
         "repo": "usdaeco-scenarios",
-        "ref": "v0.8.0",
-        "revision": "83de1cdab2b1f26fe7d209d9fb28090447484666",
+        "ref": "v0.6.0",
+        "revision": "0c9327ed67f9e4585b3cd51a52c5b053c08b3643",
         "scope": "direct"
       },
       "cctv": {
         "repo": "usdaeco-cctv",
-        "ref": "v0.5.6",
-        "revision": "567eb9cbdec045a6581c3f5863ac11a22f46e153",
+        "ref": "v0.5.2",
+        "revision": "179318a090657af530d83552388e0c6fd9360631",
         "scope": "direct"
       },
       "buildup": {
         "repo": "usdaeco-buildup",
-        "ref": "v0.2.5",
-        "revision": "99ac95080bf4d1403d410b356c4645c3f251aa40",
+        "ref": "v0.2.1",
+        "revision": "0bf6190f060e278d4f3379b52903032e3dd9b60c",
         "scope": "direct"
       },
       "wall": {
         "repo": "usdaeco-wall",
-        "ref": "v0.2.5",
-        "revision": "ce4b2fa54bb4c85d495237a93e3c883df9c1e1d6",
+        "ref": "v0.2.1",
+        "revision": "d6dca4e4f4905ae32d56246a677777b6b42c9363",
         "scope": "direct"
       },
       "pipe": {
         "repo": "usdaeco-pipe",
-        "ref": "v0.2.5",
-        "revision": "12179dfb86e93ec605dd8548d19c50d5671029ee",
+        "ref": "v0.2.1",
+        "revision": "b07db9ecfab55754a7b2a959ab3cd0d1872032eb",
         "scope": "direct"
       },
       "axis": {
         "repo": "usdaeco-axis",
-        "ref": "v0.1.5",
-        "revision": "ecff1d98bcc45c22fcceefd453374671900793ae",
+        "ref": "v0.1.2",
+        "revision": "17ca6c18f7c263c3501bc3e3580d44f630548591",
         "scope": "direct"
       },
       "usdSolid": {
         "repo": "usdSolid",
-        "ref": "v0.1.5",
-        "revision": "5792a6f56de3a7f881a73ba11b3635871cd2dc4e",
+        "ref": "v0.1.0",
+        "revision": "71e3c8dd0c08e0e629c2a4d3da4d1256f4316ac6",
         "scope": "direct"
       },
       "usdSolidOcct": {
         "repo": "usdSolidOcct",
-        "ref": "v0.1.4",
-        "revision": "0936e4e355b9ff5971ee5dbb4e8a47dcdea9e3fe",
+        "ref": "v0.1.0",
+        "revision": "a5bfb17ca2eecdad7e540bc9d1e12f47b1e97af7",
         "scope": "direct"
       }
     },
     "bonsai": {
       "toolchain": {
         "repo": "usdaeco-toolchain",
-        "ref": "v0.3.10",
-        "revision": "59d3da5ff5114089b54efaaae38efdd7fe1b8e73",
+        "ref": "v0.3.8",
+        "revision": "4ec5051c419ef056dba594e64be661cb41810275",
         "scope": "direct"
       },
       "core": {
         "repo": "usdaeco-core",
-        "ref": "v0.9.5",
-        "revision": "683adc3280254bc71b396a9c64a359cc708788f4",
+        "ref": "v0.9.2",
+        "revision": "11000b2ca7a2f560bfcd1ffd439bf9b71a5f5c18",
         "scope": "direct"
       },
       "sync": {
         "repo": "usdaeco-sync",
-        "ref": "v0.5.5",
-        "revision": "2f13dffb5e29076787e6e9b81a701ce2a0ab7e8a",
+        "ref": "v0.5.2",
+        "revision": "1ed6e5d50425811c5c85326630819bc1f04a1a15",
         "scope": "direct"
       },
       "datacentre": {
         "repo": "usdaeco-datacentre",
-        "ref": "v0.4.9",
-        "revision": "00ac72998b1a92aa6c9e8422803c3350ca8dab37",
+        "ref": "v0.4.6",
+        "revision": "d789e40fba81e5213caf9c54d1233b77b8e1fa20",
         "scope": "direct"
       },
       "scenarios": {
         "repo": "usdaeco-scenarios",
-        "ref": "v0.8.0",
-        "revision": "83de1cdab2b1f26fe7d209d9fb28090447484666",
+        "ref": "v0.6.0",
+        "revision": "0c9327ed67f9e4585b3cd51a52c5b053c08b3643",
         "scope": "direct"
       },
       "cctv": {
         "repo": "usdaeco-cctv",
-        "ref": "v0.5.6",
-        "revision": "567eb9cbdec045a6581c3f5863ac11a22f46e153",
+        "ref": "v0.5.2",
+        "revision": "179318a090657af530d83552388e0c6fd9360631",
         "scope": "direct"
       },
       "buildup": {
         "repo": "usdaeco-buildup",
-        "ref": "v0.2.5",
-        "revision": "99ac95080bf4d1403d410b356c4645c3f251aa40",
+        "ref": "v0.2.1",
+        "revision": "0bf6190f060e278d4f3379b52903032e3dd9b60c",
         "scope": "direct"
       },
       "wall": {
         "repo": "usdaeco-wall",
-        "ref": "v0.2.5",
-        "revision": "ce4b2fa54bb4c85d495237a93e3c883df9c1e1d6",
+        "ref": "v0.2.1",
+        "revision": "d6dca4e4f4905ae32d56246a677777b6b42c9363",
         "scope": "direct"
       },
       "pipe": {
         "repo": "usdaeco-pipe",
-        "ref": "v0.2.5",
-        "revision": "12179dfb86e93ec605dd8548d19c50d5671029ee",
+        "ref": "v0.2.1",
+        "revision": "b07db9ecfab55754a7b2a959ab3cd0d1872032eb",
         "scope": "direct"
       },
       "ifc": {
         "repo": "usdaeco-ifc",
-        "ref": "v0.2.2",
-        "revision": "8eb72e89af15e8642d914948384fe73038cc7817",
+        "ref": "v0.2.0",
+        "revision": "bc910117cfde0d9434eb168b5fe66089eeda40f8",
         "scope": "direct"
       },
       "axis": {
         "repo": "usdaeco-axis",
-        "ref": "v0.1.5",
-        "revision": "ecff1d98bcc45c22fcceefd453374671900793ae",
+        "ref": "v0.1.2",
+        "revision": "17ca6c18f7c263c3501bc3e3580d44f630548591",
         "scope": "direct"
       }
     },
     "revit": {
       "toolchain": {
         "repo": "usdaeco-toolchain",
-        "ref": "v0.3.10",
-        "revision": "59d3da5ff5114089b54efaaae38efdd7fe1b8e73",
+        "ref": "v0.3.8",
+        "revision": "4ec5051c419ef056dba594e64be661cb41810275",
         "scope": "direct"
       },
       "core": {
         "repo": "usdaeco-core",
-        "ref": "v0.9.5",
-        "revision": "683adc3280254bc71b396a9c64a359cc708788f4",
+        "ref": "v0.9.2",
+        "revision": "11000b2ca7a2f560bfcd1ffd439bf9b71a5f5c18",
         "scope": "direct"
       },
       "sync": {
         "repo": "usdaeco-sync",
-        "ref": "v0.5.5",
-        "revision": "2f13dffb5e29076787e6e9b81a701ce2a0ab7e8a",
+        "ref": "v0.5.2",
+        "revision": "1ed6e5d50425811c5c85326630819bc1f04a1a15",
         "scope": "direct"
       },
       "datacentre": {
         "repo": "usdaeco-datacentre",
-        "ref": "v0.4.9",
-        "revision": "00ac72998b1a92aa6c9e8422803c3350ca8dab37",
+        "ref": "v0.4.6",
+        "revision": "d789e40fba81e5213caf9c54d1233b77b8e1fa20",
         "scope": "direct"
       },
       "scenarios": {
         "repo": "usdaeco-scenarios",
-        "ref": "v0.8.0",
-        "revision": "83de1cdab2b1f26fe7d209d9fb28090447484666",
+        "ref": "v0.6.0",
+        "revision": "0c9327ed67f9e4585b3cd51a52c5b053c08b3643",
         "scope": "direct"
       },
       "cctv": {
         "repo": "usdaeco-cctv",
-        "ref": "v0.5.6",
-        "revision": "567eb9cbdec045a6581c3f5863ac11a22f46e153",
+        "ref": "v0.5.2",
+        "revision": "179318a090657af530d83552388e0c6fd9360631",
         "scope": "direct"
       },
       "buildup": {
         "repo": "usdaeco-buildup",
-        "ref": "v0.2.5",
-        "revision": "99ac95080bf4d1403d410b356c4645c3f251aa40",
+        "ref": "v0.2.1",
+        "revision": "0bf6190f060e278d4f3379b52903032e3dd9b60c",
         "scope": "direct"
       },
       "wall": {
         "repo": "usdaeco-wall",
-        "ref": "v0.2.5",
-        "revision": "ce4b2fa54bb4c85d495237a93e3c883df9c1e1d6",
+        "ref": "v0.2.1",
+        "revision": "d6dca4e4f4905ae32d56246a677777b6b42c9363",
         "scope": "direct"
       },
       "pipe": {
         "repo": "usdaeco-pipe",
-        "ref": "v0.2.5",
-        "revision": "12179dfb86e93ec605dd8548d19c50d5671029ee",
+        "ref": "v0.2.1",
+        "revision": "b07db9ecfab55754a7b2a959ab3cd0d1872032eb",
         "scope": "direct"
       },
       "ifc": {
         "repo": "usdaeco-ifc",
-        "ref": "v0.2.2",
-        "revision": "8eb72e89af15e8642d914948384fe73038cc7817",
+        "ref": "v0.2.0",
+        "revision": "bc910117cfde0d9434eb168b5fe66089eeda40f8",
         "scope": "direct"
       },
       "axis": {
         "repo": "usdaeco-axis",
-        "ref": "v0.1.5",
-        "revision": "ecff1d98bcc45c22fcceefd453374671900793ae",
+        "ref": "v0.1.2",
+        "revision": "17ca6c18f7c263c3501bc3e3580d44f630548591",
         "scope": "direct"
       }
     },
@@ -10504,14 +10479,14 @@
     "board": {
       "toolchain": {
         "repo": "usdaeco-toolchain",
-        "ref": "v0.3.10",
-        "revision": "59d3da5ff5114089b54efaaae38efdd7fe1b8e73",
+        "ref": "v0.3.8",
+        "revision": "4ec5051c419ef056dba594e64be661cb41810275",
         "scope": "direct"
       },
       "scenarios": {
         "repo": "usdaeco-scenarios",
-        "ref": "v0.8.0",
-        "revision": "83de1cdab2b1f26fe7d209d9fb28090447484666",
+        "ref": "v0.6.0",
+        "revision": "0c9327ed67f9e4585b3cd51a52c5b053c08b3643",
         "scope": "direct"
       }
     },
@@ -10764,18 +10739,18 @@
     },
     "ifc": {
       "repo": "usdaeco-toolchain",
-      "ref": "v0.3.10",
-      "scope": "train harness"
+      "ref": "v0.3.8",
+      "scope": "declared suite input"
     },
     "bonsai": {
       "repo": "usdaeco-toolchain",
-      "ref": "v0.3.10",
-      "scope": "train harness"
+      "ref": "v0.3.8",
+      "scope": "declared suite input"
     },
     "revit": {
       "repo": "usdaeco-toolchain",
-      "ref": "v0.3.10",
-      "scope": "train harness"
+      "ref": "v0.3.8",
+      "scope": "declared suite input"
     },
     "datacentre": {
       "repo": "usdaeco-toolchain",
@@ -10784,8 +10759,8 @@
     },
     "board": {
       "repo": "usdaeco-toolchain",
-      "ref": "v0.3.10",
-      "scope": "train harness"
+      "ref": "v0.3.8",
+      "scope": "declared suite input"
     },
     "plan": {
       "repo": "usdaeco-toolchain",
@@ -11143,9 +11118,9 @@
     "renders": [
       {
         "path": "renders/edited_corner.png",
-        "foregroundPixels": 156003,
+        "foregroundPixels": 156008,
         "totalPixels": 1024000,
-        "foregroundFraction": 0.1523466796875,
+        "foregroundFraction": 0.1523515625,
         "threshold8bit": 20,
         "horizontalRange": 1.0
       }
@@ -11816,7 +11791,7 @@
     }
   ],
   "walkthrough": {
-    "train": "aeco-0.8.1",
+    "train": "aeco-0.8.0",
     "steps": [
       {
         "name": "cctv",
@@ -12049,13 +12024,13 @@
             "code": "ifcopenshell:geometry",
             "message": "Unknown message invoked with the keyword FixAdvFace.FixOrientation.MSG5",
             "about": [
-              "/S4_baseline/Site/Building/Level_1/Pipe_1"
+              "/S4_baseline/Site/Building/Level_1/Pipe_2"
             ],
             "blocking": false,
             "phase": "regenerate",
             "hostRefs": [
-              "1FM62VCir7rwfSSBxqVWx$",
-              "#111"
+              "0jOwa00dLB$vMeSQCXrd_f",
+              "#146"
             ]
           },
           {
@@ -12063,13 +12038,13 @@
             "code": "ifcopenshell:geometry",
             "message": "Unknown message invoked with the keyword FixAdvFace.FixOrientation.MSG5",
             "about": [
-              "/S4_baseline/Site/Building/Level_1/Pipe_2"
+              "/S4_baseline/Site/Building/Level_1/Pipe_1"
             ],
             "blocking": false,
             "phase": "regenerate",
             "hostRefs": [
-              "2K_bFAIJnCIBqoWH4XqJop",
-              "#146"
+              "2t_hgNix5FCO0JittpzbdG",
+              "#111"
             ]
           },
           {
@@ -12077,14 +12052,14 @@
             "code": "pipePortSizeMismatch",
             "message": "Connected pipe sizes differ without a transition",
             "about": [
-              "/S4_baseline/Site/Building/Level_1/Pipe_1/Port",
-              "/S4_baseline/Site/Building/Level_1/Pipe_2/Port_7a84b6"
+              "/S4_baseline/Site/Building/Level_1/Pipe_1/Port_a20f46",
+              "/S4_baseline/Site/Building/Level_1/Pipe_2/Port_a50289"
             ],
             "blocking": false,
             "phase": "validate",
             "hostRefs": [
-              "0_AGlNfszB0ObivoSdmHr8",
-              "1wXBPYxs9By9wj48Hp_qAq"
+              "2Y3qPD6vf62eFAKT5xlBBs",
+              "2b0ebaf_X8CgQUW9FylMsQ"
             ]
           }
         ],
@@ -12095,10 +12070,10 @@
             {
               "rule": "PipePortSizeMismatch",
               "severity": "warn",
-              "message": "Connected port nominal diameters differ: 0.065 m / 0.05 m",
+              "message": "Connected port nominal diameters differ: 0.05 m / 0.065 m",
               "sites": [
-                "/S4_baseline/Site/Building/Level_1/Pipe_1/Port",
-                "/S4_baseline/Site/Building/Level_1/Pipe_2/Port_7a84b6"
+                "/S4_baseline/Site/Building/Level_1/Pipe_2/Port_a50289",
+                "/S4_baseline/Site/Building/Level_1/Pipe_1/Port_a20f46"
               ]
             },
             {
@@ -12114,7 +12089,7 @@
               "severity": "warn",
               "message": "Exact geometry must declare a positive finite tolerance in metres.",
               "sites": [
-                "/S4_baseline/Site/Building/Level_1/Pipe_2/Axis"
+                "/S4_baseline/Site/Building/Level_1/Pipe_1/Axis"
               ]
             },
             {
@@ -12130,7 +12105,7 @@
               "severity": "warn",
               "message": "Exact geometry must declare a positive finite tolerance in metres.",
               "sites": [
-                "/S4_baseline/Site/Building/Level_1/Pipe_1/Axis"
+                "/S4_baseline/Site/Building/Level_1/Pipe_2/Axis"
               ]
             }
           ]
@@ -12242,13 +12217,13 @@
             "code": "ifcopenshell:geometry",
             "message": "Unknown message invoked with the keyword FixAdvFace.FixOrientation.MSG5",
             "about": [
-              "/S4_baseline/Site/Building/Level_1/Pipe_1"
+              "/S4_baseline/Site/Building/Level_1/Pipe_2"
             ],
             "blocking": false,
             "phase": "regenerate",
             "hostRefs": [
-              "1FM62VCir7rwfSSBxqVWx$",
-              "#111"
+              "0jOwa00dLB$vMeSQCXrd_f",
+              "#146"
             ]
           },
           {
@@ -12256,13 +12231,13 @@
             "code": "ifcopenshell:geometry",
             "message": "Unknown message invoked with the keyword FixAdvFace.FixOrientation.MSG5",
             "about": [
-              "/S4_baseline/Site/Building/Level_1/Pipe_2"
+              "/S4_baseline/Site/Building/Level_1/Pipe_1"
             ],
             "blocking": false,
             "phase": "regenerate",
             "hostRefs": [
-              "2K_bFAIJnCIBqoWH4XqJop",
-              "#146"
+              "2t_hgNix5FCO0JittpzbdG",
+              "#111"
             ]
           },
           {
@@ -12270,14 +12245,14 @@
             "code": "pipePortSizeMismatch",
             "message": "Connected pipe sizes differ without a transition",
             "about": [
-              "/S4_baseline/Site/Building/Level_1/Pipe_1/Port",
-              "/S4_baseline/Site/Building/Level_1/Pipe_2/Port_7a84b6"
+              "/S4_baseline/Site/Building/Level_1/Pipe_1/Port_a20f46",
+              "/S4_baseline/Site/Building/Level_1/Pipe_2/Port_a50289"
             ],
             "blocking": false,
             "phase": "validate",
             "hostRefs": [
-              "0_AGlNfszB0ObivoSdmHr8",
-              "1wXBPYxs9By9wj48Hp_qAq"
+              "2Y3qPD6vf62eFAKT5xlBBs",
+              "2b0ebaf_X8CgQUW9FylMsQ"
             ]
           }
         ],
@@ -12288,10 +12263,10 @@
             {
               "rule": "PipePortSizeMismatch",
               "severity": "warn",
-              "message": "Connected port nominal diameters differ: 0.065 m / 0.05 m",
+              "message": "Connected port nominal diameters differ: 0.05 m / 0.065 m",
               "sites": [
-                "/S4_baseline/Site/Building/Level_1/Pipe_1/Port",
-                "/S4_baseline/Site/Building/Level_1/Pipe_2/Port_7a84b6"
+                "/S4_baseline/Site/Building/Level_1/Pipe_2/Port_a50289",
+                "/S4_baseline/Site/Building/Level_1/Pipe_1/Port_a20f46"
               ]
             },
             {
@@ -12307,7 +12282,7 @@
               "severity": "warn",
               "message": "Exact geometry must declare a positive finite tolerance in metres.",
               "sites": [
-                "/S4_baseline/Site/Building/Level_1/Pipe_2/Axis"
+                "/S4_baseline/Site/Building/Level_1/Pipe_1/Axis"
               ]
             },
             {
@@ -12323,7 +12298,7 @@
               "severity": "warn",
               "message": "Exact geometry must declare a positive finite tolerance in metres.",
               "sites": [
-                "/S4_baseline/Site/Building/Level_1/Pipe_1/Axis"
+                "/S4_baseline/Site/Building/Level_1/Pipe_2/Axis"
               ]
             }
           ]
@@ -12402,7 +12377,7 @@
           "title": "door study with the example's defaults: every door identify, fixed coverage, no findings",
           "failures": [],
           "study": {
-            "seconds": 0.07424612483009696,
+            "seconds": 0.07637804094702005,
             "views": 6,
             "rays": 31104,
             "viewsComputed": 6,
@@ -12500,7 +12475,7 @@
           "title": "a temporary hoarding across Cam_2's sightline to Door_2 changes nothing (phase filter)",
           "failures": [],
           "study": {
-            "seconds": 0.07975608296692371,
+            "seconds": 0.07979958271607757,
             "views": 6,
             "rays": 31104,
             "viewsComputed": 6,
@@ -12600,7 +12575,7 @@
           "title": "phases += temporary: the hoarding counts and Door_2 is uncovered, the message names the hoarding",
           "failures": [],
           "study": {
-            "seconds": 0.07883066590875387,
+            "seconds": 0.0804521250538528,
             "views": 6,
             "rays": 31104,
             "viewsComputed": 6,
@@ -12706,7 +12681,7 @@
           "title": "a bare mesh in Cam_3's view: counted as an obstacle, cctvUnclassifiedInView, doors still covered, shell clipped",
           "failures": [],
           "study": {
-            "seconds": 0.08181491680443287,
+            "seconds": 0.08459470886737108,
             "views": 6,
             "rays": 31104,
             "viewsComputed": 6,
@@ -12814,7 +12789,7 @@
           "title": "the cable tray drops 0.65 m into Cam_1's sightline: Door_1 is PTZ-only (warn; error under security), duty 0.375; incremental re-run",
           "failures": [],
           "study": {
-            "seconds": 0.08932537492364645,
+            "seconds": 0.09148974996060133,
             "views": 6,
             "rays": 31104,
             "viewsComputed": 5,
@@ -12942,7 +12917,7 @@
           "title": "an edit after the run without re-running: cctvStudyStale",
           "failures": [],
           "study": {
-            "seconds": 0.07855537487193942,
+            "seconds": 0.08000758290290833,
             "views": 6,
             "rays": 31104,
             "viewsComputed": 6,
@@ -13274,46 +13249,46 @@
       {
         "gate": "DC-render lobby",
         "status": "PASS",
-        "result": "576x360; 94792 bytes; mean 0.683819; standard deviation 0.246987",
+        "result": "576x360; 94501 bytes; mean 0.683801; standard deviation 0.246994",
         "evidence": {
           "path": "renders/lobby.png",
-          "sha256": "a82f9a486c900619675e25d520a747d8fc8e9c6b4857c7855fca32bc66d579c6",
+          "sha256": "f4af8d330f69d4ab02b00d9197fe8282eeb2483e86b030b475126a81498fe22d",
           "width": 576,
           "height": 360,
-          "bytes": 94792,
-          "meanLuminance": 0.6838187081026083,
-          "stdLuminance": 0.2469865766477856,
+          "bytes": 94501,
+          "meanLuminance": 0.6838007702054587,
+          "stdLuminance": 0.24699386270196907,
           "overlayColourPixels": 1728
         }
       },
       {
         "gate": "DC-render lookthrough",
         "status": "PASS",
-        "result": "576x360; 353665 bytes; mean 0.650421; standard deviation 0.264520",
+        "result": "576x360; 353111 bytes; mean 0.650497; standard deviation 0.264581",
         "evidence": {
           "path": "renders/lookthrough.png",
-          "sha256": "02e2c355241d61bbeba411d95c60be62bd71cc31177f00e303504eba47c1702f",
+          "sha256": "2ee8840f641f1bd79cb8517532a2252b014a46c306adc901e2f8541b8c49fe24",
           "width": 576,
           "height": 360,
-          "bytes": 353665,
-          "meanLuminance": 0.6504207269766703,
-          "stdLuminance": 0.2645198257616761,
-          "overlayColourPixels": 48112
+          "bytes": 353111,
+          "meanLuminance": 0.6504972526817053,
+          "stdLuminance": 0.2645809322304431,
+          "overlayColourPixels": 47971
         }
       },
       {
         "gate": "DC-render overview",
         "status": "PASS",
-        "result": "576x360; 87496 bytes; mean 0.162685; standard deviation 0.320391",
+        "result": "576x360; 87019 bytes; mean 0.162678; standard deviation 0.320430",
         "evidence": {
           "path": "renders/overview.png",
-          "sha256": "36cde2d707616f9248135ed1a2071f9f236d9cf2f05afcbddeb65df6bb7d3008",
+          "sha256": "88f28d8dca1ad31ad628f9c810384c9dc73df451ea3e1e5f9f2e6045ce84033c",
           "width": 576,
           "height": 360,
-          "bytes": 87496,
-          "meanLuminance": 0.1626851066592532,
-          "stdLuminance": 0.3203912005104257,
-          "overlayColourPixels": 2747
+          "bytes": 87019,
+          "meanLuminance": 0.16267804301697528,
+          "stdLuminance": 0.3204298277662918,
+          "overlayColourPixels": 2715
         }
       },
       {
@@ -13324,41 +13299,41 @@
           "renders": [
             {
               "path": "renders/lobby.png",
-              "sha256": "a82f9a486c900619675e25d520a747d8fc8e9c6b4857c7855fca32bc66d579c6",
+              "sha256": "f4af8d330f69d4ab02b00d9197fe8282eeb2483e86b030b475126a81498fe22d",
               "width": 576,
               "height": 360,
-              "bytes": 94792
+              "bytes": 94501
             },
             {
               "path": "renders/lookthrough.png",
-              "sha256": "02e2c355241d61bbeba411d95c60be62bd71cc31177f00e303504eba47c1702f",
+              "sha256": "2ee8840f641f1bd79cb8517532a2252b014a46c306adc901e2f8541b8c49fe24",
               "width": 576,
               "height": 360,
-              "bytes": 353665
+              "bytes": 353111
             },
             {
               "path": "renders/overview.png",
-              "sha256": "36cde2d707616f9248135ed1a2071f9f236d9cf2f05afcbddeb65df6bb7d3008",
+              "sha256": "88f28d8dca1ad31ad628f9c810384c9dc73df451ea3e1e5f9f2e6045ce84033c",
               "width": 576,
               "height": 360,
-              "bytes": 87496
+              "bytes": 87019
             }
           ],
           "content": {
             "lobby": {
-              "meanLuminance": 0.6838187081026083,
-              "stdLuminance": 0.2469865766477856,
+              "meanLuminance": 0.6838007702054587,
+              "stdLuminance": 0.24699386270196907,
               "overlayColourPixels": 1728
             },
             "lookthrough": {
-              "meanLuminance": 0.6504207269766703,
-              "stdLuminance": 0.2645198257616761,
-              "overlayColourPixels": 48112
+              "meanLuminance": 0.6504972526817053,
+              "stdLuminance": 0.2645809322304431,
+              "overlayColourPixels": 47971
             },
             "overview": {
-              "meanLuminance": 0.1626851066592532,
-              "stdLuminance": 0.3203912005104257,
-              "overlayColourPixels": 2747
+              "meanLuminance": 0.16267804301697528,
+              "stdLuminance": 0.3204298277662918,
+              "overlayColourPixels": 2715
             }
           }
         }
@@ -13502,7 +13477,7 @@
       {
         "gate": "DC-budget",
         "status": "PASS",
-        "result": "40.774s; 240s budget",
+        "result": "41.016s; 240s budget",
         "evidence": {}
       }
     ]
