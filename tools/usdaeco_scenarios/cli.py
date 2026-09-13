@@ -12,6 +12,9 @@ ROOT = Path(__file__).resolve().parents[2]
 
 def checkout(family, destination, git_base, kit_base=None):
     """Clone tagged sources without sharing mutable state with existing checkouts."""
+    from family import OPTIONAL_SOURCE_REASON, dependency_pins, optional_repositories, repos
+    pins = dependency_pins()
+    local = {pins[name]['repo']: source for name, source in repos(include_optional=True).items()}
     started = time.monotonic()
     destination = Path(destination).resolve()
     destination.mkdir(parents=True, exist_ok=True)
@@ -31,9 +34,16 @@ def checkout(family, destination, git_base, kit_base=None):
             return dict(repo=name, ref=tag, candidate='v' + metadata['version'],
                         revision=None, status='current-candidate')
         base = kit_base if name in ('usdSolid', 'usdSolidOcct') and kit_base else git_base
+        origin = base.rstrip('/') + '/' + name + '.git'
+        if name in optional_repositories():
+            source = local[name]
+            if not (source / '.git').exists():
+                print('NOT RUN checkout ' + name + ': ' + OPTIONAL_SOURCE_REASON, flush=True)
+                return dict(repo=name, ref=tag, revision=None, status='NOT RUN', reason=OPTIONAL_SOURCE_REASON)
+            origin = str(source)
         options = ['--depth', '1'] if entry.get('kind') == 'suite' else []
         subprocess.run(['git', 'clone', '--quiet', '--branch', tag, '--no-recurse-submodules', *options,
-                        base.rstrip('/') + '/' + name + '.git', str(target)],
+                        origin, str(target)],
                        check=True, capture_output=True)
         revision = subprocess.check_output(['git', '-C', str(target), 'rev-parse', 'HEAD'], text=True).strip()
         tag_revision = subprocess.check_output(

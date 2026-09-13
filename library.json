@@ -1,6 +1,6 @@
 {
   "name": "usdaeco-scenarios",
-  "version": "0.9.1",
+  "version": "0.9.2",
   "kind": "gate",
   "tier": "gate",
   "requires": {},

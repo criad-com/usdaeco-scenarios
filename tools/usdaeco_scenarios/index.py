@@ -6,10 +6,10 @@ from contextlib import contextmanager
 from pathlib import Path
 import tempfile
 
-
 @contextmanager
 def released_sources(entries, sources):
     """Supply tagged index inputs even when a kit has no suite checkout."""
+    from family import optional_repositories
     from publish import git
     root = Path(__file__).resolve().parents[2]
     with tempfile.TemporaryDirectory() as directory:
@@ -22,7 +22,7 @@ def released_sources(entries, sources):
             target = source_root / name
             if source.is_dir():
                 target.symlink_to(source, target_is_directory=True)
-            elif tag:
+            elif tag and name not in optional_repositories():
                 base = os.environ.get('AECO_GIT_BASE') or git(
                     'remote', 'get-url', 'origin', cwd=root).decode().strip().rsplit('/', 1)[0]
                 if name in ('usdSolid', 'usdSolidOcct'):
@@ -34,6 +34,7 @@ def released_sources(entries, sources):
 
 def collect(family, sources):
     """Read released cards, with an explicit card for the current candidate."""
+    from family import OPTIONAL_SOURCE_REASON, optional_repositories
     import family_readme
     from packaging.version import Version
     from family_manifest import validate_family
@@ -48,16 +49,22 @@ def collect(family, sources):
     validated = validate_family(data, inventory=True)
     if not validated:
         raise ValueError(validated.detail)
-    # The current candidate has its own card below. Its incoming train edge was
-    # validated above; omit it only from the shared generator's projection.
+    missing = {e['name'] for e in data['repos'] if e['name'] in optional_repositories()
+               and not (Path(sources) / e['name'] / '.git').exists()}
+    # Candidate and unavailable optional cards are supplied below. Validate
+    # their incoming train edges above before projecting the shared generator.
+    omitted = missing | {candidate['name']}
     projected = dict(data, repos=[dict(e, requires={k: v for k, v in e['requires'].items()
-                                                  if k != candidate['name']})
-                                 for e in data['repos'] if e != candidate])
+                                                  if k not in omitted})
+                                 for e in data['repos'] if e['name'] not in omitted])
     with tempfile.TemporaryDirectory() as directory, released_sources(projected['repos'], sources) as source_root:
         path = Path(directory) / 'family.json'
         path.write_text(json.dumps(projected))
         snapshot = family_readme.collect(path, source_root)
     cards = {c['name']: c for c in snapshot['cards']}
+    for name in missing:
+        cards[name] = dict(name=name, available=False, commit=None,
+                           purpose='Optional train member', reason=OPTIONAL_SOURCE_REASON)
     cards[candidate['name']] = dict(
         name=candidate['name'], available=True, commit=None, candidate=True,
         library=metadata, purpose='Pinned family acceptance', licence=metadata['licence'],
@@ -76,12 +83,20 @@ def render(snapshot):
 
 
 def fresh_check(output, *, family, repos):
+    from family import OPTIONAL_SOURCE_REASON, optional_repositories
     from usdaeco_check.report import Result
     try:
         output = Path(output)
         snapshot = json.loads(output.with_name('index.json').read_text())
-        if collect(family, repos) != snapshot or output.read_text() != render(snapshot):
+        current = collect(family, repos)
+        missing = {c['name']: c for c in current['cards']
+                   if c['name'] in optional_repositories() and c.get('reason') == OPTIONAL_SOURCE_REASON}
+        expected = dict(snapshot, cards=[missing.get(c['name'], c) for c in snapshot['cards']])
+        if current != expected or output.read_text() != render(snapshot):
             raise ValueError('Source cards or family README differ; regenerate the index')
+        if missing:
+            return Result('family README fresh', None,
+                          f"{len(snapshot['cards']) - len(missing)} source cards checked; " + OPTIONAL_SOURCE_REASON)
         return Result('family README fresh', True,
                       f"{len(snapshot['cards'])} rows; tagged sources and explicit current candidate")
     except (ValueError, OSError, KeyError, TypeError) as exc:
@@ -109,5 +124,5 @@ if __name__ == '__main__':
     root = Path(__file__).resolve().parents[2]
     sys.path[:0] = [str(root), str(Path(os.environ.get('TOOLCHAIN_DIR', Path(args.repos) / 'usdaeco-toolchain')) / 'tools')]
     result = generate(args.family, args.repos, args.output)
-    print(('PASS' if result else 'FAIL') + ' ' + result.detail)
-    raise SystemExit(0 if result else 1)
+    print(result.status + ' ' + result.detail)
+    raise SystemExit(int(result.status == 'FAIL'))

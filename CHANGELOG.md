@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.9.2
+
+- Remove the optional train source from the public flake inputs.
+- Report unavailable optional source checks, index freshness and complete suite provenance as NOT RUN with a reason, allowing the fast profile to complete.
+- Retain train membership and exact release checks for available local sources.
+
 ## 0.9.1
 
 - Require an explicit output destination for the IFC edit-semantics spike.

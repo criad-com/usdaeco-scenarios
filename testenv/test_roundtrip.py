@@ -105,9 +105,14 @@ assert not any(p.name.startswith('usdAeco') for p in Plug.Registry().GetAllPlugi
 
 
 def test_nix_pins_match_manifest():
+    import re
     pins = json.loads((ROOT / "dependencies.json").read_text())["repos"]
     flake = (ROOT / "flake.nix").read_text()
     assert all(f'github:criad-com/{pin["repo"]}?ref={pin["ref"]}' in flake for name, pin in pins.items())
+    from family import dependency_pins
+    for name, pin in dependency_pins().items():
+        if pin.get('optional'):
+            assert pin['repo'] not in flake and not re.search(r'\b' + re.escape(name) + r'\b', flake)
 
 
 @pytest.mark.parametrize("library", ["pipe", "wall", "buildup", "cctv", "sync"])

@@ -153,7 +153,11 @@ def main():
     print("== stage: isolate exact released sources", flush=True)
     report["repositories"] = isolate_sources(output)
     available = {n: r for n, r in report["repositories"].items() if r.get("status") != "NOT RUN"}
-    record("revision pins", len(available) == len(report['repositories']), f"{len(available)}/{len(report['repositories'])} exact sources")
+    record("revision pins", bool(available), f"{len(available)}/{len(report['repositories'])} exact sources; unavailable optional sources reported separately")
+    for name, source in report['repositories'].items():
+        if name not in available:
+            record(name + ' source checks', False, source['reason'], status='NOT RUN')
+            record(name + ' check.py', False, source['reason'], status='NOT RUN')
     paths = repos()
     sys.path.insert(0, str(paths["toolchain"] / "tools"))
     from family_manifest import validate_family
@@ -167,7 +171,7 @@ def main():
     sys.path.insert(0, str(ROOT / 'tools'))
     from usdaeco_scenarios.suite import gate as suite_gate
     suite = suite_gate(inventory, output / 'suite')
-    record('suite', suite['passed'], suite['result'], evidence=suite['evidence'])
+    record('suite', suite['passed'], suite['result'], status=suite.get('status'), evidence=suite['evidence'])
     indexed = {entry['name']: entry for entry in inventory['repos']}
     sys.path.insert(0, str(ROOT / 'tools'))
     from usdaeco_scenarios.drift import audit as drift_audit
@@ -181,7 +185,7 @@ def main():
         checks = drift[key]
         record(title, bool(checks) and all(r['passed'] for r in checks),
                f"{sum(r['passed'] for r in checks)}/{len(checks)}; {sum(not r['passed'] for r in checks)} mismatches", evidence=checks)
-    record('family index freshness', bool(index_result), index_result.detail)
+    record('family index freshness', bool(index_result), index_result.detail, status=index_result.status)
     manifest_matches = []
     for name in available:
         metadata = json.loads((paths[name] / 'library.json').read_text())

@@ -10,8 +10,8 @@ Check that released family repositories work together on the published
 
 This gate defines no schema. [family.json](family.json) inventories 25
 repositories: 23 released dependencies, this candidate and a private documentation seed.
-[dependencies.json](dependencies.json) pins 19 family dependencies
-and two native kits. The scenarios entry retains released v0.8.1; this v0.9.0
+[dependencies.json](dependencies.json) pins 18 family dependencies, one optional
+train source and two native kits. The scenarios entry retains released v0.8.1; this v0.9.2
 candidate is checked without recursively running its own gate. The generic
 build kit and the usdAECO suite v0.3.0 are inventoried separately from the
 executable semantic suites.
@@ -68,6 +68,11 @@ requires empty destination directories and verifies each checkout against its re
 are recorded as run evidence; they are not cross-mirror input pins.
 The scenarios entry links this checkout into the family root, so a candidate
 can be checked before its release tag is published.
+Optional train sources are excluded from the public flake and are acquired only
+from existing local checkouts. When unavailable, their source and suite checks,
+complete suite provenance, and index freshness report `NOT RUN` with a reason;
+the fast profile continues checking available sources. Set the optional source's
+`AECO_<NAME>_SOURCE` variable to a Git checkout to include its release checks.
 Before the full command, also export `AECO_BLENDER`, `USD_SOLID_RUNTIME` and
 `USD_SOLID_OCCT_RUNTIME` for the available Blender executable and matching
 immutable native runtimes. The runtime directories contain `paths.json`; their

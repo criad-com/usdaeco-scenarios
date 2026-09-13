@@ -26,8 +26,6 @@
     revit.flake = false;
     datacentre.url = "github:criad-com/usdaeco-datacentre?ref=v0.4.9";
     datacentre.flake = false;
-    board.url = "github:criad-com/usdaeco-board?ref=v0.1.5";
-    board.flake = false;
     plan.url = "github:criad-com/usdaeco-plan?ref=v0.1.4";
     plan.flake = false;
     compliance.url = "github:criad-com/usdaeco-compliance?ref=v0.1.3";

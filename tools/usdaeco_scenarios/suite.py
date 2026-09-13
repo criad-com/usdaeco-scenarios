@@ -239,6 +239,16 @@ def audit(root, family):
 
 
 def gate(family, destination):
+    from family import OPTIONAL_SOURCE_REASON, dependency_pins, repos
+    members = {e['name'] for e in family['repos']}
+    declarations = dependency_pins()
+    missing = [pin['repo'] for name, source in repos(include_optional=True).items()
+               if (pin := declarations[name]).get('optional') and pin['repo'] in members
+               and not (source / '.git').exists()]
+    if missing:
+        return dict(gate='suite', passed=False, status='NOT RUN',
+                    result='Complete release provenance requires every train source; ' + OPTIONAL_SOURCE_REASON,
+                    evidence=dict(unavailable=missing))
     started = time.monotonic()
     print('== stage: suite release provenance', flush=True)
     try:
@@ -262,10 +272,12 @@ def main(argv=None):
     args.output.mkdir(parents=True, exist_ok=True)
     row = gate(read(ROOT, 'family.json'), args.output / 'source')
     (args.output / 'suite.json').write_text(json.dumps(row, indent=2) + '\n')
-    print(('PASS ' if row['passed'] else 'FAIL ') + row['result'])
-    print(f"1 checks, {int(not row['passed'])} failed")
-    return int(not row['passed'])
+    status = row.get('status', 'PASS' if row['passed'] else 'FAIL')
+    print(status + ' ' + row['result'])
+    print(f"1 checks, {int(status == 'FAIL')} failed, {int(status == 'NOT RUN')} not run")
+    return int(status == 'FAIL')
 
 
 if __name__ == '__main__':
+    sys.path.insert(0, str(ROOT))
     raise SystemExit(main())

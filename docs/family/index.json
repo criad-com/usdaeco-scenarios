@@ -738,7 +738,7 @@
       "candidate": true,
       "library": {
         "name": "usdaeco-scenarios",
-        "version": "0.9.1",
+        "version": "0.9.2",
         "kind": "gate",
         "tier": "gate",
         "requires": {},
@@ -747,9 +747,9 @@
       "purpose": "Pinned family acceptance",
       "licence": "MIT",
       "example": null,
-      "status": "Current v0.9.1 candidate; released train pin v0.8.1. Its structure and regressions run without recursion. Measured full and fast results are recorded in acceptance; this card does not establish tag publication.",
+      "status": "Current v0.9.2 candidate; released train pin v0.8.1. Its structure and regressions run without recursion. Measured full and fast results are recorded in acceptance; this card does not establish tag publication.",
       "source_sha256": {
-        "library.json": "f43f4985adefc4847e2fed76387bedd87914babb88b48cac017220ae46c0ca39"
+        "library.json": "ba27f1f20edff7c614b110e9b47a98df08ae6783ca4e2278aedce455463e52b5"
       }
     },
     {

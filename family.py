@@ -9,11 +9,17 @@ ROOT = Path(__file__).resolve().parent
 LIBRARIES = {"core": "usdAeco", "axis": "usdAecoAxis", "buildup": "usdAecoBuildUp",
              "wall": "usdAecoWall", "pipe": "usdAecoPipe",
              "cctv": "usdAecoCctv", "sync": "usdAecoSync"}
+OPTIONAL_SOURCE_REASON = "optional train source unavailable; supply a local checkout to run this check"
 
 
 def dependency_pins():
     data = json.loads((ROOT / 'dependencies.json').read_text())
-    return data['repos'] | data.get('nativeKits', {})
+    return (data['repos'] | data.get('nativeKits', {})
+            | {name: dict(pin, optional=True) for name, pin in data.get('optionalRepos', {}).items()})
+
+
+def optional_repositories():
+    return {pin['repo'] for pin in dependency_pins().values() if pin.get('optional')}
 
 
 def repos(*, include_optional=False):
@@ -21,17 +27,19 @@ def repos(*, include_optional=False):
     default = json.loads(state.read_text())["sources"] if state.is_file() else str(ROOT.parent)
     parent = Path(os.environ.get("AECO_FAMILY_ROOT", default)).resolve()
     pins = dependency_pins()
-    return {name: Path(os.environ.get("AECO_" + name.upper().replace('-', '_') + "_SOURCE",
+    paths = {name: Path(os.environ.get("AECO_" + name.upper().replace('-', '_') + "_SOURCE",
                                      parent / pin['repo'])).resolve()
             for name, pin in pins.items()}
+    return {name: path for name, path in paths.items()
+            if include_optional or not pins[name].get('optional') or (path / '.git').exists()}
 
 
 def release_pins():
-    data = json.loads((ROOT / "dependencies.json").read_text())
     paths = repos()
     return {name: {"base_tag": pin["ref"], "revision": pin.get("revision") or
                    run(["git", "rev-parse", "refs/tags/" + pin["ref"] + "^{commit}"], cwd=paths[name]).strip()}
-            for name, pin in (data["repos"] | data.get("nativeKits", {})).items() if name in paths}
+            for name, pin in dependency_pins().items()
+            if name in paths and (not pin.get('optional') or (paths[name] / '.git').exists())}
 
 
 def clean_env():
@@ -96,14 +104,16 @@ def environment(pluginset=None):
 def audit_sources():
     """Fail before builds or imports on any source drift."""
     ensure_sources()
+    declarations = dependency_pins()
     for name, path in repos(include_optional=True).items():
-        if not (path / '.git').exists():
+        if not (path / '.git').exists() and not declarations[name].get('optional'):
             raise RuntimeError('Pinned source unavailable: ' + name)
     pins = release_pins()
     report = {}
     for name, path in repos(include_optional=True).items():
         if not (path / ".git").exists():
-            raise RuntimeError("Pinned source unavailable: " + name)
+            report[name] = dict(status='NOT RUN', reason=OPTIONAL_SOURCE_REASON)
+            continue
         revision = run(["git", "rev-parse", "HEAD"], cwd=path).strip()
         changed = run(["git", "status", "--porcelain", "--untracked-files=normal"], cwd=path)
         changed = [s for s in changed.splitlines() if s[3:] != "STEERING.md"]
@@ -136,6 +146,9 @@ def isolate_sources(directory):
     for name, source in sources.items():
         repo = declarations.get(name, {}).get('repo', 'usdaeco-' + name)
         destination = directory / repo
+        if declarations[name].get('optional') and not (source / '.git').exists() and not (destination / '.git').exists():
+            os.environ["AECO_" + name.upper().replace('-', '_') + "_SOURCE"] = str(destination)
+            continue
         if not destination.exists():
             pin = declarations[name]
             if (source / ".git").exists():

@@ -37,7 +37,8 @@ def audit(family, sources, *, tag_sources=None):
         try:
             metadata = json.loads((root / 'library.json').read_text())
             dependencies = json.loads((root / 'dependencies.json').read_text())
-            declared = dependencies['repos'] | dependencies.get('nativeKits', {})
+            declared = (dependencies['repos'] | dependencies.get('nativeKits', {})
+                        | dependencies.get('optionalRepos', {}))
             historical = dependencies.get('fixtures', {})
             if not isinstance(historical, dict):
                 raise ValueError('fixtures must be a mapping')
