@@ -2641,7 +2641,7 @@
       "gate": "links before builds",
       "passed": false,
       "status": "FAIL",
-      "result": "42/45 roots; usdSolid/README.md: BLOCKED.md; usdSolid/README.md: BLOCKED.md; usdSolid/docs/verification.md: ../BLOCKED.md; usdSolidOcct/docs/public-repin.md: ../BLOCKED.md",
+      "result": "42/45 roots; usdSolid/README.md: a since-removed blocker note; usdSolid/README.md: a since-removed blocker note; usdSolid/docs/verification.md: a since-removed blocker note; usdSolidOcct/docs/public-repin.md: a since-removed blocker note",
       "evidence": [
         {
           "root": "usdaeco-scenarios/README.md",
@@ -2851,12 +2851,12 @@
         {
           "root": "usdSolid/README.md",
           "passed": false,
-          "detail": "usdSolid/README.md: BLOCKED.md; usdSolid/README.md: BLOCKED.md"
+          "detail": "usdSolid/README.md: a since-removed blocker note; usdSolid/README.md: a since-removed blocker note"
         },
         {
           "root": "usdSolid/docs",
           "passed": false,
-          "detail": "usdSolid/docs/verification.md: ../BLOCKED.md"
+          "detail": "usdSolid/docs/verification.md: a since-removed blocker note"
         },
         {
           "root": "usdSolidOcct/README.md",
@@ -2866,7 +2866,7 @@
         {
           "root": "usdSolidOcct/docs",
           "passed": false,
-          "detail": "usdSolidOcct/docs/public-repin.md: ../BLOCKED.md"
+          "detail": "usdSolidOcct/docs/public-repin.md: a since-removed blocker note"
         }
       ]
     },
@@ -6918,7 +6918,7 @@
       "gate": "links at end",
       "passed": false,
       "status": "FAIL",
-      "result": "42/45 roots; usdSolid/README.md: BLOCKED.md; usdSolid/README.md: BLOCKED.md; usdSolid/docs/verification.md: ../BLOCKED.md; usdSolidOcct/docs/public-repin.md: ../BLOCKED.md",
+      "result": "42/45 roots; usdSolid/README.md: a since-removed blocker note; usdSolid/README.md: a since-removed blocker note; usdSolid/docs/verification.md: a since-removed blocker note; usdSolidOcct/docs/public-repin.md: a since-removed blocker note",
       "evidence": [
         {
           "root": "usdaeco-scenarios/README.md",
@@ -7128,12 +7128,12 @@
         {
           "root": "usdSolid/README.md",
           "passed": false,
-          "detail": "usdSolid/README.md: BLOCKED.md; usdSolid/README.md: BLOCKED.md"
+          "detail": "usdSolid/README.md: a since-removed blocker note; usdSolid/README.md: a since-removed blocker note"
         },
         {
           "root": "usdSolid/docs",
           "passed": false,
-          "detail": "usdSolid/docs/verification.md: ../BLOCKED.md"
+          "detail": "usdSolid/docs/verification.md: a since-removed blocker note"
         },
         {
           "root": "usdSolidOcct/README.md",
@@ -7143,7 +7143,7 @@
         {
           "root": "usdSolidOcct/docs",
           "passed": false,
-          "detail": "usdSolidOcct/docs/public-repin.md: ../BLOCKED.md"
+          "detail": "usdSolidOcct/docs/public-repin.md: a since-removed blocker note"
         }
       ]
     },

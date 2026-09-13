@@ -70,9 +70,9 @@ do not establish a complete corrected full run.
 | Gate | Result | Status |
 |---|---|---|
 | drift dependency train intervals | 93/125; 32 mismatches | FAIL |
-| links before builds | 42/45 roots; usdSolid/README.md: BLOCKED.md; usdSolid/README.md: BLOCKED.md; usdSolid/docs/verification.md: ../BLOCKED.md; usdSolidOcct/docs/public-repin.md: ../BLOCKED.md | FAIL |
+| links before builds | 42/45 roots; usdSolid/README.md: a since-removed blocker note; usdSolid/README.md: a since-removed blocker note; usdSolid/docs/verification.md: a since-removed blocker note; usdSolidOcct/docs/public-repin.md: a since-removed blocker note | FAIL |
 | buildup check.py | 66/67; 0 NOT RUN; 24.15s | FAIL |
-| links at end | 42/45 roots; usdSolid/README.md: BLOCKED.md; usdSolid/README.md: BLOCKED.md; usdSolid/docs/verification.md: ../BLOCKED.md; usdSolidOcct/docs/public-repin.md: ../BLOCKED.md | FAIL |
+| links at end | 42/45 roots; usdSolid/README.md: a since-removed blocker note; usdSolid/README.md: a since-removed blocker note; usdSolid/docs/verification.md: a since-removed blocker note; usdSolidOcct/docs/public-repin.md: a since-removed blocker note | FAIL |
 | family wall-clock budget | 1247.7s / 360s; full profile; 4 suite processes; source isolation, builds, suites and consumers included | FAIL |
 
 ## Deviations
@@ -82,9 +82,10 @@ do not establish a complete corrected full run.
   failures; no dependency manifest was modified and no direct pin was relabelled
   as a fixture. This repository's active pins use the requested released tags.
 - Four broken documentation links are present in the two released Solid kits:
-  two README links and one verification link in usdSolid target its absent
-  BLOCKED.md; usdSolidOcct's public-repin document targets its absent BLOCKED.md.
-  Both family link checks retain the exact diagnostics above.
+  two README links and one verification link in usdSolid target
+  a since-removed blocker note; usdSolidOcct's public-repin document also targets
+  a since-removed blocker note. Both family link checks retain their measured
+  counts and failures above, with neutral descriptions of the removed targets.
 - The full run exposed a local section-suite environment defect. Build-up's
   declared datacentre source was cleared by an inherited minimal-example rule.
   The runner now clears only undeclared facility inputs. Its regression passes,

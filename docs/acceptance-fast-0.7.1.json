@@ -1300,8 +1300,8 @@
           "repo": "usdaeco-scenarios",
           "check": "pin typical",
           "passed": true,
-          "detail": "usdaeco-typical declared v0.1.1; train [v0.1.0, v0.1.1]; inside train",
-          "dependency": "usdaeco-typical",
+          "detail": "usdaeco-repeat declared v0.1.1; train [v0.1.0, v0.1.1]; inside train",
+          "dependency": "usdaeco-repeat",
           "ref": "v0.1.1",
           "floor": "v0.1.0",
           "released": "v0.1.1",
@@ -1477,7 +1477,7 @@
           "version": "0.1.2"
         },
         {
-          "repo": "usdaeco-typical",
+          "repo": "usdaeco-repeat",
           "check": "pin toolchain",
           "passed": true,
           "detail": "usdaeco-toolchain declared v0.3.5; train [v0.3.5, v0.3.7]; inside train",
@@ -1489,7 +1489,7 @@
           "version": "0.3.5"
         },
         {
-          "repo": "usdaeco-typical",
+          "repo": "usdaeco-repeat",
           "check": "pin core",
           "passed": true,
           "detail": "usdaeco-core declared v0.9.2; train [v0.9.2, v0.9.3]; inside train",
@@ -1501,7 +1501,7 @@
           "version": "0.9.2"
         },
         {
-          "repo": "usdaeco-typical",
+          "repo": "usdaeco-repeat",
           "check": "pin datacentre",
           "passed": true,
           "detail": "usdaeco-datacentre declared v0.4.5; train [v0.4.5, v0.4.6]; inside train",
@@ -1513,7 +1513,7 @@
           "version": "0.4.5"
         },
         {
-          "repo": "usdaeco-typical",
+          "repo": "usdaeco-repeat",
           "check": "pin axis",
           "passed": true,
           "detail": "usdaeco-axis declared v0.1.2; train [v0.1.2, v0.1.3]; inside train",
@@ -1525,7 +1525,7 @@
           "version": "0.1.2"
         },
         {
-          "repo": "usdaeco-typical",
+          "repo": "usdaeco-repeat",
           "check": "pin buildup",
           "passed": true,
           "detail": "usdaeco-buildup declared v0.2.1; train [v0.2.1, v0.2.2]; inside train",
@@ -1791,19 +1791,19 @@
           "detail": ">=0.1,<0.2; declared versions ['0.1.2']; train 0.1.3"
         },
         {
-          "repo": "usdaeco-typical",
+          "repo": "usdaeco-repeat",
           "check": "requires usdAeco",
           "passed": true,
           "detail": ">=0.9.2,<1.0; declared versions ['0.9.2']; train 0.9.3"
         },
         {
-          "repo": "usdaeco-typical",
+          "repo": "usdaeco-repeat",
           "check": "requires usdAecoBuildUp",
           "passed": true,
           "detail": ">=0.2,<0.3; declared versions ['0.2.1']; train 0.2.2"
         },
         {
-          "repo": "usdaeco-typical",
+          "repo": "usdaeco-repeat",
           "check": "requires usdAecoAxis",
           "passed": true,
           "detail": ">=0.1,<0.2; declared versions ['0.1.2']; train 0.1.3"
@@ -1943,13 +1943,13 @@
           "detail": "Crate, own layers, README and vanilla render present"
         },
         {
-          "repo": "usdaeco-typical",
+          "repo": "usdaeco-repeat",
           "check": "nine sections",
           "passed": true,
           "detail": "9/9 sections in the required order"
         },
         {
-          "repo": "usdaeco-typical",
+          "repo": "usdaeco-repeat",
           "check": "published result",
           "passed": true,
           "detail": "Crate, own layers, README and vanilla render present"
@@ -2482,12 +2482,12 @@
           "detail": "6 links resolve (anchors and remote URLs skipped)"
         },
         {
-          "root": "usdaeco-typical/README.md",
+          "root": "usdaeco-repeat/README.md",
           "passed": true,
           "detail": "15 links resolve (anchors and remote URLs skipped)"
         },
         {
-          "root": "usdaeco-typical/docs",
+          "root": "usdaeco-repeat/docs",
           "passed": true,
           "detail": "2 links resolve (anchors and remote URLs skipped)"
         },
@@ -3219,12 +3219,12 @@
           "detail": "6 links resolve (anchors and remote URLs skipped)"
         },
         {
-          "root": "usdaeco-typical/README.md",
+          "root": "usdaeco-repeat/README.md",
           "passed": true,
           "detail": "15 links resolve (anchors and remote URLs skipped)"
         },
         {
-          "root": "usdaeco-typical/docs",
+          "root": "usdaeco-repeat/docs",
           "passed": true,
           "detail": "2 links resolve (anchors and remote URLs skipped)"
         },
@@ -4431,8 +4431,8 @@
         "repo": "usdaeco-scenarios",
         "check": "pin typical",
         "passed": true,
-        "detail": "usdaeco-typical declared v0.1.1; train [v0.1.0, v0.1.1]; inside train",
-        "dependency": "usdaeco-typical",
+        "detail": "usdaeco-repeat declared v0.1.1; train [v0.1.0, v0.1.1]; inside train",
+        "dependency": "usdaeco-repeat",
         "ref": "v0.1.1",
         "floor": "v0.1.0",
         "released": "v0.1.1",
@@ -4608,7 +4608,7 @@
         "version": "0.1.2"
       },
       {
-        "repo": "usdaeco-typical",
+        "repo": "usdaeco-repeat",
         "check": "pin toolchain",
         "passed": true,
         "detail": "usdaeco-toolchain declared v0.3.5; train [v0.3.5, v0.3.7]; inside train",
@@ -4620,7 +4620,7 @@
         "version": "0.3.5"
       },
       {
-        "repo": "usdaeco-typical",
+        "repo": "usdaeco-repeat",
         "check": "pin core",
         "passed": true,
         "detail": "usdaeco-core declared v0.9.2; train [v0.9.2, v0.9.3]; inside train",
@@ -4632,7 +4632,7 @@
         "version": "0.9.2"
       },
       {
-        "repo": "usdaeco-typical",
+        "repo": "usdaeco-repeat",
         "check": "pin datacentre",
         "passed": true,
         "detail": "usdaeco-datacentre declared v0.4.5; train [v0.4.5, v0.4.6]; inside train",
@@ -4644,7 +4644,7 @@
         "version": "0.4.5"
       },
       {
-        "repo": "usdaeco-typical",
+        "repo": "usdaeco-repeat",
         "check": "pin axis",
         "passed": true,
         "detail": "usdaeco-axis declared v0.1.2; train [v0.1.2, v0.1.3]; inside train",
@@ -4656,7 +4656,7 @@
         "version": "0.1.2"
       },
       {
-        "repo": "usdaeco-typical",
+        "repo": "usdaeco-repeat",
         "check": "pin buildup",
         "passed": true,
         "detail": "usdaeco-buildup declared v0.2.1; train [v0.2.1, v0.2.2]; inside train",
@@ -4916,19 +4916,19 @@
         "detail": ">=0.1,<0.2; declared versions ['0.1.2']; train 0.1.3"
       },
       {
-        "repo": "usdaeco-typical",
+        "repo": "usdaeco-repeat",
         "check": "requires usdAeco",
         "passed": true,
         "detail": ">=0.9.2,<1.0; declared versions ['0.9.2']; train 0.9.3"
       },
       {
-        "repo": "usdaeco-typical",
+        "repo": "usdaeco-repeat",
         "check": "requires usdAecoBuildUp",
         "passed": true,
         "detail": ">=0.2,<0.3; declared versions ['0.2.1']; train 0.2.2"
       },
       {
-        "repo": "usdaeco-typical",
+        "repo": "usdaeco-repeat",
         "check": "requires usdAecoAxis",
         "passed": true,
         "detail": ">=0.1,<0.2; declared versions ['0.1.2']; train 0.1.3"
@@ -5062,13 +5062,13 @@
         "detail": "Crate, own layers, README and vanilla render present"
       },
       {
-        "repo": "usdaeco-typical",
+        "repo": "usdaeco-repeat",
         "check": "nine sections",
         "passed": true,
         "detail": "9/9 sections in the required order"
       },
       {
-        "repo": "usdaeco-typical",
+        "repo": "usdaeco-repeat",
         "check": "published result",
         "passed": true,
         "detail": "Crate, own layers, README and vanilla render present"
@@ -6690,7 +6690,7 @@
       },
       {
         "name": "typical",
-        "repo": "usdaeco-typical",
+        "repo": "usdaeco-repeat",
         "tag": "v0.1.1",
         "source": {
           "ref": "v0.4.5",
@@ -6767,8 +6767,8 @@
           "sha256": "f753eb7ccd1ba7c0090f246d79913d354c8049077ca3df4e27782f939d43ce4d",
           "width": 1280
         },
-        "example_url": "https://github.com/criad-com/usdaeco-typical/tree/v0.1.1/examples/datacentre",
-        "render_url": "https://github.com/criad-com/usdaeco-typical/raw/v0.1.1/examples/datacentre/renders/overview.png"
+        "example_url": "https://github.com/criad-com/usdaeco-repeat/tree/v0.1.1/examples/datacentre",
+        "render_url": "https://github.com/criad-com/usdaeco-repeat/raw/v0.1.1/examples/datacentre/renders/overview.png"
       }
     ]
   }

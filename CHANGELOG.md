@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.9.1
+
+- Require an explicit output destination for the IFC edit-semantics spike.
+- Update historical repository references and links to usdaeco-repeat.
+- Describe since-removed blocker notes neutrally in the 0.8.0 acceptance records, preserving all measured numbers and failure statuses.
+
 ## 0.9.0
 
 - Add the usdAECO suite v0.3.0 to train aeco-0.9.0 with a shallow, nonrecursive release gate in both profiles.

@@ -28,7 +28,7 @@ The 47 declared fixtures are inventoried separately in [drift.json](drift-0.7.1.
 | usdaeco-meta | Unreleased | Unreleased |
 | usdaeco-plan | v0.1.0 | v0.1.2 |
 | usdaeco-compliance | v0.1.0 | v0.1.1 |
-| usdaeco-typical | v0.1.0 | v0.1.1 |
+| usdaeco-repeat | v0.1.0 | v0.1.1 |
 | usdaeco-clash | v0.2.0 | v0.2.1 |
 | usdaeco-solid | v0.1.1 | v0.1.3 |
 | usdSolid | v0.1.0 | v0.1.2 |

@@ -585,21 +585,21 @@
       "trainRef": "v0.1.2"
     },
     {
-      "repo": "usdaeco-typical",
+      "repo": "usdaeco-repeat",
       "ref": "v0.1.0",
       "dependency": "usdaeco-toolchain",
       "fixtureRef": "v0.3.2",
       "trainRef": "v0.3.3"
     },
     {
-      "repo": "usdaeco-typical",
+      "repo": "usdaeco-repeat",
       "ref": "v0.1.0",
       "dependency": "usdaeco-datacentre",
       "fixtureRef": "v0.4.2",
       "trainRef": "v0.4.5"
     },
     {
-      "repo": "usdaeco-typical",
+      "repo": "usdaeco-repeat",
       "ref": "v0.1.0",
       "dependency": "usdaeco-axis",
       "fixtureRef": "v0.1.1",

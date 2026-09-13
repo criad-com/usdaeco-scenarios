@@ -1,5 +1,6 @@
 """Headless ifcopenshell spike: what happens to joined walls and port-connected
 pipes when one element is extended or moved, and what an adapter must do."""
+import argparse
 import math, time, logging, io
 import numpy as np
 import ifcopenshell, ifcopenshell.api, ifcopenshell.geom, ifcopenshell.validate
@@ -8,6 +9,10 @@ import ifcopenshell.util.representation as urep, ifcopenshell.util.element as ue
 import ifcopenshell.util.system as usys
 from ifcopenshell.util.shape_builder import ShapeBuilder
 from ifcopenshell.api import run
+
+parser = argparse.ArgumentParser(description=__doc__)
+parser.add_argument("--output", required=True, help="Destination IFC file")
+args = parser.parse_args()
 
 f = ifcopenshell.file(schema="IFC4X3")
 run("root.create_entity", f, ifc_class="IfcProject", name="Spike")
@@ -150,5 +155,5 @@ print("P2 geometry P1:", shape_info(P1)); print("P2 geometry P2:", shape_info(P2
 # alternative policy: neighbour fixed, segment 2 shortened instead (both ends constrained)
 rep2 = urep.get_representation(P2, "Model", "Body", "MODEL_VIEW"); ext2 = rep2.Items[0]
 print("P3 alt policy would set P2 depth", ext2.Depth, "->", ext2.Depth - 0.5, "and move its start port; a fitting insert needs mep_bend_shape/mep_transition_shape + connect_port")
-out = "/private/tmp/claude-501/-Volumes-Bkp2-Projects/6bd8a086-2cd1-49b9-bf4a-d4c638648467/scratchpad/spike_edit.ifc"
+out = args.output
 f.write(out); print("wrote", out, len(list(f)), "entities")
