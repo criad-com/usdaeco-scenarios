@@ -38,7 +38,10 @@ def test_structure_report_uses_actual_counts_and_rejects_missing_results():
 def test_seeds_are_inventory_entries_and_released_subset_is_compatible():
     inventory = json.loads((ROOT / 'family.json').read_text())
     entries = {row['name']: row for row in inventory['repos']}
-    assert len(entries) == 24
+    assert len(entries) == 25
+    assert entries['usdaeco']['kind'] == 'suite'
+    assert set(entries['usdaeco']['requires']) == {
+        name for name, entry in entries.items() if entry['released'] and name != 'usdaeco'}
     assert entries['usdaeco-meta']['tag'] is None
     for name, tag in {'plan':'v0.1.4','compliance':'v0.1.3','repeat':'v0.2.1',
                       'clash':'v0.2.3','solid':'v0.1.5'}.items():

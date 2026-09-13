@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.9.0
+
+- Add the usdAECO suite v0.3.0 to train aeco-0.9.0 with a shallow, nonrecursive release gate in both profiles.
+- Verify suite gitlinks against origin release tags, report explicit released overrides, and inventory stage proofs and package/analysis provenance.
+- Keep scenarios v0.8.1 as the released pin while checking this v0.9.0 candidate without recursion.
+
 ## 0.8.1 — public train closure
 
 - Advance IFC, Revit, Bonsai, board and both native kit releases; retain the public dependency floors.

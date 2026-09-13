@@ -1,0 +1,42 @@
+{
+  "initialFast": {
+    "checks": 54,
+    "counts": {
+      "PASS": 30,
+      "FAIL": 1,
+      "NOT RUN": 23
+    },
+    "seconds": 98.4,
+    "failure": "Existing regression expected 24 inventory entries; updated to 25 for the suite member."
+  },
+  "focusedSuiteTests": {
+    "passed": 26,
+    "seconds": 10.15
+  },
+  "finalFast": {
+    "checks": 54,
+    "counts": {
+      "PASS": 31,
+      "FAIL": 0,
+      "NOT RUN": 23
+    },
+    "seconds": 95.11
+  },
+  "pytest": "165 passed in 25.08s",
+  "existingTrainEntriesUnchanged": 24,
+  "lockfile": "Inherited tracked lockfile removed from version control; local copy remains ignored.",
+  "finalDocumentation": {
+    "links": "45/45 roots",
+    "sanitization": {
+      "files": 138,
+      "violations": [],
+      "passed": true
+    },
+    "retiredTermFiles": [],
+    "index": "25 rows; tagged sources and explicit current candidate",
+    "structure": {
+      "checks": 29,
+      "failed": 0
+    }
+  }
+}

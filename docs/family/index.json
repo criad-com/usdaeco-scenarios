@@ -1,7 +1,7 @@
 {
   "format": 1,
   "family": {
-    "train": "aeco-0.8.1",
+    "train": "aeco-0.9.0",
     "repos": [
       {
         "name": "aeco-toolchain",
@@ -318,6 +318,41 @@
         "enclave": null,
         "released": "v0.1.5",
         "floor": "v0.1.3"
+      },
+      {
+        "name": "usdaeco",
+        "kind": "suite",
+        "library": null,
+        "tag": "v0.3.0",
+        "released": "v0.3.0",
+        "floor": "v0.3.0",
+        "requires": {
+          "aeco-toolchain": ">=0.4.0",
+          "usdaeco-core": ">=0.9.5",
+          "usdaeco-axis": ">=0.1.5",
+          "usdaeco-toolchain": ">=0.3.10",
+          "usdaeco-buildup": ">=0.2.5",
+          "usdaeco-wall": ">=0.2.5",
+          "usdaeco-pipe": ">=0.2.5",
+          "usdaeco-cctv": ">=0.5.6",
+          "usdaeco-cctv-exec": ">=0.2.4",
+          "usdaeco-sync": ">=0.5.5",
+          "usdaeco-ifc": ">=0.2.3",
+          "usdaeco-bonsai": ">=0.1.6",
+          "usdaeco-revit": ">=0.1.5",
+          "usdaeco-datacentre": ">=0.4.9",
+          "usdaeco-board": ">=0.1.5",
+          "usdaeco-scenarios": ">=0.8.1",
+          "usdaeco-plan": ">=0.1.4",
+          "usdaeco-compliance": ">=0.1.3",
+          "usdaeco-repeat": ">=0.2.1",
+          "usdaeco-clash": ">=0.2.3",
+          "usdaeco-solid": ">=0.1.5",
+          "usdSolid": ">=0.1.6",
+          "usdSolidOcct": ">=0.1.5"
+        },
+        "example": null,
+        "enclave": null
       }
     ]
   },
@@ -703,7 +738,7 @@
       "candidate": true,
       "library": {
         "name": "usdaeco-scenarios",
-        "version": "0.8.1",
+        "version": "0.9.0",
         "kind": "gate",
         "tier": "gate",
         "requires": {},
@@ -712,9 +747,9 @@
       "purpose": "Pinned family acceptance",
       "licence": "MIT",
       "example": null,
-      "status": "Current release candidate; its structure and regressions run without recursion. Measured full and fast results are recorded in acceptance; this card does not establish tag publication.",
+      "status": "Current v0.9.0 candidate; released train pin v0.8.1. Its structure and regressions run without recursion. Measured full and fast results are recorded in acceptance; this card does not establish tag publication.",
       "source_sha256": {
-        "library.json": "fb814265b12dc2b2dc2fa6952793aec9b0a3c9caf061bdb2c49125347ad7d676"
+        "library.json": "e8d479716f1568e388deb548356361c88ca40b8e0c98307ba7f795dc86638653"
       }
     },
     {
@@ -937,6 +972,28 @@
         "library.json": "e62f2a6a48182a533764444aa7fe50c176c3daecf71e995476cf9735b3971c6c",
         "README.md": "1309f75f5a65dc8158ac3fbc4e33bdd189885d238e1a552f901f38706704a267",
         "LICENSE": "202a23a57b429d91028dc1b4f62b6342bad6bc3ee294d20c58f363fac184e346"
+      }
+    },
+    {
+      "name": "usdaeco",
+      "available": true,
+      "commit": "b78cdae03022ba7db3415c8ea2568096c78704cb",
+      "library": {
+        "name": "usdaeco",
+        "version": "0.3.0",
+        "kind": "suite",
+        "tier": "suite",
+        "requires": {},
+        "licence": "MIT"
+      },
+      "purpose": "the usdAECO suite",
+      "status": "Version 0.3.0 adds the flattened form, a Bonsai cooling delivery and a building walkthrough. Its [guide](stage/README.md) records what was run, what uses committed results, and the limits of the expected analysis findings and mute-validation deviations. The complete measured record is [stage/manifest.json](stage/manifest.json).",
+      "example": null,
+      "licence": "MIT",
+      "source_sha256": {
+        "library.json": "c1fcce18d09aad1937e38144bef2eed5ec53dc1a7d6b2b0e3d71a4f7319679ec",
+        "README.md": "e188635ea9a1f1e21093013ac4ddf00e8662413139c8559c7a2a020c4bc97815",
+        "LICENSE": "fafca50624e04851cf175ec61cf7246d6f1ba5b52c67f8fb09f43ff82437d859"
       }
     }
   ]

@@ -31,6 +31,11 @@ manifests, and consume the fresh plan, compliance, repeat, clash and solid
 findings. Export the five-step walkthrough from released outputs and renders,
 then run regression, link and sanitization checks.
 
+Both profiles audit the usdAECO suite in a shallow clone without submodules:
+compare gitlinks with origin release tags, validate explicit released overrides,
+verify the stage file inventory and record package/analysis provenance and proofs.
+This row does not execute the suite's stage checks or rebuild the facility.
+
 ## 5 Validation
 
 The family Report provides structure checks and the final count. NOT RUN
@@ -80,5 +85,5 @@ Nix execution is not proven by Python acceptance.
 
 ## 9 Status
 
-Version 0.8.1. See [acceptance](acceptance.md) for measured counts and
+Version 0.9.0 candidate. See [acceptance](acceptance.md) for measured counts and
 [release inventory](release-inventory.json) for exact source provenance.

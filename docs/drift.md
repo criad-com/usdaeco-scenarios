@@ -1,11 +1,11 @@
 # Dependency train intervals
 
-Train `aeco-0.8.1` has **0 direct-pin mismatches among 125 declarations**.
+Train `aeco-0.9.0` has **0 direct-pin mismatches among 125 declarations**.
 All 35 requirement-range checks and 22 publication-contract checks pass.
-Every floor remains unchanged from 0.8.0, including the scenarios floor v0.8.0.
+The 24 existing floors and released tags remain unchanged; the suite adds floor/release v0.3.0.
 
 The floor is the first permitted public release. Declared fixtures remain
-separate in [drift.json](drift.json) and never waive a direct mismatch.
+separate in the [current fast report](acceptance-fast-0.9.0.json) and never waive a direct mismatch.
 The generic build kit is included in interval checks; OpenUSD inputs remain external.
 
 ## Train bounds
@@ -36,8 +36,10 @@ The generic build kit is included in interval checks; OpenUSD inputs remain exte
 | usdaeco-solid | v0.1.4 | v0.1.5 |
 | usdSolid | v0.1.4 | v0.1.6 |
 | usdSolidOcct | v0.1.3 | v0.1.5 |
+| usdaeco | v0.3.0 | v0.3.0 |
 
 ## Exact upstream mismatches
 
-None. Both the single full gate and the separate fast profile report 125/125.
+None. The current fast profile reports 125/125. Suite overrides are checked
+separately against origin release tags; they do not advance these train bounds.
 [Previous drift](drift-0.8.0.md) preserves the earlier 32 findings.

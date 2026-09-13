@@ -34,3 +34,5 @@ def test_checkout_uses_current_candidate_without_requesting_an_unpublished_tag(t
     assert (tmp_path / 'usdaeco-scenarios').resolve() == ROOT
     assert result['sources'][0]['revision'] is None
     assert result['sources'][0]['status'] == 'current-candidate'
+    assert result['sources'][0]['ref'] == family['repos'][0]['released']
+    assert result['sources'][0]['candidate'] == 'v' + json.loads((ROOT / 'library.json').read_text())['version']

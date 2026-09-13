@@ -22,14 +22,17 @@ def checkout(family, destination, git_base, kit_base=None):
         if target.exists():
             raise ValueError('Fresh checkout destination already exists: ' + name)
         if name == 'usdaeco-scenarios':
+            from packaging.version import Version
             metadata = json.loads((ROOT / 'library.json').read_text())
-            if tag != 'v' + metadata['version']:
-                raise ValueError('Scenarios candidate version differs from train')
+            if Version(metadata['version']) < Version(tag):
+                raise ValueError('Scenarios candidate is older than the released train')
             target.symlink_to(os.path.relpath(ROOT, destination), target_is_directory=True)
             print('PASS current candidate ' + name + ' ' + tag, flush=True)
-            return dict(repo=name, ref=tag, revision=None, status='current-candidate')
+            return dict(repo=name, ref=tag, candidate='v' + metadata['version'],
+                        revision=None, status='current-candidate')
         base = kit_base if name in ('usdSolid', 'usdSolidOcct') and kit_base else git_base
-        subprocess.run(['git', 'clone', '--quiet', '--branch', tag,
+        options = ['--depth', '1'] if entry.get('kind') == 'suite' else []
+        subprocess.run(['git', 'clone', '--quiet', '--branch', tag, '--no-recurse-submodules', *options,
                         base.rstrip('/') + '/' + name + '.git', str(target)],
                        check=True, capture_output=True)
         revision = subprocess.check_output(['git', '-C', str(target), 'rev-parse', 'HEAD'], text=True).strip()

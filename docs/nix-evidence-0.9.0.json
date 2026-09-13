@@ -1,0 +1,8 @@
+{
+  "attempts": 1,
+  "command": "nix flake check --no-write-lock-file --offline",
+  "exitCode": 1,
+  "seconds": 0.68,
+  "passed": false,
+  "reason": "The direct public board v0.1.5 input returned HTTP 404 during resolution; the external registry did not redirect it. Evaluation and builds are not proven."
+}

@@ -8,10 +8,10 @@ KITS = {"usdSolid": "usdaeco-solid-kit", "usdSolidOcct": "usdaeco-solid-occt-kit
 
 
 def validate_family(document, **kwargs):
-    """Project generic kit names/kinds; preserve pins and ranges.
+    """Project generic kit names and the suite kind; preserve pins and ranges.
 
     The shared validator restricts repository names to usdaeco-* and has no
-    kit kind. The public inventory retains the actual names and kind.
+    kit or suite kind. The public inventory retains the actual names and kinds.
     """
     from usdaeco_check.family import validate_family as shared_validate
     from usdaeco_check.report import Result
@@ -31,4 +31,9 @@ def validate_family(document, **kwargs):
         if entry.get("name") in KITS and entry.get("kind") == "kit":
             entry["name"] = KITS[entry["name"]]
             entry["kind"] = "library"
+        if entry.get('kind') == 'suite':
+            if entry.get('name') != 'usdaeco' or entry.get('library') is not None:
+                return Result('family suite', False, 'suite must be usdaeco with no schema library')
+            entry['kind'] = 'gate'
+        entry['requires'] = {KITS.get(name, name): bounds for name, bounds in entry['requires'].items()}
     return shared_validate(data, **kwargs)

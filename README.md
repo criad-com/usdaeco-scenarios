@@ -8,17 +8,18 @@ Check that released family repositories work together on the published
 
 ## The schema on an index card
 
-This gate defines no schema. [family.json](family.json) inventories 24
-repositories: 22 released dependencies, this candidate and a private documentation seed.
+This gate defines no schema. [family.json](family.json) inventories 25
+repositories: 23 released dependencies, this candidate and a private documentation seed.
 [dependencies.json](dependencies.json) pins 19 family dependencies
-and two native kits. The scenarios entry names this release; the
+and two native kits. The scenarios entry retains released v0.8.1; this v0.9.0
 candidate is checked without recursively running its own gate. The generic
-build kit is inventoried separately from the executable semantic suites.
+build kit and the usdAECO suite v0.3.0 are inventoried separately from the
+executable semantic suites.
 
 ## The example
 
 <!-- demo:start -->
-Walk through `demo-datacentre-01` in train `aeco-0.8.1`. Each step uses its repository's released findings and one recorded render. Public links name intended mirror locations; network availability is not checked.
+Walk through `demo-datacentre-01` in train `aeco-0.9.0`. Each step uses its repository's released findings and one recorded render. Public links name intended mirror locations; network availability is not checked.
 
 **1. CCTV** — Start with visibility: 45 sensors generate 45 sectors. CriticalDoors covers 11/11 fixed targets; Privacy reports 0 covered exclusions.
 
@@ -77,7 +78,7 @@ export AECO_FAMILY_ROOT="$PWD/out/family"
 env -u PYTHONPATH "$PYTHON" run_scenarios.py checkout --output "$AECO_FAMILY_ROOT"
 export TOOLCHAIN_DIR="$AECO_FAMILY_ROOT/usdaeco-toolchain"
 export AECO_CORE_ROOT="$AECO_FAMILY_ROOT/usdaeco-core"
-env -u PYTHONPATH PYTHONPATH="$AECO_CORE_ROOT:$PWD" "$PYTHON" check.py --output out/gate
+env -u PYTHONPATH "$PYTHON" check.py --output out/gate
 env -u PYTHONPATH -u AECO_FAMILY_ROOT "$PYTHON" -m pytest -q
 env -u PYTHONPATH "$PYTHON" run_scenarios.py demo --output out/demo
 ```
@@ -96,7 +97,7 @@ live integrations; their rows remain NOT RUN with reasons.
 For a shorter audit, use a separate output directory:
 
 ```sh
-env -u PYTHONPATH PYTHONPATH="$AECO_CORE_ROOT:$PWD" "$PYTHON" check.py --profile fast --output out/fast
+env -u PYTHONPATH "$PYTHON" check.py --profile fast --output out/fast
 ```
 
 The fast profile verifies the train, source cards, variant manifests, committed
@@ -105,6 +106,25 @@ plugin set and runs this repository's tests. Full repository suites and derived
 consumer reproductions are NOT RUN: those entry points combine their checks
 with publication, render or native execution. A fast result does not establish
 fresh publication parity or replace the full profile.
+
+Both profiles include the `suite` row. The suite is cloned at v0.3.0 with
+`--depth 1 --no-recurse-submodules`; no duplicate family submodules are acquired.
+The row checks all 23 gitlinks against released tags on the suite's origin,
+checks train pins or explicitly released overrides, verifies the stage file
+inventory, and records the manifest and integration proofs. It also verifies
+every referenced package/analysis tag, including retained producer tags.
+For just this provenance check, using the same `AECO_GIT_BASE` mirror:
+
+```sh
+env -u PYTHONPATH "$PYTHON" tools/usdaeco_scenarios/suite.py --output out/suite
+```
+
+Suite v0.3.0 lacks `pins.py --check --from-gitlinks`, so the row uses
+`git ls-tree` and peeled origin tags. A release providing that option also
+runs its pins command. The suite's root `check.py` needs populated submodules;
+stage composition, rendering and rebuilds are recorded release evidence and
+are not rerun here. [Acceptance](docs/acceptance.md) states the measured scope
+and the limitations carried by those proofs.
 
 `run_scenarios.py demo` is the source-checkout form of `scenarios demo`. It exports
 one local README, five exact findings files and five recorded renders. The
@@ -121,7 +141,7 @@ they are outside the seven-library codeless flake plugin set.
 
 ```sh
 env -u PYTHONPATH "$PYTHON" check.py --structure-only
-nix flake check --offline --no-update-lock-file
+nix flake check --offline --no-write-lock-file
 ```
 
 Flake inputs use public names. For a private mirror, follow the toolchain's
@@ -131,21 +151,29 @@ for every direct input. No private registry or lockfile belongs in this tree.
 
 ## Family
 
-Train `aeco-0.8.1` uses core v0.9.5, axis v0.1.5 and toolchain v0.3.10.
+Train `aeco-0.9.0` uses core v0.9.5, axis v0.1.5 and toolchain v0.3.10.
 Datacentre v0.4.9 supplies the published variants; repeat v0.2.1 supplies the
 repeated-floor example. Requirements are ranges copied from released manifests.
 Inventory validation admits the private metadata entry; separate strict
 validation checks released compatibility. A local adapter projects generic
-kit names and kinds for the semantic-family validator, preserving tags and ranges. The
+kit names and the suite kind for the semantic-family validator, preserving tags and ranges. The
 [generated family index](docs/family/README.md) reads source cards from exact
 tags and has a freshness check against those sources.
+
+The suite's inventory `requires` names all 23 repositories of its baseline
+train, each at least at that train's released version. Exact suite pins are
+checked separately: its baseline is aeco-0.8.1 with released overrides for
+datacentre v0.5.1 and IFC v0.3.1. The train's existing released tags and floors
+remain unchanged. The suite floor is v0.3.0, the release selected for the
+integrated-stage provenance contract. Scenarios v0.9.0 remains an explicit
+candidate until publication; its released v0.8.1 pin matches the suite gitlink.
 
 Each family entry declares `released` (the tag executed by the gate) and
 `floor` (the oldest permitted direct dependency pin). Direct pins must lie
 inside this inclusive interval and satisfy their declared requirement ranges.
 The released version must also satisfy those ranges. A pin carrying commit evidence
 is verified against its own tag, accepting an explicitly recorded public commit
-when supplied. The floor is the first public release, so older direct pins fail. The `tag` field is a checked alias of
+when supplied. The floor is the oldest permitted public release, so older direct pins fail. The `tag` field is a checked alias of
 `released` for the pinned toolchain index generator. Declarations under `dependencies.json.fixtures` are inventoried separately and never satisfy direct requirements or waive a direct mismatch.
 OpenUSD inputs remain external. The generic build kit is subject to its public floor.
 The nine-section use-case and published-result checks follow the toolchain's
@@ -157,23 +185,19 @@ scope: use-case and integration repositories; reduced kinds are exempt.
 runtime; `family_manifest.py`: generic-kit inventory adapter; `testenv/`:
 regression tests; `scenarios/`: published-stage checks; `demo/`: synthetic
 roundtrip; `baselines/`: synthetic inputs; `docs/`: acceptance and provenance.
+`tools/usdaeco_scenarios/suite.py`: shallow suite release and stage-evidence audit.
 `out/` and `.work/` are disposable and uncommitted.
 
 ## Status
 
-Version 0.8.1 candidate. Full: **124 checks, 3 failed, 25 not run; 96 PASS; 1222.26 s**.
-Fast: **53 checks, 0 failed, 23 not run; 30 PASS; 79.37 s**. Drift: **0/125**.
-The full run passes **19/21 suites** and **45/45 documentation roots**.
-Corrected core and axis suites separately pass **71/71** and **54/54**.
-Local structure: **29/0**; pytest: **135 passed** in the recorded acceptance.
-The [release correction](docs/release-correction.json) passes fast **53 checks,
-0 failed, 23 not run; 79.96 s**, including **139 pytest tests**, **29/0 lint**,
-**45/45 link roots** and **24 fresh index rows** with no pre-existing hub checkout.
-The reviewer is reproducing the corrected complete full run and will record
-its measured result at merge; that result is not yet proven here.
-The full budget fails; Nix remains not proven after one offline attempt.
-See [acceptance](docs/acceptance.md) and [packaging](docs/packaging.md) for
-measured results and deviations. NOT RUN never counts as PASS.
+Version 0.9.0 candidate. Fast: **54 checks, 0 failed, 23 not run; 31 PASS;
+95.11 s**. Pytest: **165 passed**. Structure: **29 checks, 0 failed**.
+The suite row verifies **23 gitlinks**, **284 released
+stage references**, **250 stage files** and **12 recorded proof groups**.
+The [acceptance report](docs/acceptance.md) records the fast profile, local
+tests and structure counts. The full profile keeps its existing execution
+scope and has not been rerun for this release. Nix is not proven after one
+input-resolution failure. NOT RUN never counts as PASS.
 
 ## Licence
 

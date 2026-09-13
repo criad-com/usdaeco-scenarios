@@ -93,7 +93,10 @@ def main():
     output = args.output.resolve()
     output.mkdir(parents=True, exist_ok=True)
     started_gate = time.monotonic()
-    rows, report = [], {"repositories": {}, "libraries": {}, "version": "0.8.1", "train": "aeco-0.8.1", "profile": args.profile}
+    inventory = json.loads((ROOT / 'family.json').read_text())
+    metadata = json.loads((ROOT / 'library.json').read_text())
+    rows, report = [], {"repositories": {}, "libraries": {}, "version": metadata['version'],
+                        "train": inventory['train'], "profile": args.profile}
     placeholder_root = Path(os.environ.get('AECO_FAMILY_ROOT', ROOT / 'out/family'))
 
     def save():
@@ -161,6 +164,10 @@ def main():
     released = dict(inventory, repos=[r for r in inventory['repos'] if r['released'] is not None])
     result = validate_family(released)
     record("released family compatibility", bool(result), result.detail)
+    sys.path.insert(0, str(ROOT / 'tools'))
+    from usdaeco_scenarios.suite import gate as suite_gate
+    suite = suite_gate(inventory, output / 'suite')
+    record('suite', suite['passed'], suite['result'], evidence=suite['evidence'])
     indexed = {entry['name']: entry for entry in inventory['repos']}
     sys.path.insert(0, str(ROOT / 'tools'))
     from usdaeco_scenarios.drift import audit as drift_audit
